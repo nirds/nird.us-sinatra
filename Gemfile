@@ -4,6 +4,7 @@ gem 'sinatra',  '~> 1.3.2'
 gem 'heroku',   '~> 2.25.0'
 gem 'haml',     '~> 3.1.7'
 gem 'sass',     '~> 3.2.5'
+gem "psych",    "~> 1.3.4" # YAML Parsing
 
 group :test do
   gem 'rspec', '~> 2.11.0'
