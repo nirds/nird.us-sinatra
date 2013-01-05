@@ -8,7 +8,7 @@ end
 get '/' do
   # TODO make this HAML
   @title  = "hello"
-  @pizzas = YAML.load_file('data/pizza.yml')
+  @beers = YAML.load_file('data/beer.yml')
   haml :index
 end
 
@@ -43,6 +43,6 @@ __END__
     = yield
 
 @@ index
--@pizzas.each do |pizza|
-  %h2= pizza[1]["name"]
-  %p=  pizza[1]["toppings"]
+-@beers.each do |beer|
+  %h2= beer[1]["name"]
+  %p=  beer[1]["toppings"]
