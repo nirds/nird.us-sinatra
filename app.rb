@@ -43,6 +43,10 @@ __END__
     = yield
 
 @@ index
+
 -@beers.each do |beer|
   %h2= beer[1]["name"]
-  %p=  beer[1]["toppings"]
+  %p=  beer[1]["description"]
+
+%p below is the output of @beers["stout"]["description"]
+= @beers["stout"]["description"]

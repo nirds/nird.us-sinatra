@@ -1,6 +1,6 @@
 stout:
   name: "Stout"
-  toppings: "Chocolaty and dark"
+  description: "Chocolaty and dark"
 veggie:
   name: "Pale Ale"
-  toppings: "Hoppy and bright"
+  description: "Hoppy and bright"
