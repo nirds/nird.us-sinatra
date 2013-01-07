@@ -2,6 +2,7 @@ require 'compass'
 require 'sinatra'
 require 'yaml'
 require 'sass'
+require 'hashie'
 
 set :views, :sass => 'views/sass', :haml => 'views', :default => 'views'
 
@@ -21,9 +22,9 @@ end
 get '/' do
   @title  = "hello"
   # TODO make YAML auto-load if it exist in data/
-  @beers = YAML.load_file('data/beer.yml')
-  @people = YAML.load_file('data/people.yml')
-  @offerings = YAML.load_file('data/offerings.yml')
+  @beers      = Hashie::Mash.new(YAML.load_file('data/beer.yml'))
+  @people     = Hashie::Mash.new(YAML.load_file('data/people.yml'))
+  @offerings  = Hashie::Mash.new(YAML.load_file('data/offerings.yml'))
   haml :index
 end
 
