@@ -1,14 +1,8 @@
-%h1 Our People
--@people.each do |person|
-  %h2= person.last["full_name"]
-  -person.last["description"].each do |paragraph|
-    %p= paragraph.last
-
-
 %section.offerings
 -@offerings.each do |offering|
   %div.offering{:id => offering.last["id"]}
     %h1= offering.last["tagline"]
+    %p=  offering.last["copy"]
 
 %section.people
 -@people.each do |person|
