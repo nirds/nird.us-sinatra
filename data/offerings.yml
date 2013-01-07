@@ -1,0 +1,9 @@
+build:
+  id: "build"
+  tagline: "We Build"
+teach:
+  id: "teach"
+  tagline: "We Teach"
+partner:
+  id: "partner"
+  tagline: "We Partner"

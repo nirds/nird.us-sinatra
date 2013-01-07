@@ -6,12 +6,9 @@
 
 
 %section.offerings
-  %div.offering#build
-    %h1 We Build
-  %div.offering#teach
-    %h1 We Teach
-  %div.offering#partner
-    %h1 We Partner
+-@offerings.each do |offering|
+  %div.offering{:id => offering.last["id"]}
+    %h1= offering.last["tagline"]
 
 %section.people
 -@people.each do |person|

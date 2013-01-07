@@ -24,6 +24,7 @@ get '/' do
   @title  = "hello"
   @beers = YAML.load_file('data/beer.yml')
   @people = YAML.load_file('data/people.yml')
+  @offerings = YAML.load_file('data/offerings.yml')
   haml :index
 end
 
