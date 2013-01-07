@@ -8,4 +8,13 @@
 
 %section.offerings
   %div.offering#build
-    %h1 We build amazingness
+    %h1 We Build
+  %div.offering#teach
+    %h1 We Teach
+  %div.offering#partner
+    %h1 We Partner
+
+%section.people
+-@people.each do |person|
+  %div.person{:id => person.last["full_name"]}
+    %h1= person.last["full_name"]
