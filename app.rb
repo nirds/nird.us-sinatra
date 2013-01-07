@@ -1,11 +1,23 @@
+
+require 'compass'
 require 'sinatra'
 require 'yaml'
+require 'sass'
 
-before do
-  headers "Content-Type" => "text/html; charset=utf-8"
+configure do # Based on Chris Eppstein's [Sinatra Integration](https://github.com/chriseppstein/compass/wiki/Sinatra-Integration)
+  Compass.configuration do |config|
+    config.project_path = File.dirname(__FILE__)
+    config.sass_dir = 'views/sass'
+  end
+
+  set :haml, { :format => :html5 }
+  set :sass, Compass.sass_engine_options
 end
 
-set :views, :sass => 'views/sass', :default => 'views'
+get '/screen.css' do
+  content_type 'text/css', :charset => 'utf-8'
+  sass :screen
+end
 
 get '/' do
   # TODO make this HAML

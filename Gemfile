@@ -5,6 +5,7 @@ gem 'heroku',   '~> 2.25.0'
 gem 'haml',     '~> 3.1.7'
 gem 'sass',     '~> 3.2.5'
 gem "psych",    "~> 1.3.4" # YAML Parsing
+gem "compass",  "~> 0.12.2"
 
 group :test do
   gem 'rspec', '~> 2.11.0'
