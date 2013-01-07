@@ -1,0 +1,21 @@
+%html
+  %head
+    %title
+      = @title
+    %style
+      :sass
+        /* TODO put styles in Sass-y stylesheet. */
+        body
+          background-color: #FAFAFA
+          margin:           38px
+        p
+          padding:          0
+          margin:           0
+          font-family:      Helvetica, Arial, "Lucida Grande", sans-serif
+        a
+          color:            #33C
+          text-decoration:  none
+          &:visited
+            color:          #339
+  %body
+    = yield

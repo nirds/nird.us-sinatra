@@ -4,3 +4,10 @@
 :ipa:
   :name: "Pale Ale"
   :description: "Hoppy and bright"
+
+YAML:
+  name: "Yet Another Markup Language"
+  description: "blah blah blah"
+
+business_name: "A Pizza Shop"
+hours: "1PM to 2AM"
