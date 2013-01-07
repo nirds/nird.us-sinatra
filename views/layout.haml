@@ -2,9 +2,6 @@
   %head
     %title
       = @title
-    %style
-      :sass
-        /* TODO put styles in Sass-y stylesheet. */
-
+    %link{:rel => "stylesheet", :href => "styles.css"}
   %body
     = yield
