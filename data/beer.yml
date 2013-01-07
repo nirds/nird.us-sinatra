@@ -1,6 +1,6 @@
-stout:
-  name: "Stout"
-  description: "Chocolaty and dark"
-veggie:
-  name: "Pale Ale"
-  description: "Hoppy and bright"
+:stout:
+  :name: "Stout"
+  :description: "Chocolaty and dark"
+:ipa:
+  :name: "Pale Ale"
+  :description: "Hoppy and bright"

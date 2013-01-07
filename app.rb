@@ -44,9 +44,12 @@ __END__
 
 @@ index
 
--@beers.each do |beer|
-  %h2= beer[1]["name"]
-  %p=  beer[1]["description"]
+%p= @beers
 
-%p below is the output of @beers["stout"]["description"]
-= @beers["stout"]["description"]
+-@beers.each do |beer|
+  %h2= beer[1][:name]
+  %p=  beer[1][:description]
+  %p= beer
+
+%p below is the output of @beers[:stout][:description]
+= @beers[:stout][:description]
