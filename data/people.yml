@@ -1,5 +1,6 @@
 renee:
-  full_name: "Renée Hendrickson"
+  id: "renee"
+  full_name: "Renée De Voursney"
   image: "http://placekitten.com/g/250/250"
   description:
     paragraph_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus fermentum arcu sit amet auctor. Phasellus eget libero dui. Ut porta, elit at posuere fermentum, metus augue laoreet elit, nec rhoncus lacus nunc vitae lorem. Nunc ultricies leo ac orci vulputate ac vehicula tortor auctor. Fusce eu felis interdum leo vulputate ornare vitae quis turpis. Etiam est tellus, interdum a congue ac, consequat ut felis. Donec congue consequat nisi nec malesuada. Suspendisse ultrices dolor vitae felis tristique tincidunt. Integer et nisi purus."
@@ -8,7 +9,8 @@ renee:
     paragraph_4: "Sed commodo tortor dui, cursus adipiscing elit. Integer tortor lectus, ullamcorper quis eleifend at, facilisis vitae nisl. In egestas rhoncus ante eu adipiscing. Nullam luctus mauris vel leo faucibus pulvinar. Phasellus sagittis, eros et aliquam rhoncus, velit magna aliquam dui, at luctus mauris tortor ac massa. In ut felis eget dui adipiscing posuere scelerisque ac nisi. Fusce ac nisi eget nunc eleifend fringilla. Cras in lorem eu arcu ultricies lobortis. Suspendisse adipiscing porttitor tempor. Integer est arcu, fringilla imperdiet dapibus at, convallis vel elit."
     paragraph_5: "Phasellus consectetur velit vitae lectus aliquet molestie. Aliquam tincidunt porttitor tincidunt. Etiam placerat dictum eros, a congue nibh mollis lacinia. Quisque lectus risus, semper in tempor quis, congue sit amet nisi. Aliquam scelerisque accumsan purus dapibus tempus. Nulla eget est ut ligula sodales fringilla vel eu dolor. Morbi eget aliquam justo. Ut non dapibus tortor. Donec semper auctor euismod. Etiam eget eleifend dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 adam:
-  full_name: "Adam Hendrickson"
+  id: "adam"
+  full_name: "Adam Hendricksen"
   image: "http://placekitten.com/g/250/250"
   description:
     paragraph_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus fermentum arcu sit amet auctor. Phasellus eget libero dui. Ut porta, elit at posuere fermentum, metus augue laoreet elit, nec rhoncus lacus nunc vitae lorem. Nunc ultricies leo ac orci vulputate ac vehicula tortor auctor. Fusce eu felis interdum leo vulputate ornare vitae quis turpis. Etiam est tellus, interdum a congue ac, consequat ut felis. Donec congue consequat nisi nec malesuada. Suspendisse ultrices dolor vitae felis tristique tincidunt. Integer et nisi purus."
@@ -17,6 +19,7 @@ adam:
     paragraph_4: "Sed commodo tortor dui, cursus adipiscing elit. Integer tortor lectus, ullamcorper quis eleifend at, facilisis vitae nisl. In egestas rhoncus ante eu adipiscing. Nullam luctus mauris vel leo faucibus pulvinar. Phasellus sagittis, eros et aliquam rhoncus, velit magna aliquam dui, at luctus mauris tortor ac massa. In ut felis eget dui adipiscing posuere scelerisque ac nisi. Fusce ac nisi eget nunc eleifend fringilla. Cras in lorem eu arcu ultricies lobortis. Suspendisse adipiscing porttitor tempor. Integer est arcu, fringilla imperdiet dapibus at, convallis vel elit."
     paragraph_5: "Phasellus consectetur velit vitae lectus aliquet molestie. Aliquam tincidunt porttitor tincidunt. Etiam placerat dictum eros, a congue nibh mollis lacinia. Quisque lectus risus, semper in tempor quis, congue sit amet nisi. Aliquam scelerisque accumsan purus dapibus tempus. Nulla eget est ut ligula sodales fringilla vel eu dolor. Morbi eget aliquam justo. Ut non dapibus tortor. Donec semper auctor euismod. Etiam eget eleifend dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 strand:
+  id: "strand"
   full_name: "Strand McCutchen"
   image: "/images/strand.jpeg"
   description:
