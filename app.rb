@@ -29,26 +29,6 @@ get '/' do
   haml :index
 end
 
-get '/teach' do
-  haml :teach
-end
-
-get '/build' do
-  haml :build
-end
-
-get '/partner' do
-  haml :partner
-end
-
-get '/people' do
-  haml :people
-end
-
-get '/people/%r{.*}' do |name|
-  haml name
-end
-
 get '/*' do
   redirect to('/')
 end

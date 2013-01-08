@@ -17,34 +17,33 @@ $margin_l     : 10%
 $gutter_l     : 5%
 
 
-
 @mixin bottom_shade($top, $bottom)
-  // IE10 Consumer Preview 
+  // IE10 Consumer Preview
   background-image: -ms-linear-gradient(top, $top 0%, $bottom 100%)
   // Mozilla Firefox
   background-image: -moz-linear-gradient(top, $top 0%, $bottom 100%)
-  // Opera 
+  // Opera
   background-image: -o-linear-gradient(top, $top 0%, $bottom 100%)
-  // Webkit (Safari/Chrome 10) 
+  // Webkit (Safari/Chrome 10)
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $top), color-stop(1, $bottom))
-  // Webkit (Chrome 11+) 
+  // Webkit (Chrome 11+)
   background-image: -webkit-linear-gradient(top, $top 0%, $bottom 100%)
   // W3C Markup, IE10 Release Preview
   background-image: linear-gradient(to bottom, $top 0%, $bottom 100%)
 
 @mixin top_light($lamp, $shade, $image)
   $top : 18rem
-  // IE10 Consumer Preview */ 
+  // IE10 Consumer Preview */
   background-image: -ms-radial-gradient(center $top, circle farthest-corner, $lamp 0%, $shade 20%), url($image)
-  // Mozilla Firefox */ 
+  // Mozilla Firefox */
   background-image: -moz-radial-gradient(center $top, circle farthest-corner, $lamp 0%, $shade 20%), url($image)
-  // Opera */ 
+  // Opera */
   background-image: -o-radial-gradient(center $top, circle farthest-corner, $lamp 0%, $shade 20%), url($image)
-  // Webkit (Safari/Chrome 10) */ 
+  // Webkit (Safari/Chrome 10) */
   background-image: -webkit-gradient(radial, center $top, 0, center top, 553, color-stop(0.0, $lamp), color-stop(0.2, $shade)), url($image)
-  // Webkit (Chrome 11+) */ 
+  // Webkit (Chrome 11+) */
   background-image: -webkit-radial-gradient(center $top, circle farthest-corner, $lamp 0%, $shade 20%), url($image)
-  // W3C Markup, IE10 Release Preview */ 
+  // W3C Markup, IE10 Release Preview */
   background-image: radial-gradient(circle farthest-corner at center $top, $lamp 0%, $shade 20%), url($image)
 
 @mixin round_corner($radius)
@@ -52,7 +51,6 @@ $gutter_l     : 5%
   -moz-border-radius      : $radius
   -o-border-radius        : $radius
   border-radius           : $radius
-
 
 html, header, footer, div, section, article, aside, time, h1, h2, h3, h4, h5, h6, p, ol, ul, li, img, figure, figcaption
   margin      : 0
