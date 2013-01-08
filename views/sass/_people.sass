@@ -16,7 +16,7 @@
       top         : 1rem
       left        : 1rem
       right       : 1rem
-      bottom      : 70%
+      height      : 4rem
       @include bottom_shade(rgba(white, 0.05), rgba(white, 0.01))
       @include round_corner(1.0rem)
 
@@ -44,6 +44,7 @@
       text:
         align     : center
       margin:
+        top       : 1rem
         bottom    : 1rem
         left      : 1rem
         right     : 1rem
@@ -52,9 +53,6 @@
     img
       width       : 100%
       height      : auto
-      opacity     : 0.7
-      &:hover
-        opacity   : 1
 
   @media (min-width: 480px)
     @include row($margin_p, $gutter_p)
