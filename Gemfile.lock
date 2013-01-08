@@ -62,6 +62,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
   capistrano
   compass (~> 0.12.2)
   haml (~> 3.1.7)
