@@ -1,7 +1,6 @@
-require 'compass'
 require 'sinatra'
-require 'yaml'
 require 'sass'
+require 'yaml'
 require 'hashie'
 
 set :views, :sass => 'views/sass', :haml => 'views', :default => 'views'
@@ -21,10 +20,12 @@ end
 
 get '/' do
   @title  = "hello"
-  # TODO make YAML auto-load if it exist in data/
-  @beers      = Hashie::Mash.new(YAML.load_file('data/beer.yml'))
-  @people     = Hashie::Mash.new(YAML.load_file('data/people.yml'))
-  @offerings  = Hashie::Mash.new(YAML.load_file('data/offerings.yml'))
+
+  Dir.glob("data/*.yml").each do |file|
+    variable = /data\/(.*).yml/.match(file)[1]
+    instance_variable_set(:"@#{variable}", Hashie::Mash.new(YAML.load_file(file)))
+  end
+
   haml :index
 end
 
