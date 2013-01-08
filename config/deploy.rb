@@ -1,9 +1,6 @@
-# config/deploy.rb
-# We're using RVM on a server, need this.
-$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
-require 'rvm/capistrano'
-set :rvm_ruby_string, '1.9.3-head@nird-sinatra'
-set :rvm_type, :user
+require "rvm/capistrano"                  # Load RVM's capistrano plugin.
+set :rvm_type, :system
+set :rvm_ruby_string, 'ruby-1.9.3-head@nird-sinatra'        # Or whatever env you want it to run in.
 
 # Bundler tasks
 require 'bundler/capistrano'

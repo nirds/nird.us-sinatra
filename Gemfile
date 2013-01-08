@@ -8,6 +8,7 @@ gem "psych",    "~> 1.3.4" # YAML Parsing
 gem "compass",  "~> 0.12.2"
 gem "hashie",     "~> 1.2.0"
 gem "capistrano"
+gem "rvm-capistrano"
 
 group :test do
   gem 'rspec', '~> 2.11.0'
