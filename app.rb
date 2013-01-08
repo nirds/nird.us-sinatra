@@ -19,7 +19,7 @@ get '/styles.css' do
 end
 
 get '/' do
-  @title  = "hello"
+  @title  = "NIRD"
 
   Dir.glob("data/*.yml").each do |file|
     variable = /data\/(.*).yml/.match(file)[1]
