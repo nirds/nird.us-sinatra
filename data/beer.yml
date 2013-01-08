@@ -1,9 +1,9 @@
-:stout:
-  :name: "Stout"
-  :description: "Chocolaty and dark"
-:ipa:
-  :name: "Pale Ale"
-  :description: "Hoppy and bright"
+stout:
+  name: "Stout"
+  description: "Chocolaty and dark"
+ipa:
+  name: "Pale Ale"
+  description: "Hoppy and bright"
 
 YAML:
   name: "Yet Another Markup Language"
