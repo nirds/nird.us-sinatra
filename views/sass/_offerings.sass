@@ -9,11 +9,19 @@
 
   .offering
     @include col(1, 1, $margin_p, $gutter_p)
+    margin:
+      top         : 4rem
     background:
       color       : $dark
       color       : rgba($dark, 0.7)
     @include bottom_shade(rgba($grey, 0.4), rgba($dark, 0.5))
     @include round_corner(1.0rem)
+    &:hover
+      background:
+        color       : $pink
+        color       : rgba($pink, 0.5)
+      @include bottom_shade(rgba($pink, 0.6), rgba($pink, 0.1))
+      @include round_corner(1.0rem)
     
     &:before
       position    : absolute
@@ -34,8 +42,6 @@
         align     : center
 
     p
-      text:
-        align     : justify
       margin:
         left      : 2rem
         right     : 2rem

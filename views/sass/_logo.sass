@@ -1,6 +1,20 @@
 .logo
   height        : 360px
-  height        : 15rem
+  margin:
+    top         : 1rem
+  height        : 20rem
+  @media (min-width: 480px)
+    margin:
+      top       : 1rem
+    height      : 24rem
+  @media (min-width: 600px)
+    margin:
+      top       : 2rem
+    height      : 24rem
+  @media (min-width: 1024px)
+    margin:
+      top       : 4rem
+    height      : 30rem
   background:
     image       : url(images/logo.png)
     repeat      : no-repeat

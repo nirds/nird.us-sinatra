@@ -3,7 +3,6 @@
   %h2 Northwest Independent Ruby Development
 
 %section.offerings
-  %h1 What We Do
   -# When iterating over these structures, use each_value,
   -# as each is returning key-value pairs.
   -@offerings.each_value do |offering|
@@ -12,10 +11,11 @@
       %p=  offering.copy
 
 %section.people
-  %h1 Our Great People
-  -@people.each_value do |person|
-    %figure.person{:id => person.id}
-      %div.container
-        %img(src="#{person.image}")
-      %figcaption
-        %h2= person.full_name
+  %div.team
+    %h1 Who We Are
+    -@people.each_value do |person|
+      %figure.person{:id => person.id}
+        %div.container
+          %img(src="#{person.image}")
+        %figcaption
+          %h2= person.full_name
