@@ -32,19 +32,20 @@ $gutter_l     : 5%
   background-image: linear-gradient(to bottom, $top 0%, $bottom 100%)
 
 @mixin top_light($lamp, $shade, $image)
-  $top : 18rem
+  $top : 50%
+  $wid : 110%
   // IE10 Consumer Preview */
-  background-image: -ms-radial-gradient(center $top, circle farthest-corner, $lamp 0%, $shade 20%), url($image)
+  background-image: -ms-radial-gradient(center $top, circle closest-side, $lamp 0%, $shade $wid), url($image)
   // Mozilla Firefox */
-  background-image: -moz-radial-gradient(center $top, circle farthest-corner, $lamp 0%, $shade 20%), url($image)
+  background-image: -moz-radial-gradient(center $top, circle closest-side, $lamp 0%, $shade $wid), url($image)
   // Opera */
-  background-image: -o-radial-gradient(center $top, circle farthest-corner, $lamp 0%, $shade 20%), url($image)
+  background-image: -o-radial-gradient(center $top, circle closest-side, $lamp 0%, $shade $wid), url($image)
   // Webkit (Safari/Chrome 10) */
-  background-image: -webkit-gradient(radial, center $top, 0, center top, 553, color-stop(0.0, $lamp), color-stop(0.2, $shade)), url($image)
+  background-image: -webkit-gradient(radial, center $top, 0, center $top, 140, color-stop(0.0, $lamp), color-stop($wid / 100%, $shade)), url($image)
   // Webkit (Chrome 11+) */
-  background-image: -webkit-radial-gradient(center $top, circle farthest-corner, $lamp 0%, $shade 20%), url($image)
+  background-image: -webkit-radial-gradient(center $top, circle closest-side, $lamp 0%, $shade $wid), url($image)
   // W3C Markup, IE10 Release Preview */
-  background-image: radial-gradient(circle farthest-corner at center $top, $lamp 0%, $shade 20%), url($image)
+  background-image: radial-gradient(circle closest-side at center $top, $lamp 0%, $shade $wid), url($image)
 
 @mixin round_corner($radius)
   -webkit-border-radius   : $radius
@@ -59,6 +60,5 @@ html, header, footer, div, section, article, aside, time, h1, h2, h3, h4, h5, h6
 html
   background:
     image     : url(dark_leather.png)
-  @include top_light(rgba($pink, 0.2), rgba($pink, 0), 'dark_leather.png')
   font:
     size      : 62.5%
