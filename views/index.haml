@@ -1,13 +1,13 @@
 %section.offerings
--# When iterating over these structures, use each_value,
--# as each is returning key-value pairs.
--@offerings.each_value do |offering|
-  %div.offering{:id => offering.id}
-    %h1= offering.tagline
-    %p=  offering.copy
+  -# When iterating over these structures, use each_value,
+  -# as each is returning key-value pairs.
+  -@offerings.each_value do |offering|
+    %div.offering{:id => offering.id}
+      %h2= offering.tagline
+      %p=  offering.copy
 
 %section.people
--@people.each_value do |person|
-  %div.person{:id => person.id}
-    %h1= person.full_name
-    %img(src="#{person.image}")
+  -@people.each_value do |person|
+    %div.person{:id => person.id}
+      %h2= person.full_name
+      %img(src="#{person.image}")
