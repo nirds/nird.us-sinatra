@@ -1,0 +1,46 @@
+html, header, footer, div, section, article, aside, time, h1, h2, h3, h4, h5, h6, p, ol, ul, li, img, figure, figcaption
+  margin      : 0
+  padding     : 0
+
+html
+  background:
+    image     : url(dark_leather.png)
+  font:
+    size      : 62.5%
+
+$margin_p     : 1%
+$gutter_p     : 2%
+
+$margin_t     : 3%
+$gutter_t     : 3%
+
+$margin_s     : 10%
+$gutter_s     : 5%
+
+$margin_l     : 20%
+$gutter_l     : 5%
+
+$dark         : #111
+$grey         : #444
+$light        : #AAA
+$bright       : #DDD
+
+@mixin bottom_shade($top, $bottom)
+  // IE10 Consumer Preview 
+  background-image: -ms-linear-gradient(top, $top 0%, $bottom 100%)
+  // Mozilla Firefox
+  background-image: -moz-linear-gradient(top, $top 0%, $bottom 100%)
+  // Opera 
+  background-image: -o-linear-gradient(top, $top 0%, $bottom 100%)
+  // Webkit (Safari/Chrome 10) 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $top), color-stop(1, $bottom))
+  // Webkit (Chrome 11+) 
+  background-image: -webkit-linear-gradient(top, $top 0%, $bottom 100%)
+  // W3C Markup, IE10 Release Preview
+  background-image: linear-gradient(to bottom, $top 0%, $bottom 100%)
+
+@mixin round_corner($radius)
+  -webkit-border-radius   : $radius
+  -moz-border-radius      : $radius
+  -o-border-radius        : $radius
+  border-radius           : $radius

@@ -1,11 +1,11 @@
 %section.offerings
--@offerings.each do |offering|
-  %div.offering{:id => offering.last["id"]}
-    %h1= offering.last["tagline"]
-    %p=  offering.last["copy"]
+  -@offerings.each do |offering|
+    %div.offering{:id => offering.last["id"]}
+      %h2= offering.last["tagline"]
+      %p=  offering.last["copy"]
 
 %section.people
--@people.each do |person|
-  %div.person{:id => person.last["id"]}
-    %h1= person.last["full_name"]
-    %img(src="#{person.last["image"]}")
+  -@people.each do |person|
+    %div.person{:id => person.last["id"]}
+      %h1= person.last["full_name"]
+      %img(src="#{person.last["image"]}")

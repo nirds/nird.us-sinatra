@@ -1,0 +1,24 @@
+@mixin col($column_count: 1, $number_columns: 1, $margin_percent: 0%, $gutter_percent: 5%)
+  float                 : left
+  position              : relative
+  box-sizing            : border-box
+  -webkit-box-sizing    : border-box
+  -moz-box-sizing       : border-box
+  $row                  : 100% + $gutter_percent - $margin_percent
+  $raw_column           : ($row - $margin_percent) / $column_count
+  $untrimmed            : $number_columns * $raw_column
+  $trimmed              : $untrimmed - $gutter_percent
+
+  width                 : $trimmed * (100% / $row)
+  margin:
+    left                : $gutter-percent
+
+@mixin row($margin_percent: 0%, $gutter_percent: 5%)
+  display               : block
+  box-sizing            : border-box
+  -webkit-box-sizing    : border-box
+  -moz-box-sizing       : border-box
+  overflow              : hidden
+  width                 : 100%
+  padding:
+    left                : $margin_percent - $gutter_percent
