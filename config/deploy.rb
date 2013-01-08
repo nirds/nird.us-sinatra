@@ -1,3 +1,13 @@
+# config/deploy.rb
+# We're using RVM on a server, need this.
+$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
+require 'rvm/capistrano'
+set :rvm_ruby_string, '1.9.3-head@nird-sinatra'
+set :rvm_type, :user
+
+# Bundler tasks
+require 'bundler/capistrano'
+
 set :domain, "nird.us"
 set :application, "nird"
 set :deploy_to, "/var/www/#{application}"
