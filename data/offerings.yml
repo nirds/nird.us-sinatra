@@ -1,12 +1,12 @@
 build:
   id: "build"
   tagline: "We Build"
-  copy: "We can build your sophisticated web applications using Ruby on Rails, Sinatra, or RefineryCMS, depending on your technical needs. We are a full-stack Ruby development team. With NIRD you can watch your app grow from a concept to a full featured site."
+  copy: "Depending on your technical requirements, we can build your sophisticated web applications using Ruby on Rails, Sinatra, or RefineryCMS. We are a full-stack Ruby development team. With NIRD you can watch your app grow from a concept to a full featured site."
 teach:
   id: "teach"
   tagline: "We Teach"
-  copy: "Our skilled team is passionate about sharing our expertise, and can provide world class training in Ruby and Ruby on Rails. From beginner lessons in basic ruby to advanced topics like scaling or big data, we can provide all your Ruby stack training needs."
+  copy: "Our skilled team is passionate about sharing our expertise, and will provide world class training in Ruby on Rails. We are able to provide all your Ruby stack training needs from beginner lessons in basic ruby to advanced topics like scaling or big data."
 partner:
   id: "partner"
   tagline: "We Partner"
-  copy: "With our unique combination of technical capability and training skills, we can help your orgination grow along side your app. As we build, we will bring your team up to speed to maintain and extend your app."
+  copy: "With our unique combination of technical capability and training skills, we can help your organization grow along side your app. As we build, we will bring your team up to speed to maintain and extend your app."
