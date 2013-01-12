@@ -15,14 +15,14 @@
       color       : $dark
       color       : rgba($dark, 0.7)
     @include bottom_shade(rgba($grey, 0.4), rgba($dark, 0.5))
-    @include round_corner(1.0rem)
+    @include round(1.0rem)
     @extend %fade_in_out
     &:hover
       background:
         color       : $pink
         color       : rgba($pink, 0.5)
       @include bottom_shade(rgba($pink, 0.6), rgba($pink, 0.1))
-      @include round_corner(1.0rem)
+      @include round(1.0rem)
       @extend %fade_in_out
     
     &:before
@@ -33,7 +33,7 @@
       right       : 1rem
       height      : 4rem
       @include bottom_shade(rgba(white, 0.05), rgba(white, 0.01))
-      @include round_corner(1.0rem)
+      @include round(1.0rem)
     
     h2
       margin:

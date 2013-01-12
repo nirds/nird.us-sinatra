@@ -22,14 +22,14 @@
   border  : ($weight / 1.0rem * 10px) solid $color
   border  : $weight solid $color
 
-@mixin row($margin: 0%)
+@mixin row1($margin: 0%)
   display   : block
   width     : 100%
   overflow  : hidden
   padding:
     left    : $margin
 
-@mixin col($number_col: 1, $col_wide: 1, $margin: 0%, $gutter: 0%)
+@mixin col1($number_col: 1, $col_wide: 1, $margin: 0%, $gutter: 0%)
   display   : block
   $area     : 100% - 2 * $margin + $gutter
   $col_gut  : $area / $number_col
