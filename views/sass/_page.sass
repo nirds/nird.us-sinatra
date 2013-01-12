@@ -47,7 +47,6 @@ $gutter_l     : 5%
   // W3C Markup, IE10 Release Preview */
   background-image: radial-gradient(circle closest-side at center $top, $lamp 0%, $shade $wid), url($image)
 
-
 %fade_in_out
   $time   : 0.1s
   -webkit-transition      : all $time ease-in-out
@@ -56,11 +55,30 @@ $gutter_l     : 5%
   transition              : all $time ease-in-out
 
 html, header, footer, div, section, article, aside, time, h1, h2, h3, h4, h5, h6, p, ol, ul, li, img, figure, figcaption
-  margin      : 0
-  padding     : 0
+  margin        : 0
+  padding       : 0
 
 html
   background:
-    image     : url(dark_leather.png)
+    image       : url(dark_leather.png)
   font:
-    size      : 62.5%
+    size        : 62.5%
+
+.action
+  $radius       : 1rem
+  $flare        : 1rem
+  position      : fixed
+  z-index       : 1
+  top           : 0
+  right         : 0
+  margin:
+    top         : 2rem
+    right       : 2rem
+  @extend p
+  color         : white
+  @extend %fade_in_out
+  &:hover
+    color       : $pink
+    text:
+      shadow    : 0 0 1rem rgba($pink, 0.5)
+    @extend %fade_in_out
