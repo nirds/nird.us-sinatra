@@ -1,0 +1,43 @@
+@mixin round($radius: 0rem)
+  border-radius           : $radius / 1.0rem * 10px
+  -webkit-border-radius   : $radius / 1.0rem * 10px
+  -moz-border-radius      : $radius / 1.0rem * 10px
+  border-radius           : $radius
+
+@mixin pad($radius: 0rem)
+  padding   : $radius / 1.0rem * 10px
+  padding   : $radius
+
+@mixin buffer($buffer: 0rem)
+  margin    : $buffer / 1.0rem * 10px
+  margin    : $buffer
+
+@mixin shadow($right: 0.0rem, $down: 0.0rem, $blur: 0.5rem, $spread: 0.0rem, $color: #fff)
+  box-shadow          : ($right / 1.0rem * 10px) ($down / 1.0rem * 10px) ($blur / 1.0rem * 10px) ($spread / 1.0rem * 10px) $color
+  -webkit-box-shadow  : ($right / 1.0rem * 10px) ($down / 1.0rem * 10px) ($blur / 1.0rem * 10px) ($spread / 1.0rem * 10px) $color
+  -moz-box-shadow     : ($right / 1.0rem * 10px) ($down / 1.0rem * 10px) ($blur / 1.0rem * 10px) ($spread / 1.0rem * 10px) $color
+  box-shadow          : $right $down $blur $spread $color
+
+@mixin border($weight: 0.1rem, $color: #fff)
+  border  : ($weight / 1.0rem * 10px) solid $color
+  border  : $weight solid $color
+
+@mixin row($margin: 0%)
+  display   : block
+  width     : 100%
+  overflow  : hidden
+  padding:
+    left    : $margin
+
+@mixin col($number_col: 1, $col_wide: 1, $margin: 0%, $gutter: 0%)
+  display   : block
+  $area     : 100% - 2 * $margin + $gutter
+  $col_gut  : $area / $number_col
+  width     : $col_wide * $col_gut - $gutter
+  margin:
+    right   : $gutter
+
+%box
+  -webkit-box-sizing    : border-box
+  -moz-box-sizing       : border-box
+  box-sizing            : border-box
