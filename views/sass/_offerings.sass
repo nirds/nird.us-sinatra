@@ -1,12 +1,5 @@
 .offerings
   @include row($margin_p)
-  h1
-    @include col(1, 1, $margin_p, $gutter_p)
-    %extend %box
-    margin:
-      top         : 1em
-    text:
-      align       : center
 
   .offering
     @include col(1, 1, $margin_p, $gutter_p)
@@ -14,43 +7,56 @@
     float         : left
     margin:
       top         : 2rem
-    background:
-      color       : $dark
-      color       : rgba($dark, 0.7)
-    @include bottom_shade(rgba($grey, 0.4), rgba($dark, 0.5))
-    @include round(1.0rem)
-    @extend %fade_in_out
-    &:hover
-      background:
-        color       : $pink
-        color       : rgba($pink, 0.5)
-      @include bottom_shade(rgba($pink, 0.6), rgba($pink, 0.1))
-      @include round(1.0rem)
-      @extend %fade_in_out
-    
-    &:before
-      position    : absolute
-      content     : ''
-      top         : 1rem
-      left        : 1rem
-      right       : 1rem
-      height      : 4rem
-      @include bottom_shade(rgba(white, 0.05), rgba(white, 0.01))
-      @include round(1.0rem)
-    
-    h2
-      margin:
-        top       : 1rem
-        left      : 2rem
-        right     : 2rem
-      text:
-        align     : center
+    .panel
+      $radius     : 1rem
+      $flare      : 1rem
+      @include buffer($flare)
+      @include round($radius)
+      @include pad($radius)
 
-    p
-      margin:
-        left      : 2rem
-        right     : 2rem
-        bottom    : 1em
+      %extend %box
+      background:
+        color     : $dark
+        color     : rgba($dark, 0.7)
+      @include bottom_shade(rgba($grey, 0.4), rgba($dark, 0.5))
+      
+      @extend %fade_in_out
+      &:hover
+        background:
+          color   : $pink
+          color   : rgba($pink, 0.5)
+        @include bottom_shade(rgba($pink, 0.6), rgba($pink, 0.1))
+        @include shadow(0rem, 0rem, $flare, $flare / 2, rgba($pink, 0.15))
+        @extend %fade_in_out
+      
+      &:before
+        position    : absolute
+        content     : ''
+        top         : 2rem
+        left        : 2rem
+        right       : 2rem
+        height      : 4rem
+        @include bottom_shade(rgba(white, 0.05), rgba(white, 0.01))
+        @include round(1.0rem)
+    
+      h2
+        text:
+          align     : center
+      p
+        margin:
+          left      : 1rem
+          right     : 1rem
+      @extend %fade_in_out
+      &:hover
+        h2
+          color     : white
+          text:
+            shadow  : 0 0 1rem rgba(white, 0.25)
+        p
+          color     : $bright
+          text:
+            shadow  : 0 0 1rem rgba($bright, 0.25)
+        @extend %fade_in_out
 
   @media (min-width: 768px)
     @include row($margin_t)

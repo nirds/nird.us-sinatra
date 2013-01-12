@@ -7,15 +7,17 @@
   -# as each is returning key-value pairs.
   -@offerings.each_value do |offering|
     %div.offering{:id => offering.id}
-      %h2= offering.tagline
-      %p=  offering.copy
+      %div.panel
+        %h2= offering.tagline
+        %p=  offering.copy
 
 %section.people
   %div.team
-    %h1 Who We Are
-    -@people.each_value do |person|
-      %figure.person{:id => person.id}
-        %div.container
-          %img(src="#{person.image}")
-        %figcaption
-          %h2= person.full_name
+    %div.panel
+      %h1 Who We Are
+      -@people.each_value do |person|
+        %figure.person{:id => person.id}
+          %div.container
+            %img(src="#{person.image}")
+          %figcaption
+            %h2= person.full_name
