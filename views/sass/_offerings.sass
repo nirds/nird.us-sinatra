@@ -40,6 +40,7 @@
         @include round(1.0rem)
     
       h2
+        color       : $pink
         text:
           align     : center
       p
@@ -71,6 +72,9 @@
       @include col(1, 1, $margin_s, $gutter_s)
     .offering
       @include col(3, 1, $margin_s, $gutter_s)
+      .panel
+        h2
+          color         : $bright
   
   @media (min-width: 1920px)
     @include row($margin_l)
