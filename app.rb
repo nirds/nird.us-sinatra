@@ -29,6 +29,17 @@ get '/' do
   haml :index
 end
 
+get '/teach' do
+  @title  = "NIRD - We Teach"
+
+  Dir.glob("data/*.yml").each do |file|
+    variable = /data\/(.*).yml/.match(file)[1]
+    instance_variable_set(:"@#{variable}", Hashie::Mash.new(YAML.load_file(file)))
+  end
+
+  haml :teach
+end
+
 get '/*' do
   redirect to('/')
 end
