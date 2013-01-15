@@ -6,6 +6,24 @@ teach:
   id: "teach"
   tagline: "We Teach"
   copy: "Our skilled team is passionate about sharing our expertise, and will provide world class training in Ruby on Rails. We are able to provide all your Ruby stack training needs from beginner lessons in basic ruby to advanced topics like scaling or big data."
+  detail:
+    remote:
+      heading: "Remote Trainings"
+      paragraphs:
+        host: "We can host remote training sessions for your team, covering a range of development topics. Popular trainings include:"
+        customize: "We look forward to working with you to design a custom training program to fit your organization's needs."
+      bullets:
+        entreprenuers: "Individualized Rails training for Entreprenuers"
+        intro: "Introduction to Ruby and Rails for Developers"
+        testing: "Testing in Ruby"
+    local:
+      heading: "On-Site Trainings"
+      paragraphs:
+        travel: "We are happy to travel to your workplace to teach you, anywhere in the world. Some places our consultants have taught are:"
+      bullets:
+        sf: "The Bay Area/Silicon Valley"
+        nyc: "New York City"
+        berlin: "Berlin"
 partner:
   id: "partner"
   tagline: "We Partner"
