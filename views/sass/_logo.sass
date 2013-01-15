@@ -1,43 +1,55 @@
-a.home
-  display       : block
-  width         : 28rem
-  margin:
-    left        : auto
-    right       : auto
-  @media (min-width: 480px)
-    width       : 36rem
+.logo_center
+  @include row($margin_p)
   @media (min-width: 600px)
-    width       : 36rem
+    @include row($margin_t)
   @media (min-width: 1024px)
-    width       : 45rem
+    @include row($margin_s)
+  @media (min-width: 1920px)
+    @include row($margin_l)
 
 .logo
-  height        : 360px
-  height        : 20rem
-  margin:
-    top         : 1rem
-  @media (min-width: 480px)
-    margin:
-      top       : 1rem
-    height      : 24rem
+  @include col(1, 1, $margin_p, $gutter_p)
   @media (min-width: 600px)
-    margin:
-      top       : 2rem
-    height      : 24rem
+    @include col(1, 1, $margin_t, $gutter_t)
   @media (min-width: 1024px)
+    @include col(1, 1, $margin_s, $gutter_s)
+  @media (min-width: 1920px)
+    @include col(1, 1, $margin_l, $gutter_l)
+
+  a.home
+    display       : block
     margin:
-      top       : 4rem
-    height      : 30rem
-  background:
-    image       : url(images/logo.png)
-    repeat      : no-repeat
-    position    : center center
-    size        : auto 100%
-  @include top_light(rgba($pink, 0.2), rgba($pink, 0), 'images/logo.png')
-  @extend %fade_in_out
-  &:hover
-    @include top_light(rgba($pink, 0.3), rgba($pink, 0), 'images/logo.png')
+      top         : 1rem
+    height        : 360px
+    height        : 20rem
+    width         : 28rem
+    background:
+      image       : url(images/logo.png)
+      repeat      : no-repeat
+      position    : center center
+      size        : auto 100%
+    @include top_light(rgba($pink, 0.2), rgba($pink, 0), 'images/logo.png')
     @extend %fade_in_out
+    &:hover
+      @include top_light(rgba($pink, 0.3), rgba($pink, 0), 'images/logo.png')
+      @extend %fade_in_out
+    margin:
+      left        : auto
+      right       : auto
+    @media (min-width: 480px)
+      height      : 24rem
+      width       : 36rem
+    @media (min-width: 600px)
+      margin:
+        top       : 2rem
+      height      : 24rem
+      width       : 36rem
+    @media (min-width: 1024px)
+      margin:
+        top       : 4rem
+      height      : 30rem
+      width       : 45rem
+
   h1
     text:
       align     : center
