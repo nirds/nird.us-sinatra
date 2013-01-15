@@ -29,6 +29,17 @@ get '/' do
   haml :index
 end
 
+get '/build' do
+  @title  = "NIRD - We Build"
+
+  Dir.glob("data/*.yml").each do |file|
+    variable = /data\/(.*).yml/.match(file)[1]
+    instance_variable_set(:"@#{variable}", Hashie::Mash.new(YAML.load_file(file)))
+  end
+
+  haml :build
+end
+
 get '/teach' do
   @title  = "NIRD - We Teach"
 
@@ -38,6 +49,17 @@ get '/teach' do
   end
 
   haml :teach
+end
+
+get '/partner' do
+  @title  = "NIRD - We Partner"
+
+  Dir.glob("data/*.yml").each do |file|
+    variable = /data\/(.*).yml/.match(file)[1]
+    instance_variable_set(:"@#{variable}", Hashie::Mash.new(YAML.load_file(file)))
+  end
+
+  haml :partner
 end
 
 get '/*' do
