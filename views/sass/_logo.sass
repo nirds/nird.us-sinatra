@@ -1,6 +1,6 @@
 a.home
   display       : block
-  width         : 30rem
+  width         : 28rem
   margin:
     left        : auto
     right       : auto
@@ -46,3 +46,23 @@ a.home
     text:
       align     : center
       indent    : -9999px
+
+.action
+  $radius       : 1rem
+  $flare        : 1rem
+  position      : fixed
+  z-index       : 1
+  top           : 0
+  left          : 0
+  margin:
+    top         : 2rem
+    left        : 2rem
+    right       : 2rem
+  @extend p
+  color         : white
+  @extend %fade_in_out
+  &:hover
+    color       : $pink
+    text:
+      shadow    : 0 0 1rem rgba($pink, 0.5)
+    @extend %fade_in_out

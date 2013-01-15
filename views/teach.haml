@@ -1,18 +1,20 @@
 %section.teach
   %h1=@offerings.teach.tagline
-  %div.panel
-    %h2=@offerings.teach.detail.remote.heading
-    %p
-      =@offerings.teach.detail.remote.paragraphs.host
-    %ul
-    -@offerings.teach.detail.remote.bullets.each_value do |bullet|
-      %li=bullet
-    %p
-      =@offerings.teach.detail.remote.paragraphs.customize
-  %div.panel
-    %h2=@offerings.teach.detail.local.heading
-    %p
-      =@offerings.teach.detail.local.paragraphs.travel
-    %ul
-    -@offerings.teach.detail.local.bullets.each_value do |bullet|
-      %li=bullet
+  %div.specialty
+    %div.panel
+      %h2=@offerings.teach.detail.remote.heading
+      %p
+        =@offerings.teach.detail.remote.paragraphs.host
+      %ul
+      -@offerings.teach.detail.remote.bullets.each_value do |bullet|
+        %li=bullet
+      %p
+        =@offerings.teach.detail.remote.paragraphs.customize
+  %div.specialty
+    %div.panel
+      %h2=@offerings.teach.detail.local.heading
+      %p
+        =@offerings.teach.detail.local.paragraphs.travel
+      %ul
+      -@offerings.teach.detail.local.bullets.each_value do |bullet|
+        %li=bullet

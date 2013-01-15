@@ -16,6 +16,9 @@ $gutter_s     : 5%
 $margin_l     : 10%
 $gutter_l     : 5%
 
+$radius       : 1rem
+$flare        : 1rem
+
 
 @mixin bottom_shade($top, $bottom)
   // IE10 Consumer Preview
@@ -64,22 +67,14 @@ html
   font:
     size        : 62.5%
 
-.action
-  $radius       : 1rem
-  $flare        : 1rem
-  position      : fixed
-  z-index       : 1
-  top           : 0
-  left          : 0
-  margin:
-    top         : 2rem
-    left        : 2rem
-    right       : 2rem
-  @extend p
-  color         : white
-  @extend %fade_in_out
-  &:hover
-    color       : $pink
-    text:
-      shadow    : 0 0 1rem rgba($pink, 0.5)
-    @extend %fade_in_out
+.panel
+  %extend %box
+  @include buffer($flare)
+  @include round($radius)
+  @include pad($radius)
+  background:
+    color       : $dark
+    color       : rgba($dark, 0.5)
+  @include bottom_shade(rgba($grey, 0.3), rgba($dark, 0.5))
+      
+  @extend %fade_in_out 
