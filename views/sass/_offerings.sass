@@ -74,14 +74,12 @@
 .build, .teach, .partner
   @include row($margin_p)
   
-  h1
-    @include col(1, 1, $margin_p, $gutter_p)
-  
   .panel
     height        : 40rem
+    @include col(1, 1, $margin_p, 0)
 
   .specialty
-    @include col(1, 1, $margin_p, $gutter_p)
+    @include col(1, 1, 0, 0)
     h1
       text:
         align     : center
@@ -123,10 +121,10 @@
 
   @media (min-width: 768px)
     @include row($margin_t)
-    h1
-      @include col(1, 1, $margin_t, $gutter_t)
+    .panel
+      @include col(1, 1, $margin_t, 0)
     .specialty
-      @include col(2, 1, $margin_t, $gutter_t)
+      @include col(2, 1, 0, 0)
       p, li
         font:
           size    : 10px
@@ -134,7 +132,6 @@
 
   @media (min-width: 900px)
     .specialty
-      @include col(2, 1, $margin_t, $gutter_t)
       p, li
         font:
           size    : 12px
@@ -142,10 +139,10 @@
 
   @media (min-width: 1024px)
     @include row($margin_s)
-    h1
-      @include col(1, 1, $margin_s, $gutter_s)
+    .panel
+      @include col(1, 1, $margin_s, 0)
     .specialty
-      @include col(2, 1, $margin_s, $gutter_s)
+      @include col(2, 1, 0, 0)
 
   @media (min-width: 1280px)
     .specialty
@@ -156,7 +153,7 @@
 
   @media (min-width: 1920px)
     @include row($margin_l)
-    h1
-      @include col(1, 1, $margin_l, $gutter_l)
+    .panel
+      @include col(1, 1, $margin_l, 0)
     .specialty
-      @include col(2, 1, $margin_l, $gutter_l)
+      @include col(2, 1, 0, 0)
