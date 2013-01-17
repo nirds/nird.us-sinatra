@@ -4,7 +4,7 @@
   -@offerings.each_value do |offering|
     %div.offering{:id => offering.id}
       %div.panel
-        %h2= offering.tagline
+        %h1= offering.tagline
         %p=  offering.copy
 
 %section.people
@@ -16,4 +16,4 @@
           %div.container
             %img(src="#{person.image}")
           %figcaption
-            %h2= person.full_name
+            %h3= person.full_name
