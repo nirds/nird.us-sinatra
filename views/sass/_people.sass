@@ -37,15 +37,13 @@
       margin      : auto auto
       
       &:hover
+        
         h3
+          @extend %fade_in_out
           color   : $pink
-          @extend %fade_in_out
         .container
-          @extend %fade_in_out
-          -webkit-transform   : translate(0, -1rem)
-          -moz-transform      : translate(0, -1rem)
-          -o-transform        : translate(0, -1rem)
-          transform           : translate(0, -1rem)
+          @extend %bump_up
+          
 
 
     .container

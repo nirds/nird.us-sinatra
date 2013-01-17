@@ -9,6 +9,7 @@
       top         : 2rem
     .panel
       &:hover
+        @extend %fade_in_out
         background:
           color   : $pink
           color   : rgba($pink, 0.5)
@@ -27,24 +28,27 @@
         @include round(1.0rem)
     
       h1
+        @extend %fade_in_out
         text:
           align     : center
-        
+
       p
+        @extend %fade_in_out
         margin:
           left      : 1rem
           right     : 1rem
-      @extend %fade_in_out
+      
       &:hover
         h2
+          @extend %fade_in_out
           color     : white
           text:
             shadow  : 0 0 1rem rgba(white, 0.25)
         p
+          @extend %fade_in_out
           color     : $bright
           text:
             shadow  : 0 0 1rem rgba($bright, 0.15)
-        @extend %fade_in_out
 
   @media (min-width: 768px)
     @include row($margin_t)
