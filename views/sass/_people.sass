@@ -26,19 +26,37 @@
 
   .person
     @include col(1, 1, 0, 0)
-    %extend %box
+    @extend %box
+    display       : block
     float         : left
+
+    a
+      @extend %box
+      display     : block
+      width       : 200px
+      margin      : auto auto
+      
+      &:hover
+        h3
+          color   : $pink
+          @extend %fade_in_out
+        .container
+          @extend %fade_in_out
+          -webkit-transform   : translate(0, -1rem)
+          -moz-transform      : translate(0, -1rem)
+          -o-transform        : translate(0, -1rem)
+          transform           : translate(0, -1rem)
+
 
     .container
       position    : relative
       margin:
         top       : 3rem
-        left      : auto
-        right     : auto
-      width       : 150px
-      height      : 150px
+      width       : 200px
+      height      : 200px
       @include round(1.0rem)
       overflow    : hidden
+      @extend %fade_in_out
     
     h3
       text:
@@ -48,9 +66,7 @@
         bottom    : 1rem
         left      : 1rem
         right     : 1rem
-      //&:hover
-      //  color     : $pink
-      //  text-shadow: 0 0 1rem rgba($pink, 0.25)
+      @extend %fade_in_out
     p
       text:
         align     : center

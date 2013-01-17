@@ -12,8 +12,9 @@
     %div.panel
       %h1 Who We Are
       -@people.each_value do |person|
-        %figure.person{:id => person.id}
-          %div.container
-            %img(src="#{person.image}")
-          %figcaption
-            %h3= person.full_name
+        %figure.person
+          %a{:id => person.id,:href=>'#'}
+            %div.container
+              %img(src="#{person.image}")
+            %figcaption
+              %h3= person.full_name
