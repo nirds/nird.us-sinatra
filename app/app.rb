@@ -21,13 +21,12 @@ end
 get '/:verb' do |verb|
   if %(build teach partner).include? verb.downcase
     @title  = "NIRD - We #{verb.capitalize}"
-    haml params[:verb].to_sym
+    haml verb.to_sym
   else
     redirect to('/')
   end
 end
 
 get '/*' do
-  %w(build teach partner)
   redirect to('/')
 end
