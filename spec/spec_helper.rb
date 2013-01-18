@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), '..', 'dynamo.rb')
+require File.join(File.dirname(__FILE__), '..', 'app/app.rb')
 
 require 'sinatra'
 require 'rack/test'
