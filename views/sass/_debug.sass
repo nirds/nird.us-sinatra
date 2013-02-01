@@ -4,26 +4,37 @@ $ma         : 10%
   display   : block
   float     : left
   width     : 10%
-  height    : 50px
+  height    : 30px
   &:nth-child(2n-1)
     background:
-      color     : tan
+      color     : black
   &:nth-child(2n)
     background:
-      color     : coral
+      color     : white
+.hundredth
+  display   : block
+  float     : left
+  width     : 1%
+  height    : 20px
+  &:nth-child(2n-1)
+    background:
+      color     : black
+  &:nth-child(2n)
+    background:
+      color     : white
 
 .rowtest
-  @include row(10%, 10%)
+  @include row(0%, 5%)
   float     : left
   height    : 50px
   background: 
     color     : white
 
 .coltest
-  @include col(2, 1, 10%, 10%)
+  @include col(4, 1, 0%, 5%)
   @extend %box
   background:
-    color     : aqua
+    color     : gold
   float       : left
   padding:
     left      : 10%
