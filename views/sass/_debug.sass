@@ -24,20 +24,18 @@ $ma         : 10%
       color     : white
 
 .rowtest
-  @include row(5%, 15%)
+  @include row(5%, 3%)
   float     : left
   height    : 50px
   background: 
     color     : white
 
 .coltest
-  @include col(3, 1, 5%, 15%)
+  @include col(3, 1, 5%, 3%)
   @extend %box
   background:
     color     : gold
   float       : left
-  padding:
-    left      : 10%
 
 .coltestR
   @extend .coltest
