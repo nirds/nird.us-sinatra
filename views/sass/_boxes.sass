@@ -23,7 +23,7 @@
   border  : $weight solid $color
 
 @mixin row($margin: 0%, $gutter: 0%)
-  display   : block
+  display   : inline-block
   $marg_p   : min($margin - $gutter / 2, 0)
   $padd_p   : max($margin - $gutter / 2, 0)
   $widt_p   : 100% - $marg_p
@@ -62,7 +62,6 @@
     left    : $marg_t
     right   : $marg_t
   width     : $colwidt_t
-
 
 %box
   -webkit-box-sizing    : border-box
