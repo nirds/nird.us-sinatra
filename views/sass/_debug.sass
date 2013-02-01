@@ -1,0 +1,33 @@
+$ma         : 10%
+
+.tenth
+  display   : block
+  float     : left
+  width     : 10%
+  height    : 50px
+  &:nth-child(2n-1)
+    background:
+      color     : tan
+  &:nth-child(2n)
+    background:
+      color     : coral
+
+.rowtest
+  @include row(10%, 10%)
+  float     : left
+  height    : 50px
+  background: 
+    color     : white
+
+.coltest
+  @include col(2, 1, 10%, 10%)
+  @extend %box
+  background:
+    color     : aqua
+  float       : left
+  padding:
+    left      : 10%
+
+.coltestR
+  @extend .coltest
+  float       : right

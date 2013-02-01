@@ -22,22 +22,47 @@
   border  : ($weight / 1.0rem * 10px) solid $color
   border  : $weight solid $color
 
-@mixin row($margin: 0%)
+@mixin row($margin: 0%, $gutter: 0%)
   display   : block
-  width     : 100% - $margin
-  overflow  : hidden
+  $marg_p   : min($margin - $gutter / 2, 0)
+  $padd_p   : max($margin - $gutter / 2, 0)
+  $widt_p   : 100% - 2 * $marg_p
+  $p_to_r   : 100% / $widt_p
+  $padd_r   : $padd_p * $p_to_r
+  $widt_r   : $widt_p * $p_to_r - 2 * $padd_r
+  $trim_p   : $widt_r / $p_to_r
+
+  margin:
+    left    : $marg_p
+  width     : $trim_p
   padding:
-    left    : $margin
+    left    : $padd_r
+    right   : $padd_r
+  overflow  : hidden
 
 @mixin col($number_col: 1, $col_wide: 1, $margin: 0%, $gutter: 0%)
   display   : block
-  position  : relative
-  $num_guts : $number_col - 1
-  $area     : 100% - 2 * $margin + $gutter * max($num_guts, 2)
-  $col_gut  : $area / $number_col
-  width     : $col_wide * $col_gut - $gutter
+  $marg_p   : min($margin - $gutter / 2, 0)
+  $padd_p   : max($margin - $gutter / 2, 0)
+  $widt_p   : 100% - 2 * $marg_p
+  $p_to_r   : 100% / $widt_p
+  $padd_r   : $padd_p * $p_to_r
+  $widt_r   : $widt_p * $p_to_r - 2 * $padd_r
+  $trim_p   : $widt_r / $p_to_r
+
+  $p_to_t   : 100% / $trim_p
+
+  $marg_t   : $gutter / 2 * $p_to_t
+
+  $add_col  : $number_col - 1
+  $colwidt_p: (100% - 2 * $margin - $add_col * $gutter) / ($add_col + 1)
+  $colwidt_t: $colwidt_p * $p_to_t
+
   margin:
-    right   : $gutter
+    left    : $marg_t
+    right   : $marg_t
+  width     : $colwidt_t
+
 
 %box
   -webkit-box-sizing    : border-box

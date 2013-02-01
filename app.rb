@@ -62,6 +62,17 @@ get '/partner' do
   haml :partner
 end
 
+get '/debug' do
+  @title  = "DEBUG PAGE"
+
+  Dir.glob("data/*.yml").each do |file|
+    variable = /data\/(.*).yml/.match(file)[1]
+    instance_variable_set(:"@#{variable}", Hashie::Mash.new(YAML.load_file(file)))
+  end
+
+  haml :debug
+end
+
 get '/*' do
   redirect to('/')
 end
