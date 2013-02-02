@@ -24,14 +24,14 @@ $ma         : 10%
       color     : white
 
 .rowtest
-  @include row(5%, 3%)
+  @include row(5%, 8%)
   float     : left
   height    : 50px
   background: 
     color     : white
 
 .coltest
-  @include col(3, 1, 5%, 3%)
+  @include col(3, 1, 5%, 8%, 0)
   @extend %box
   background:
     color     : gold
@@ -41,15 +41,19 @@ $ma         : 10%
   @extend .coltest
   float       : right
 
-.colfour
-  @include col(4, 1, 5%, 3%)
+.colsix
+  @include col(6, 1, 5%, 8%, 0)
   @extend %box
   background:
     color     : gold
   float       : left
 
+.colsixpush
+  @extend .colsix
+  @include col(6, 1, 5%, 8%, 1)
+
 .coldouble
-  @include col(4, 2, 5%, 3%)
+  @include col(6, 2, 5%, 8%, 0)
   @extend %box
   background:
     color     : gold
