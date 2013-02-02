@@ -60,7 +60,8 @@
 
   $added_columns        : $number_columns - 1
   $column_width_page    : (100% - 2 * $margin - $added_columns * $gutter) / ($added_columns + 1)
-  $column_width_trimmed : $column_width_page * $page_to_trimmed
+  $multiple_column_page : $columns_wide * $column_width_page + ($columns_wide - 1) * $gutter
+  $column_width_trimmed : $multiple_column_page * $page_to_trimmed
 
   margin:
     left                : $margin_trimmed

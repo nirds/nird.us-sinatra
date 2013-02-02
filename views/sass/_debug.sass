@@ -40,3 +40,17 @@ $ma         : 10%
 .coltestR
   @extend .coltest
   float       : right
+
+.colfour
+  @include col(4, 1, 5%, 3%)
+  @extend %box
+  background:
+    color     : gold
+  float       : left
+
+.coldouble
+  @include col(4, 2, 5%, 3%)
+  @extend %box
+  background:
+    color     : gold
+  float       : left
