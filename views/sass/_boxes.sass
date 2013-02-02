@@ -44,7 +44,7 @@
     left        : $padding_row
     right       : $padding_row
 
-@mixin col($number_columns: 1, $columns_wide: 1, $margin: 0%, $gutter: 0%, $push_columns_left: 0)
+@mixin col($number_columns: 1, $columns_wide: 1, $margin: 0%, $gutter: 0%, $push_columns_left: 0, $push_columns_right: 0)
   display               : block
   $margin_page          : min($margin - $gutter / 2, 0)
   $padding_page         : $margin - $gutter / 2
@@ -65,9 +65,11 @@
 
   $left_pushed_trimmed  : $push_columns_left * ($column_width_trimmed + 2 * $margin_trimmed) + $margin_trimmed
 
+  $right_pushed_trimmed : $push_columns_right * ($column_width_trimmed + 2 * $margin_trimmed) + $margin_trimmed
+
   margin:
     left                : $left_pushed_trimmed
-    right               : $margin_trimmed
+    right               : $right_pushed_trimmed
   width                 : $column_width_trimmed
 
 %box
