@@ -8,22 +8,14 @@
       height        : 33rem
       margin:
         top         : 1rem
-      &:before
-        position    : absolute
-        border: red dotted 1px
-        content     : ''
-        top         : 1rem
-        left        : 2rem
-        right       : 2rem
-        height      : 4rem
-        @include bottom_shade(rgba(white, 0.05), rgba(white, 0.01))
-        @include round(1.0rem)
 
   h1
     @include col(1, 1, 0, 0)
     @extend %box
     text:
       align       : center
+    @include bottom_shade(rgba(white, 0.05), rgba(white, 0.01))
+    @include round(1.0rem)
 
   .person
     @include col(1, 1, 0, 0)
