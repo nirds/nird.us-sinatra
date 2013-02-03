@@ -79,7 +79,6 @@ html
     size        : 62.5%
 
 .panel
-  %extend %box
   @include buffer($flare)
   @include round($radius)
   @include pad($radius)
@@ -87,5 +86,4 @@ html
     color       : $dark
     color       : rgba($dark, 0.5)
   @include bottom_shade(rgba($grey, 0.3), rgba($dark, 0.5))
-      
   @extend %fade_in_out 

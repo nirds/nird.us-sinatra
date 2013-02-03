@@ -23,7 +23,7 @@
   border  : $weight solid $color
 
 @mixin row($margin: 0%, $gutter: 0%)
-  display       : block
+  display       : inline-block
 
   //The calculations below contextually translate inputs for the end user
   //Page context is what a user would see
@@ -46,6 +46,7 @@
 
 @mixin col($number_columns: 1, $columns_wide: 1, $margin: 0%, $gutter: 0%, $push_columns_left: 0, $push_columns_right: 0)
   display               : block
+  
   $margin_page          : min($margin - $gutter / 2, 0)
   $padding_page         : $margin - $gutter / 2
   $width_page           : 100% - $margin_page
