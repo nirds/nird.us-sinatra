@@ -1,7 +1,12 @@
+%section.logo_center
+  %div.logo
+    %a.alternate{:href=>"/"}
+      %h1 NIRD
+      %h2 Northwest Independent Ruby Development
+
 %section.teach
-  %h1=@offerings.teach.tagline
-  %div.specialty
-    %div.panel
+  %div.panel
+    %div.specialty
       %h1=@offerings.teach.detail.remote.heading
       %p
         =@offerings.teach.detail.remote.paragraphs.host
@@ -10,8 +15,7 @@
         %li=bullet
       %p
         =@offerings.teach.detail.remote.paragraphs.customize
-  %div.specialty
-    %div.panel
+    %div.specialty
       %h1=@offerings.teach.detail.local.heading
       %p
         =@offerings.teach.detail.local.paragraphs.travel
