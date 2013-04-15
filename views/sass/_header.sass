@@ -1,0 +1,42 @@
+nav
+  position      : fixed
+  z-index       : 1
+  top           : 0
+  left          : 0
+  right         : 0
+  height        : 4rem
+  @include bottom_shade(rgba(#000, 1.0), rgba(#000, 0.8))
+  a
+    position    : fixed
+    top         : 1rem
+    @extend p
+    color       : white
+    @extend %fade_in_out
+    &:hover
+      color     : $pink
+      text:
+        shadow  : 0 0 1rem rgba($pink, 0.5)
+      @extend %fade_in_out
+
+.action
+  $radius       : 1rem
+  $flare        : 1rem
+  margin:
+    left        : $margin_p
+    right       : $margin_p
+  padding:
+    left        : 3rem
+    right       : 3rem
+  
+  @media (min-width: 600px)
+    margin:
+      left      : $margin_t
+      right     : $margin_t
+  @media (min-width: 1024px)
+    margin:
+      left      : $margin_s
+      right     : $margin_s
+  @media (min-width: 1920px)
+    margin:
+      left      : $margin_l
+      right     : $margin_l
