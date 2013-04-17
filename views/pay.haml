@@ -1,0 +1,7 @@
+%form.payment{:action => "/charge", :method => "post"}
+  %article
+    %p test test
+    %label.amount{:name => 'post[cost]'} Charge Me
+    %input.amount{:name => 'post[cost]',:type => 'text', :placeholder => '0.50(USD)'}
+
+  %script.stripe-button{:src => "https://checkout.stripe.com/v2/checkout.js", :'data-key' => "#{settings.publishable_key}"}
