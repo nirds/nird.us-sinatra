@@ -55,7 +55,8 @@ post '/charge' do
     :currency    => 'usd',
     :customer    => customer.id
   )
-
+  
+  @confirmed_charge = "#{money_pair[0].to_s}.#{money_pair[1].to_s}"
   haml :charge
 end
 
