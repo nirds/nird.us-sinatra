@@ -1,6 +1,19 @@
 %form.payment{:action => "/charge", :method => "post"}
   %article
     %p test test
+
+    %label.customer.organization{:name => 'post[organization]'}
+      Your Organization:
+    %input.customer.organization{:name => 'post[organization]', :type => 'text'}
+
+    %label.customer.project{:name => 'post[project]'}
+      Project to pay for:
+    %input.customer.project{:name => 'post[project]', :type => 'text'}
+
+    %label.customer.invoice{:name => 'post[invoice]'}
+      Invoice Number:
+    %input.customer.invoice{:name => 'post[invoice]', :type => 'text'}
+
     %label.amount{:name => 'post[cost]'} Charge Me
     %input.amount{:name => 'post[cost]',:type => 'text', :placeholder => '0.50(USD)'}
 

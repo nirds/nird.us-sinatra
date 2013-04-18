@@ -44,6 +44,12 @@ post '/charge' do
   @amount = money_pair[0]*100 + (money_pair[1] || 0)
   @amount = [@amount, 50].max
 
+  # Customer, Project and Invoice Description
+  customer = params[:post][:organization]
+  project = params[:post][:project]
+  invoice = params[:post][:invoice]
+  @description = "#{customer} - #{project} - #{invoice}"
+
   customer = Stripe::Customer.create(
     :email => 'customer@example.com',
     :card  => params[:stripeToken]
@@ -51,7 +57,7 @@ post '/charge' do
 
   charge = Stripe::Charge.create(
     :amount      => @amount,
-    :description => 'Sinatra Charge',
+    :description => @description,
     :currency    => 'usd',
     :customer    => customer.id
   )
