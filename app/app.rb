@@ -38,10 +38,9 @@ Stripe.api_key = settings.secret_key
 post '/charge' do
   # Amount in cents
   american_decimal = params[:post][:cost].gsub(',', '.')
-  sanitized_amount = american_decimal.gsub(/[^\d\.]/,'')
-  money_pair = sanitized_amount.split('.').map{ |value| value.to_i}
-
-  @amount = money_pair[0]*100 + (money_pair[1] || 0)
+  sanitized_amount = american_decimal.gsub(/[^\d\.]/,'').to_f
+  
+  @amount = (sanitized_amount * 100).to_i
   @amount = [@amount, 50].max
 
   # Customer, Project and Invoice Description
@@ -62,7 +61,7 @@ post '/charge' do
     :customer    => customer.id
   )
   
-  @confirmed_charge = "#{money_pair[0].to_s}.#{money_pair[1].to_s}"
+  @confirmed_charge = @amount.to_f / 100
   haml :charge
 end
 
