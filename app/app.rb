@@ -37,7 +37,9 @@ Stripe.api_key = settings.secret_key
 
 post '/charge' do
   # Amount in cents
-  money_pair = params[:post][:cost].split('.').map{ |value| value.to_i}
+  american_decimal = params[:post][:cost].gsub(',', '.')
+  sanitized_amount = american_decimal.gsub(/[^\d\.]/,'')
+  money_pair = sanitized_amount.split('.').map{ |value| value.to_i}
 
   @amount = money_pair[0]*100 + (money_pair[1] || 0)
   @amount = [@amount, 50].max
