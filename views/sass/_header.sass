@@ -2,17 +2,18 @@ nav
   position      : fixed
   z-index       : 1
   top           : 0
-  left          : 0
-  right         : 0
   padding:
     top         : 1rem
     bottom      : 0.5rem
   background:
     color       : #000
+  +row($margin_s)
   a
+    @extend %box
+    float         : left
+    +col(2, 1, $margin_s, $gutter_s)
     $radius       : 1rem
     $flare        : 1rem
-    
     @extend p
     color       : white
     @extend %fade_in_out
@@ -25,21 +26,11 @@ nav
     padding:
       left        : 3rem
       right       : 3rem
-
-    margin:
-      left        : $margin_p
-      right       : $margin_p
     @media (min-width: 600px)
-      margin:
-        left      : $margin_t
-        right     : $margin_t
+      
     @media (min-width: 1024px)
-      margin:
-        left      : $margin_s
-        right     : $margin_s
+      
     @media (min-width: 1920px)
-      margin:
-        left      : $margin_l
-        right     : $margin_l
-    .pay
-      float       : right
+      
+  .pay
+    text-align  : right
