@@ -7,14 +7,14 @@
     %input.customer.organization{:name => 'post[organization]', :type => 'text'}
 
     %label.customer.project{:name => 'post[project]'}
-      Project to pay for:
+      Project:
     %input.customer.project{:name => 'post[project]', :type => 'text'}
 
     %label.customer.invoice{:name => 'post[invoice]'}
       Invoice Number:
-    %input.customer.invoice{:name => 'post[invoice]', :type => 'text'}
+    %input.customer.invoice{:name => 'post[invoice]', :type => 'text', :placeholder => 'Invoice Number'}
 
-    %label.amount{:name => 'post[cost]'} Charge Me
-    %input.amount{:name => 'post[cost]',:type => 'text', :placeholder => '0.50(USD)'}
+    %label.amount{:name => 'post[cost]'} Amount:
+    %input.amount{:name => 'post[cost]',:type => 'text', :placeholder => 'USD only'}
 
   %script.stripe-button{:src => "https://checkout.stripe.com/v2/checkout.js", :'data-key' => "#{settings.publishable_key}"}
