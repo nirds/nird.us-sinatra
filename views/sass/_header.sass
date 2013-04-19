@@ -9,19 +9,13 @@ nav
     color       : #000
   +row($margin_s)
   a
+    @extend p
     @extend %box
     float         : left
     +col(2, 1, $margin_s, $gutter_s)
     $radius       : 1rem
     $flare        : 1rem
-    @extend p
-    color       : white
-    @extend %fade_in_out
-    &:hover
-      color     : $pink
-      text:
-        shadow  : 0 0 1rem rgba($pink, 0.5)
-      @extend %fade_in_out
+    
 
     padding:
       left        : 3rem

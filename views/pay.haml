@@ -1,20 +1,36 @@
-%form.payment{:action => "/charge", :method => "post"}
-  %article
-    %p test test
+%section.pay_method
+  %form.stripe_form{:action => "/charge", :method => "post"}
+    %div.panel
+      %h1 Make a Payment
 
-    %label.customer.organization{:name => 'post[organization]'}
-      Your Organization:
-    %input.customer.organization{:name => 'post[organization]', :type => 'text'}
+      %div.pay_field
+        %label.customer.organization{:name => 'post[organization]'}
+          Your Organization:
+        %div.input
+          %input.customer.organization{:name => 'post[organization]', :type => 'text'}
 
-    %label.customer.project{:name => 'post[project]'}
-      Project:
-    %input.customer.project{:name => 'post[project]', :type => 'text'}
+      %div.pay_field
+        %label.customer.project{:name => 'post[project]'}
+          Project:
+        %div.input
+          %input.customer.project{:name => 'post[project]', :type => 'text'}
 
-    %label.customer.invoice{:name => 'post[invoice]'}
-      Invoice Number:
-    %input.customer.invoice{:name => 'post[invoice]', :type => 'text', :placeholder => 'Invoice Number'}
+      %div.pay_field
+        %label.customer.invoice{:name => 'post[invoice]'}
+          Invoice Number:
+        %div.input
+          %input.customer.invoice{:name => 'post[invoice]', :type => 'text', :placeholder => 'Invoice Number'}
 
-    %label.amount{:name => 'post[cost]'} Amount:
-    %input.amount{:name => 'post[cost]',:type => 'text', :placeholder => 'USD only'}
+      %div.pay_field
+        %label.amount{:name => 'post[cost]'} Amount:
+        %div.input
+          %input.amount{:name => 'post[cost]',:type => 'text', :placeholder => 'USD only'}
 
-  %script.stripe-button{:src => "https://checkout.stripe.com/v2/checkout.js", :'data-key' => "#{settings.publishable_key}"}
+      %div.pay_field.stripe
+        %script.stripe-button{:src => "https://checkout.stripe.com/v2/checkout.js", :'data-key' => "#{settings.publishable_key}"}
+
+      %h2
+        %strong
+          %a{:href=>"mailto:payments@nird.us?Subject=Payment%20Inquiry"}
+            Contact Us
+        if you have any questions or concerns.
