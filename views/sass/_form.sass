@@ -74,3 +74,21 @@
       @include col(1, 1, $margin_l, $gutter_l)
     .pay_field
       +col(3, 1, 0, 0)
+
+.payment_received
+  @extend .pay_method
+  h2
+    display       : block
+    +col(1, 1, $margin_p, $gutter_p)
+    text:
+      align       : center
+    padding:
+      top         : 5rem
+    @media (min-width: 768px)
+      +col(1, 1, $margin_t, $gutter_t)
+
+    @media (min-width: 1024px)
+      +col(1, 1, $margin_s, $gutter_s)
+    
+    @media (min-width: 1920px)
+      +col(1, 1, $margin_l, $gutter_l)
