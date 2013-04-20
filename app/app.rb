@@ -21,12 +21,22 @@ get '/' do
 end
 
 get '/:verb' do |verb|
-  if %(build teach partner pay).include? verb.downcase
-    @title  = "NIRD - We #{verb.capitalize}"
-    haml verb.to_sym
+  whitelist = %(build teach partner pay)
+  if whitelist.include? verb.downcase
+    process verb
   else
     redirect to('/')
   end
+end
+
+def process(verb)
+  case verb.downcase
+  when "build", "teach", "partner"
+    @title = "NIRD - We #{verb.capitalize}"
+  when "pay"
+    @title = "NIRD - Make a Payment"
+  end
+  haml verb.to_sym
 end
 
 # Stripe Functionality
@@ -62,6 +72,7 @@ post '/charge' do
   )
   
   @confirmed_charge = @amount.to_f / 100
+  @title = "NIRD - Thank You"
   haml :charge
 end
 
