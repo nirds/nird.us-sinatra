@@ -2,12 +2,12 @@ build:
   id: "build"
   homepage: true
   tagline: "We Build"
-  copy: "Based on your tech&shy;nic&shy;al re&shy;quire&shy;ments, we can build your soph&shy;ist&shy;ic&shy;ated web ap&shy;plic&shy;a&shy;tions us&shy;ing Ruby on Rails, Sinatra, or Re&shy;fineryCMS. We are a full-stack Ruby de&shy;vel&shy;op&shy;ment team. With NIRD you can watch your app grow from a concept to a full fea&shy;tured site."
+  copy: "Based on your tech&shy;nic&shy;al re&shy;quire&shy;ments, we can build your soph&shy;ist&shy;ic&shy;ated web ap&shy;plic&shy;a&shy;tions us&shy;ing Ruby on Rails, Sin&shy;a&shy;tra, or Re&shy;finery&shy;CMS. We are a full-stack Ruby de&shy;vel&shy;op&shy;ment team. With NIRD you can watch your app grow from a concept to a full fea&shy;tured site."
 teach:
   id: "teach"
   homepage: true
   tagline: "We Teach"
-  copy: "Our skilled team is pas&shy;sion&shy;ate about shar&shy;ing our ex&shy;pert&shy;ise, and will provide world class train&shy;ing in Ruby on Rails. We are able to provide all your Ruby stack train&shy;ing needs from be&shy;gin&shy;ner les&shy;sons in ba&shy;sic ruby to ad&shy;vanced top&shy;ics like scal&shy;ing or big data."
+  copy: "Our skilled team is pas&shy;sion&shy;ate about shar&shy;ing our ex&shy;pert&shy;ise, and will pro&shy;vide world class train&shy;ing in Ruby on Rails. We are able to pro&shy;vide all your Ruby stack train&shy;ing needs from be&shy;gin&shy;ner les&shy;sons in ba&shy;sic ruby to ad&shy;vanced top&shy;ics like scal&shy;ing or big data."
   detail:
     remote:
       heading: "Remote Trainings"
