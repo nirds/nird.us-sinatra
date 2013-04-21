@@ -2,7 +2,7 @@ build:
   id: "build"
   homepage: true
   tagline: "We Build"
-  copy: "Based on your tech&shy;nic&shy;al re&shy;quire&shy;ments, we can build your soph&shy;ist&shy;ic&shy;ated web ap&shy;plic&shy;a&shy;tions us&shy;ing Ruby on Rails, Sin&shy;a&shy;tra, or Re&shy;finery&shy;CMS. We are a full-&#8203stack Ruby de&shy;vel&shy;op&shy;ment team. With NIRD you can watch your app grow from a concept to a full fea&shy;tured site."
+  copy: "Based on your tech&shy;nic&shy;al re&shy;quire&shy;ments, we can build your soph&shy;ist&shy;ic&shy;ated web ap&shy;plic&shy;a&shy;tions us&shy;ing Ruby on Rails, Sin&shy;a&shy;tra, or Re&shy;finery&shy;CMS. We are a full&#8208;&#8203;stack Ruby de&shy;vel&shy;op&shy;ment team. With NIRD you can watch your app grow from a concept to a full fea&shy;tured site."
 teach:
   id: "teach"
   homepage: true
