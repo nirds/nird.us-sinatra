@@ -28,3 +28,5 @@ partner:
   id: "partner"
   tagline: "We Partner"
   copy: "With our unique combination of technical capability and training skills, we can help your organization grow along side your app. As we build, we will bring your team up to speed to maintain and extend your app."
+pay:
+  tagline: "Make a Payment"

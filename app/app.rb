@@ -16,28 +16,20 @@ get '/styles.css' do
   sass :styles
 end
 
+get '/:verb' do |verb|
+  verb_down = verb.downcase
+  pass unless @offerings.has_key?( verb_down )
+  @title = standardize_title( @offerings[verb_down].tagline )
+  haml verb_down.to_sym
+end
+
 get '/' do
   @title  = "NIRD"
   haml :index
 end
 
-get '/:verb' do |verb|
-  whitelist = %(build teach partner pay)
-  if whitelist.include? verb.downcase
-    process verb
-  else
-    redirect to('/')
-  end
-end
-
-def process(verb)
-  case verb.downcase
-  when "build", "teach", "partner"
-    @title = "NIRD - We #{verb.capitalize}"
-  when "pay"
-    @title = "NIRD - Make a Payment"
-  end
-  haml verb.to_sym
+def standardize_title( unique_title_portion )
+  "NIRD - #{unique_title_portion}"
 end
 
 # Stripe Functionality
