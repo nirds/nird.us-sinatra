@@ -1,11 +1,13 @@
 build:
   id: "build"
+  homepage: true
   tagline: "We Build"
-  copy: "Based on your technical requirements, we can build your so&#173;phist&#173;i&#173;cated web applications using Ruby on Rails, Sinatra, or RefineryCMS. We are a full-stack Ruby development team. With NIRD you can watch your app grow from a concept to a full featured site."
+  copy: "Based on your tech&shy;nic&shy;al re&shy;quire&shy;ments, we can build your soph&shy;ist&shy;ic&shy;ated web ap&shy;plic&shy;a&shy;tions us&shy;ing Ruby on Rails, Sinatra, or Re&shy;fineryCMS. We are a full-stack Ruby de&shy;vel&shy;op&shy;ment team. With NIRD you can watch your app grow from a concept to a full fea&shy;tured site."
 teach:
   id: "teach"
+  homepage: true
   tagline: "We Teach"
-  copy: "Our skilled team is passionate about sharing our expertise, and will provide world class training in Ruby on Rails. We are able to provide all your Ruby stack training needs from beginner lessons in basic ruby to advanced topics like scaling or big data."
+  copy: "Our skilled team is pas&shy;sion&shy;ate about shar&shy;ing our ex&shy;pert&shy;ise, and will provide world class train&shy;ing in Ruby on Rails. We are able to provide all your Ruby stack train&shy;ing needs from be&shy;gin&shy;ner les&shy;sons in ba&shy;sic ruby to ad&shy;vanced top&shy;ics like scal&shy;ing or big data."
   detail:
     remote:
       heading: "Remote Trainings"
@@ -26,7 +28,8 @@ teach:
         berlin: "Berlin"
 partner:
   id: "partner"
+  homepage: true
   tagline: "We Partner"
-  copy: "With our unique combination of technical capability and training skills, we can help your organization grow along side your app. As we build, we will bring your team up to speed to maintain and extend your app."
+  copy: "With our unique com&shy;bin&shy;a&shy;tion of tech&shy;nic&shy;al cap&shy;ab&shy;il&shy;ity and train&shy;ing skills, we can help your or&shy;gan&shy;iz&shy;a&shy;tion grow along side your app. As we build, we will bring your team up to speed to main&shy;tain and ex&shy;tend your app."
 pay:
   tagline: "Make a Payment"
