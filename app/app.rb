@@ -3,6 +3,7 @@ require 'sass'
 require 'yaml'
 require 'hashie'
 require 'stripe'
+require 'money'
 require_relative 'helpers'
 
 before { load_yaml_into_hashie_variables }
@@ -40,39 +41,48 @@ def process(verb)
 end
 
 # Stripe Functionality
+
+def ensure_minimum_cents( cents )
+  [ cents, 50 ].max
+end
+
+def extract_description( post_data )
+  customer = post_data[:organization]
+  project  = post_data[:project]
+  invoice  = post_data[:invoice]
+  return "#{customer} - #{project} - #{invoice}"
+end
+
+def extract_stripe_customer( params )
+  Stripe::Customer.create(
+    :email => 'customer@example.com',
+    :card  => params[:stripeToken]
+  )
+end
+
+def create_charge(amount, customer, description)
+  Stripe::Charge.create(
+    :amount      => amount,
+    :customer    => customer.id,
+    :description => description,
+    :currency    => 'usd'
+  )
+end
+
 set :publishable_key, ENV['PUBLISHABLE_KEY']
 set :secret_key, ENV['SECRET_KEY']
 
 Stripe.api_key = settings.secret_key
 
 post '/charge' do
-  # Amount in cents
-  american_decimal = params[:post][:cost].gsub(',', '.')
-  sanitized_amount = american_decimal.gsub(/[^\d\.]/,'').to_f
-  
-  @amount = (sanitized_amount * 100).to_i
-  @amount = [@amount, 50].max
+  money       = Money.parse( params[:post][:cost] )
+  amount      = ensure_minimum_cents( money.cents )
+  customer    = extract_stripe_customer( params )
+  description = extract_description( params[:post] )
+  charge      = create_charge(amount, customer, description)
 
-  # Customer, Project and Invoice Description
-  customer = params[:post][:organization]
-  project = params[:post][:project]
-  invoice = params[:post][:invoice]
-  @description = "#{customer} - #{project} - #{invoice}"
-
-  customer = Stripe::Customer.create(
-    :email => 'customer@example.com',
-    :card  => params[:stripeToken]
-  )
-
-  charge = Stripe::Charge.create(
-    :amount      => @amount,
-    :description => @description,
-    :currency    => 'usd',
-    :customer    => customer.id
-  )
-  
-  @confirmed_charge = @amount.to_f / 100
-  @title = "NIRD - Thank You"
+  @confirmed_charge = Money.us_dollar( charge.amount )
+  @title            = "NIRD - Thank You"
   haml :charge
 end
 
