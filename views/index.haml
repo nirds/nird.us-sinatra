@@ -2,10 +2,11 @@
   -# When iterating over these structures, use each_value,
   -# as each is returning key-value pairs.
   -@offerings.each_value do |offering|
-    %div.offering{:id => offering.id}
-      %div.panel
-        %h1= offering.tagline
-        %p=  offering.copy
+    -if offering.homepage
+      %div.offering{:id => offering.id}
+        %div.panel
+          %h1= offering.tagline
+          %p=  offering.copy
 
 %section.people
   %div.team
@@ -18,3 +19,4 @@
               %img(src="#{person.image}")
             %figcaption
               %h3= person.full_name
+      %div.height_set

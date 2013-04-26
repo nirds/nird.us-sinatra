@@ -1,0 +1,30 @@
+nav
+  position      : fixed
+  z-index       : 1
+  top           : 0
+  padding:
+    top         : 1rem
+    bottom      : 0.5rem
+  background:
+    color       : #000
+  +row($margin_s)
+  a
+    @extend p
+    @extend %box
+    float         : left
+    +col(2, 1, $margin_s, $gutter_s)
+    $radius       : 1rem
+    $flare        : 1rem
+    
+
+    padding:
+      left        : 3rem
+      right       : 3rem
+    @media (min-width: 600px)
+      
+    @media (min-width: 1024px)
+      
+    @media (min-width: 1920px)
+      
+  .pay
+    text-align  : right
