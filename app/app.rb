@@ -27,7 +27,7 @@ get '/:person' do |person|
   person_down = person.downcase
   pass unless @people.has_key?( person_down )
   @title = @people[person_down].full_name
-  haml person_down.to_sym
+  haml :person
 end
 
 get '/' do
