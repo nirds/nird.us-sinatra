@@ -23,6 +23,13 @@ get '/:verb' do |verb|
   haml verb_down.to_sym
 end
 
+get '/:person' do |person|
+  person_down = person.downcase
+  pass unless @people.has_key?( person_down )
+  @title = @people[person_down].full_name
+  haml person_down.to_sym
+end
+
 get '/' do
   @title  = "NIRD"
   haml :index

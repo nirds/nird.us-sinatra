@@ -15,7 +15,7 @@
       %h1 Who We Are
       -@people.each_value do |person|
         %figure.person
-          %a{:id => person.id,:href=>'#'}
+          %a{:id => person.id,:href=>person.id}
             %div.container
               %img(src="#{person.image}")
             %figcaption
