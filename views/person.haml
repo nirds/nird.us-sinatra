@@ -1,4 +1,3 @@
-
 %section.people
 	%div.team
 		%div.panel
@@ -9,8 +8,6 @@
 						%h1="hi"
 				%div.text
 					%h1=@person.full_name
-					%br
 					-@person.description.each_value do |paragraphs|
 						%p=paragraphs
-						%br
 			%div.height_set
