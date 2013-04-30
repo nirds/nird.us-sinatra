@@ -1,3 +1,18 @@
+%container
+  position    : relative
+  margin:
+    top       : 3rem
+  width       : 200px
+  height      : 200px
+  @include round(1.0rem)
+  overflow    : hidden
+  @extend %fade_in_out
+
+%headshot
+  img
+    width       : 100%
+    height      : auto
+
 .people
   @include row($margin_p)
   .team
@@ -16,6 +31,28 @@
         height      : 4rem
         @include bottom_shade(rgba(white, 0.05), rgba(white, 0.01))
         @include round(1.0rem)
+    
+    .profile
+      @include row(0)
+    
+    .text
+      @include col(3, 2, 0, 0)
+      @extend %box
+      float : left
+      h1
+        text:
+          align: left
+    .image
+      @include col(3, 1, 0, 0)
+      @extend %box
+      float : left
+      .container
+        @extend %container
+        margin:
+          top: 5.5rem
+          left: auto
+          right: auto
+        @extend %headshot
 
   h1
     @include col(1, 1, 0, 0)
@@ -27,21 +64,9 @@
     display       : inline-block
     width         : 100%
     
-  .profile
-    @include row(0)
-    border : red dotted 1px
-
-  .text
-    @include col(3, 2, 0, 0)
-    @extend %box
-    float :left
-    border : red dotted 1px
-
-  .image
-    @include col(3, 1, 0, 0)
-    @extend %box
-    float :left
-    border : red dotted 1px
+  
+  
+  
 
   .person
     @include col(1, 1, 0, 0)
@@ -64,15 +89,9 @@
           @extend %bump_up
 
     .container
-      position    : relative
-      margin:
-        top       : 3rem
-      width       : 200px
-      height      : 200px
-      @include round(1.0rem)
-      overflow    : hidden
-      @extend %fade_in_out
-    
+      @extend %container
+      @extend %headshot
+
     h3
       text:
         align     : center
@@ -85,9 +104,9 @@
     p
       text:
         align     : center
-    img
-      width       : 100%
-      height      : auto
+    
+
+    
 
   @media (min-width: 480px)
     .person
