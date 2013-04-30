@@ -26,6 +26,22 @@
   .height_set
     display       : inline-block
     width         : 100%
+    
+  .profile
+    @include row(0)
+    border : red dotted 1px
+
+  .text
+    @include col(3, 2, 0, 0)
+    @extend %box
+    float :left
+    border : red dotted 1px
+
+  .image
+    @include col(3, 1, 0, 0)
+    @extend %box
+    float :left
+    border : red dotted 1px
 
   .person
     @include col(1, 1, 0, 0)
@@ -46,8 +62,6 @@
           color   : $pink
         .container
           @extend %bump_up
-          
-
 
     .container
       position    : relative

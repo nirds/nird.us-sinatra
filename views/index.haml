@@ -5,8 +5,9 @@
     -if offering.homepage
       %div.offering{:id => offering.id}
         %div.panel
-          %h1= offering.tagline
-          %p=  offering.copy
+          %a.details{:href=>"/"+offering.id}
+            %h1= offering.tagline
+            %p=  offering.copy
 
 %section.people
   %div.team
@@ -14,7 +15,7 @@
       %h1 Who We Are
       -@people.each_value do |person|
         %figure.person
-          %a{:id => person.id,:href=>'#'}
+          %a{:id => person.id,:href=>'/'+person.id}
             %div.container
               %img(src="#{person.image}")
             %figcaption
