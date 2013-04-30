@@ -1,1 +1,16 @@
-%h1=@person.full_name
+
+%section.people
+	%div.team
+		%div.panel
+			%div.profile
+				%div.image
+					%div.container
+						%img(src="#{@person.image}")
+						%h1="hi"
+				%div.text
+					%h1=@person.full_name
+					%br
+					-@person.description.each_value do |paragraphs|
+						%p=paragraphs
+						%br
+			%div.height_set
