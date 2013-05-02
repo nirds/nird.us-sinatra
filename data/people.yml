@@ -1,7 +1,7 @@
 renee:
   id: "renee"
   full_name: "Renée De Voursney"
-  image: "/images/renee_headshot_sq.jpg"
+  image: "/images/renee_headshot_sq_bw.jpg"
   description:
     paragraph_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus fermentum arcu sit amet auctor. Phasellus eget libero dui. Ut porta, elit at posuere fermentum, metus augue laoreet elit, nec rhoncus lacus nunc vitae lorem. Nunc ultricies leo ac orci vulputate ac vehicula tortor auctor. Fusce eu felis interdum leo vulputate ornare vitae quis turpis. Etiam est tellus, interdum a congue ac, consequat ut felis. Donec congue consequat nisi nec malesuada. Suspendisse ultrices dolor vitae felis tristique tincidunt. Integer et nisi purus."
     paragraph_2: "Sed vehicula, augue et fringilla vestibulum, risus mi egestas ante, at adipiscing ligula felis eget dui. Integer eros erat, accumsan sed mattis interdum, faucibus nec est. Praesent iaculis varius libero, eget pretium dui dignissim eu. In tincidunt faucibus consequat. Praesent at risus at libero luctus accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc tincidunt tortor at libero malesuada pretium. Donec lacinia vulputate blandit. Ut orci risus, luctus eu interdum id, vulputate id metus."
@@ -11,7 +11,7 @@ renee:
 adam:
   id: "adam"
   full_name: "Adam Hendricksen"
-  image: "/images/placeholder_sticks.jpg"
+  image: "/images/adam_headshot_sq_bw.jpg"
   description:
     paragraph_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus fermentum arcu sit amet auctor. Phasellus eget libero dui. Ut porta, elit at posuere fermentum, metus augue laoreet elit, nec rhoncus lacus nunc vitae lorem. Nunc ultricies leo ac orci vulputate ac vehicula tortor auctor. Fusce eu felis interdum leo vulputate ornare vitae quis turpis. Etiam est tellus, interdum a congue ac, consequat ut felis. Donec congue consequat nisi nec malesuada. Suspendisse ultrices dolor vitae felis tristique tincidunt. Integer et nisi purus."
     paragraph_2: "Sed vehicula, augue et fringilla vestibulum, risus mi egestas ante, at adipiscing ligula felis eget dui. Integer eros erat, accumsan sed mattis interdum, faucibus nec est. Praesent iaculis varius libero, eget pretium dui dignissim eu. In tincidunt faucibus consequat. Praesent at risus at libero luctus accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc tincidunt tortor at libero malesuada pretium. Donec lacinia vulputate blandit. Ut orci risus, luctus eu interdum id, vulputate id metus."
@@ -21,7 +21,7 @@ adam:
 strand:
   id: "strand"
   full_name: "Strand McCutchen"
-  image: "/images/placeholder_bradley.jpg"
+  image: "/images/strand_headshot_sq.jpg"
   description:
     paragraph_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus fermentum arcu sit amet auctor. Phasellus eget libero dui. Ut porta, elit at posuere fermentum, metus augue laoreet elit, nec rhoncus lacus nunc vitae lorem. Nunc ultricies leo ac orci vulputate ac vehicula tortor auctor. Fusce eu felis interdum leo vulputate ornare vitae quis turpis. Etiam est tellus, interdum a congue ac, consequat ut felis. Donec congue consequat nisi nec malesuada. Suspendisse ultrices dolor vitae felis tristique tincidunt. Integer et nisi purus."
     paragraph_2: "Sed vehicula, augue et fringilla vestibulum, risus mi egestas ante, at adipiscing ligula felis eget dui. Integer eros erat, accumsan sed mattis interdum, faucibus nec est. Praesent iaculis varius libero, eget pretium dui dignissim eu. In tincidunt faucibus consequat. Praesent at risus at libero luctus accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc tincidunt tortor at libero malesuada pretium. Donec lacinia vulputate blandit. Ut orci risus, luctus eu interdum id, vulputate id metus."
