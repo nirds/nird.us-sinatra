@@ -47,18 +47,20 @@
           align: justify
       @media (min-width: 768px)
         @include col(3, 2, 0, 0)
+        padding:
+          right: 4rem
         float : left
         h1
           margin:
             top: 1.6em
           text:
             align: left
-        p
-          padding:
-            right: 1rem
+          
     .image
       @include col(1, 1, 0, 0)
       @extend %box
+      padding:
+        left: 4rem
       .container
         @extend %container
         margin:
@@ -68,10 +70,18 @@
         @extend %headshot
       @media (min-width: 768px)
         @include col(3, 1, 0, 0)
+        padding:
+          left: 4rem
+          right: 5rem
         float : left
         .container
+          width: 100%
+          height: auto
           margin:
             top: 6.5rem
+      @media (min-width: 1350px)
+        .container
+          width: 300px
 
   h1
     @include col(1, 1, 0, 0)
