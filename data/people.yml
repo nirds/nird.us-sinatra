@@ -1,7 +1,7 @@
 renee:
   id: "renee"
   full_name: "Renée De Voursney"
-  image: "/images/renee_headshot_sq.jpg"
+  image: "/images/renee_headshot_sq_bw.jpg"
   description:
     paragraph_1: "Pres&shy;id&shy;ent & Chief Ad&shy;ven&shy;ture Of&shy;ficer - Renée draws on her ex&shy;per&shy;i&shy;ence from a vari&shy;ety of pro&shy;jects, from high en&shy;ergy phys&shy;ics sim&shy;u&shy;la&shy;tions to fin&shy;an&shy;cial fore&shy;cast&shy;ing mod&shy;els, to provide key ex&shy;pert&shy;ise for NIRD’s cli&shy;ents in the areas of busi&shy;ness in&shy;tel&shy;li&shy;gence and soft&shy;ware de&shy;vel&shy;op&shy;ment. An avid Ruby de&shy;veloper, Ren&shy;ee con&shy;sults on pro&shy;jects for a di&shy;verse ar&shy;ray of com&shy;pan&shy;ies. She also teaches fre&shy;quent classes on Ruby, Rails, and everything else to new pro&shy;gram&shy;mers, ex&shy;per&shy;i&shy;enced pro&shy;gram&shy;mers, and some&shy;times to both at the same time!"
     paragraph_2: "Be&shy;fore found&shy;ing NIRD, Ren&shy;ee util&shy;ized her back&shy;ground in com&shy;puter sci&shy;ence and eco&shy;nom&shy;ics to cre&shy;ate in&shy;nov&shy;at&shy;ive solu&shy;tions for lead&shy;ing or&shy;gan&shy;iz&shy;a&shy;tions in the tele&shy;com&shy;mu&shy;nic&shy;a&shy;tions, aerospace, and high tech in&shy;dus&shy;tries. An ex&shy;pert in agile de&shy;vel&shy;op&shy;ment and a tech&shy;nic&shy;al lead&shy;er in the Ruby on Rails soft&shy;ware com&shy;munity, she co-foun&shy;ded Seattle Rails&shy;Bridge and fre&shy;quently presents at Ruby con&shy;fer&shy;ences all over the world."
@@ -10,7 +10,7 @@ renee:
 adam:
   id: "adam"
   full_name: "Adam Hendricksen"
-  image: "/images/placeholder_sticks.jpg"
+  image: "/images/adam_headshot_sq_bw.jpg"
   description:
     paragraph_1: "After work&shy;ing as a rock&shy;et propul&shy;sion en&shy;gin&shy;eer at NASA and Boe&shy;ing, Adam de&shy;cided to turn in his pock&shy;et pro&shy;tect&shy;or for the ex&shy;cit&shy;ing world of web design. He fo&shy;cuses on build&shy;ing el&shy;eg&shy;ant web&shy;sites us&shy;ing re&shy;spons&shy;ive design tech&shy;niques, Ruby-on-Rails frame&shy;works, and cre&shy;at&shy;ive prob&shy;lem solv&shy;ing. Adam claims that he is con&shy;stantly learn&shy;ing, even when he’s teach&shy;ing the rest of us."
     paragraph_2: "On the week&shy;ends, Adam spends his time bik&shy;ing, bang&shy;ing on his drums, and ar&shy;guing that chick&shy;en is a ve&shy;get&shy;able."
@@ -19,7 +19,7 @@ adam:
 strand:
   id: "strand"
   full_name: "Strand McCutchen"
-  image: "/images/placeholder_bradley.jpg"
+  image: "/images/strand_headshot_sq.jpg"
   description:
     paragraph_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus fermentum arcu sit amet auctor. Phasellus eget libero dui. Ut porta, elit at posuere fermentum, metus augue laoreet elit, nec rhoncus lacus nunc vitae lorem. Nunc ultricies leo ac orci vulputate ac vehicula tortor auctor. Fusce eu felis interdum leo vulputate ornare vitae quis turpis. Etiam est tellus, interdum a congue ac, consequat ut felis. Donec congue consequat nisi nec malesuada. Suspendisse ultrices dolor vitae felis tristique tincidunt. Integer et nisi purus."
     paragraph_2: "Sed vehicula, augue et fringilla vestibulum, risus mi egestas ante, at adipiscing ligula felis eget dui. Integer eros erat, accumsan sed mattis interdum, faucibus nec est. Praesent iaculis varius libero, eget pretium dui dignissim eu. In tincidunt faucibus consequat. Praesent at risus at libero luctus accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc tincidunt tortor at libero malesuada pretium. Donec lacinia vulputate blandit. Ut orci risus, luctus eu interdum id, vulputate id metus."
