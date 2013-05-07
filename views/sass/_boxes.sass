@@ -33,7 +33,7 @@
   display   : block
   position  : relative
   $num_guts : $number_col - 1
-  $area     : 100% - 2 * $margin + $gutter * max($num_guts, 2)
+  $area     : 100% - 2 * $margin + $gutter * $num_guts
   $col_gut  : $area / $number_col
   width     : $col_wide * $col_gut - $gutter
   margin:
