@@ -3,11 +3,15 @@
 %header_font
   font:
     family  : 'Montserrat', Helvetica, sans-serif
-  color     : $bright
 
 %copy_font
   font:
     family  : 'Arimo', Helvetica, sans-serif
+
+%bright_font
+  color     : $bright
+
+%light_font
   color     : $light
 
 %half_font
@@ -33,27 +37,33 @@
 h1
   @extend %header_font
   @extend %three_font
+  @extend %bright_font
 
 h2
   @extend %header_font
   @extend %two_font
+  @extend %bright_font
 
 h3
   @extend %copy_font
   @extend %two_font
+  @extend %light_font
 
 h4
   @extend %copy_font
   @extend %one_font
+  @extend %light_font
 
 
 p
   @extend %copy_font
   @extend %one_font
+  @extend %light_font
 
 ul, ol, li
   @extend %copy_font
   @extend %one_font
+  @extend %light_font
   padding-left: 5rem
 
 a
