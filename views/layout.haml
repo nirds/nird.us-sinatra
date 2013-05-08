@@ -6,7 +6,7 @@
     %link{:rel => "stylesheet", :href => "styles.css"}
     %link{:rel => "shortcut icon", :href => "images/NIRD_favicon.png"} 
   %header
-    %nav
+    %nav.top
       %a.action{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
         Let's Make It Happen!
       %a.pay{:href=>"/pay"}
@@ -19,3 +19,10 @@
           %h2 Northwest Independent Ruby Development
     
     = yield
+
+  %footer
+    %div
+      %p © Northwest Independent Ruby Development, LLC 2013. 
+    %div
+      %a.action{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
+        Contact NIRD

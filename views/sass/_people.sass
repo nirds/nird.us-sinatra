@@ -2,6 +2,7 @@
   position    : relative
   margin:
     top       : 3rem
+    bottom    : 3rem
   width       : 200px
   height      : 200px
   @include round(1.0rem)
@@ -21,6 +22,7 @@
     .panel
       margin:
         top         : 1rem
+        bottom      : 4rem
       
       &:before
         position    : absolute
@@ -29,7 +31,7 @@
         left        : 2rem
         right       : 2rem
         height      : 4rem
-        @include bottom_shade(rgba(white, 0.05), rgba(white, 0.01))
+        @include bottom_shade(rgba(white, 0.05), rgba(white, 0.001))
         @include round(1.0rem)
     
     .profile
@@ -45,16 +47,20 @@
           align: justify
       @media (min-width: 768px)
         @include col(3, 2, 0, 0)
+        padding:
+          right: 4rem
         float : left
         h1
+          margin:
+            top: 1.6em
           text:
             align: left
-        p
-          padding:
-            right: 1rem
+          
     .image
       @include col(1, 1, 0, 0)
       @extend %box
+      padding:
+        left: 4rem
       .container
         @extend %container
         margin:
@@ -64,10 +70,24 @@
         @extend %headshot
       @media (min-width: 768px)
         @include col(3, 1, 0, 0)
+        padding:
+          left: 4rem
+          right: 5rem
         float : left
         .container
+          width: 100%
+          height: auto
           margin:
             top: 6.5rem
+      @media (min-width: 1350px)
+        .container
+          width: 300px
+      .twitter
+        @extend %copy_font
+        @extend %one_font
+        display: block
+        width: 100%
+        text-align: center
 
   h1
     @include col(1, 1, 0, 0)

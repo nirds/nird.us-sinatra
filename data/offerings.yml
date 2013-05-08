@@ -8,6 +8,7 @@ teach:
   homepage: true
   tagline: "We Teach"
   copy: "Our skilled team is pas&shy;sion&shy;ate about shar&shy;ing our ex&shy;pert&shy;ise, and will pro&shy;vide world class train&shy;ing in Ruby on Rails. We are able to pro&shy;vide all your Ruby stack train&shy;ing needs from be&shy;gin&shy;ner les&shy;sons in ba&shy;sic ruby to ad&shy;vanced top&shy;ics like scal&shy;ing or big data."
+  intro: "Why Ruby? Ruby is ver&shy;sat&shy;ile, easy to code in, and hon&shy;estly a lot of fun. It’s used by thou&shy;sands of com&shy;pan&shy;ies and mil&shy;lions of people every day. It’s also easy to learn, be&shy;cause Ruby was writ&shy;ten for hu&shy;mans, not ma&shy;chines. If you’ve nev&shy;er touched code be&shy;fore, Ruby is a great place to start. For ex&shy;per&shy;i&shy;enced pro&shy;gram&shy;mers, we prom&shy;ise Ruby will rap&shy;idly be&shy;come your new fa&shy;vor&shy;ite pro&shy;gram&shy;ming lan&shy;guage. Here at NIRD, we’re pas&shy;sion&shy;ate about Ruby and Ruby-on-Rails, and we can’t wait to share that ex&shy;per&shy;i&shy;ence with you."
   detail:
     remote:
       heading: "Remote Trainings"
@@ -32,4 +33,4 @@ partner:
   tagline: "We Partner"
   copy: "With our unique com&shy;bin&shy;a&shy;tion of tech&shy;nic&shy;al cap&shy;ab&shy;il&shy;ity and train&shy;ing skills, we can help your or&shy;gan&shy;iz&shy;a&shy;tion grow along side your app. As we build, we will bring your team up to speed to main&shy;tain and ex&shy;tend your app."
 pay:
-  tagline: "Make a Payment"
+  tagline: "Make a Payment" 
