@@ -2,26 +2,30 @@
   @include row($margin_p, $gutter_p)
   .stripe_form
     @include col(1, 1, $margin_p, $gutter_p)
-    &:before
-      position    : absolute
-      content     : ''
-      top         : 1rem
-      left        : 2rem
-      right       : 2rem
-      height      : 4rem
-      @include bottom_shade(rgba(white, 0.05), rgba(white, 0.01))
-      @include round(1.0rem)
+    position: relative
+    .panel
+      &:before
+        position    : absolute
+        content     : ''
+        top         : 1rem
+        left        : 2rem
+        right       : 2rem
+        height      : 4rem
+        @include bottom_shade(rgba(white, 0.05), rgba(white, 0.01))
+        @include round(1.0rem)
   .pay_field
     +col(1, 1, 0, 0)
     @extend %box
     height        : 7.5rem
     float         : left
+    position      : relative
     label
       @extend h3
       position    : absolute
       top         : 1rem
       left        : 1rem
       right       : 1rem
+      
     .input
       position    : absolute
       bottom      : 1rem
