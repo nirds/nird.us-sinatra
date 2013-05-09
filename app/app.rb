@@ -55,8 +55,8 @@ end
 
 def extract_stripe_customer( params )
   Stripe::Customer.create(
-    :email => 'customer@example.com',
-    :card  => params[:stripeToken]
+    email: params[:post][:email],
+    card:  params[:stripeToken]
   )
 end
 
