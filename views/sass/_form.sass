@@ -11,6 +11,8 @@
       height      : 4rem
       @include bottom_shade(rgba(white, 0.05), rgba(white, 0.01))
       @include round(1.0rem)
+  .panel
+    height: 57rem
   .pay_field
     +col(1, 1, 0, 0)
     @extend %box
@@ -56,6 +58,8 @@
   @media (min-width: 480px)
     .pay_field
       +col(2, 1, 0, 0)
+    .panel
+      height: 34rem
   
   @media (min-width: 768px)
     @include row($margin_t)
@@ -63,6 +67,8 @@
       @include col(1, 1, $margin_t, $gutter_t)
     .pay_field
       +col(3, 1, 0, 0)
+    .panel
+      height: 27rem
 
   @media (min-width: 1024px)
     @include row($margin_s)
@@ -70,6 +76,8 @@
       @include col(1, 1, $margin_s, $gutter_s)
     .pay_field
       +col(3, 1, 0, 0)
+    .panel
+      height: 27rem
   
   @media (min-width: 1920px)
     @include row($margin_l)
