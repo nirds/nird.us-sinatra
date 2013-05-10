@@ -1,8 +1,9 @@
 .offerings
-  @include row($margin_p)
+  @include row($margin_p, $gutter_p)
 
   .offering
     @include col(1, 1, $margin_p, $gutter_p)
+    position      : relative
     %extend %box
     float         : left
     margin:
@@ -53,28 +54,28 @@
             shadow  : 0 0 1rem rgba($bright, 0.15)
 
   @media (min-width: 768px)
-    @include row($margin_t)
+    @include row($margin_t, $gutter_t)
     h1
       @include col(1, 1, $margin_t, $gutter_t)
     .offering
       @include col(3, 1, $margin_t, $gutter_t)
   
   @media (min-width: 1024px)
-    @include row($margin_s)
+    @include row($margin_s, $gutter_s)
     h1
       @include col(1, 1, $margin_s, $gutter_s)
     .offering
       @include col(3, 1, $margin_s, $gutter_s)
   
   @media (min-width: 1920px)
-    @include row($margin_l)
+    @include row($margin_l, $gutter_l)
     h1
       @include col(1, 1, $margin_l, $gutter_l)
     .offering
       @include col(3, 1, $margin_l, $gutter_l)
 
 .build, .teach, .partner
-  @include row($margin_p)
+  @include row($margin_p, $gutter_p)
   
   h1
     @include col(1, 1, $margin_p, $gutter_p)
@@ -131,7 +132,7 @@
           size    : 1.5rem
 
   @media (min-width: 768px)
-    @include row($margin_t)
+    @include row($margin_t, $gutter_t)
     h1
       @include col(1, 1, $margin_t, $gutter_t)
     .specialty
@@ -150,7 +151,7 @@
           size    : 1.2rem
 
   @media (min-width: 1024px)
-    @include row($margin_s)
+    @include row($margin_s, $gutter_s)
     h1
       @include col(1, 1, $margin_s, $gutter_s)
     .specialty
@@ -164,7 +165,7 @@
           size    : 1.5rem
 
   @media (min-width: 1920px)
-    @include row($margin_l)
+    @include row($margin_l, $gutter_l)
     h1
       @include col(1, 1, $margin_l, $gutter_l)
     .specialty
