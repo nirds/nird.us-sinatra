@@ -1,7 +1,7 @@
 renee:
   id: "renee"
   full_name: "Renée De Voursney"
-  image: "/images/renee_headshot_sq_bw.jpg"
+  image: "/images/renee_headshot_sq_bw.png"
   twitter: "gigglegirl4e"
   description:
     paragraph_1: "Pres&shy;id&shy;ent & Chief Ad&shy;ven&shy;ture Of&shy;ficer - Renée draws on her ex&shy;per&shy;i&shy;ence from a vari&shy;ety of pro&shy;jects, from high en&shy;ergy phys&shy;ics sim&shy;u&shy;la&shy;tions to fin&shy;an&shy;cial fore&shy;cast&shy;ing mod&shy;els, to provide key ex&shy;pert&shy;ise for NIRD’s cli&shy;ents in the areas of busi&shy;ness in&shy;tel&shy;li&shy;gence and soft&shy;ware de&shy;vel&shy;op&shy;ment. An avid Ruby de&shy;veloper, Ren&shy;ee con&shy;sults on pro&shy;jects for a di&shy;verse ar&shy;ray of com&shy;pan&shy;ies. She also teaches fre&shy;quent classes on Ruby, Rails, and everything else to new pro&shy;gram&shy;mers, ex&shy;per&shy;i&shy;enced pro&shy;gram&shy;mers, and some&shy;times to both at the same time!"
@@ -11,7 +11,7 @@ renee:
 elise:
   id: "elise"
   full_name: "Elise Worthy"
-  image: "/images/elise_headshot_sq_bw.jpg"
+  image: "/images/elise_headshot_sq_bw.png"
   twitter: "eliseworthy"
   description:
     paragraph_1: "Elise worked in mar&shy;ket&shy;ing and product man&shy;age&shy;ment at Blue Box Group and At&shy;las Ac&shy;cel&shy;er&shy;at&shy;or be&shy;fore diving in&shy;to Ruby, Rails, and soft&shy;ware de&shy;vel&shy;op&shy;ment. A gradu&shy;ate of Hungry Academy at Liv&shy;ing&shy;So&shy;cial, Elise’s unique set of skills al&shy;low her to fo&shy;cus on soft&shy;ware from both product and en&shy;gin&shy;eer&shy;ing per&shy;spect&shy;ives, en&shy;abling her to quickly eval&shy;u&shy;ate and build the most vi&shy;able fea&shy;tures."
@@ -22,7 +22,7 @@ elise:
 strand:
   id: "strand"
   full_name: "Strand McCutchen"
-  image: "/images/strand_headshot_sq.jpg"
+  image: "/images/strand_headshot_sq_bw.png"
   twitter: "strabd"
   description:
     paragraph_1: "Strand is a trans&shy;real&shy;ist data&shy;punk who taught him&shy;self Ruby and Rails while liv&shy;ing in a stu&shy;dio above his broth&shy;er’s brew&shy;ery in Guang&shy;zhou, China. He is an open-source afi&shy;cion&shy;ado who be&shy;lieves that read&shy;ing source code is lib&shy;er&shy;at&shy;ing."
@@ -33,7 +33,7 @@ strand:
 adam:
   id: "adam"
   full_name: "Adam Hendricksen"
-  image: "/images/adam_headshot_sq_bw.jpg"
+  image: "/images/adam_headshot_sq_bw.png"
   twitter: "visionaryschin"
   description:
     paragraph_1: "After work&shy;ing as a rock&shy;et propul&shy;sion en&shy;gin&shy;eer at NASA and Boe&shy;ing, Adam de&shy;cided to turn in his pock&shy;et pro&shy;tect&shy;or for the ex&shy;cit&shy;ing world of web design. He fo&shy;cuses on build&shy;ing el&shy;eg&shy;ant web&shy;sites us&shy;ing re&shy;spons&shy;ive design tech&shy;niques, Ruby-on-Rails frame&shy;works, and cre&shy;at&shy;ive prob&shy;lem solv&shy;ing. Adam claims that he is con&shy;stantly learn&shy;ing, even when he’s teach&shy;ing the rest of us."
@@ -43,7 +43,7 @@ adam:
 betsy:
   id: "betsy"
   full_name: "Betsy Walker"
-  image: "/images/betsy_headshot_sq_bw.jpg"
+  image: "/images/betsy_headshot_sq_bw.png"
   twitter: "etsyspy"
   description:
     paragraph_1: "Betsy en&shy;joys tack&shy;ling in&shy;ter&shy;est&shy;ing prob&shy;lems and re&shy;du&shy;cing chaos to or&shy;der, or at least to the level of or&shy;gan&shy;ized chaos. She has worked as a polit&shy;ic&shy;al or&shy;gan&shy;izer, done mar&shy;ket&shy;ing for a tech start-up, man&shy;aged a bakery, and taught preschool in Beijing, a vari&shy;ety of ex&shy;per&shy;i&shy;ence that she finds re&shy;mark&shy;ably use&shy;ful at NIRD." 
