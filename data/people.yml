@@ -22,7 +22,7 @@ elise:
 strand:
   id: "strand"
   full_name: "Strand McCutchen"
-  image: "/images/strand_headshot_sq.jpg"
+  image: "/images/strand_headshot_sq_bw.jpg"
   twitter: "strabd"
   description:
     paragraph_1: "Strand is a trans&shy;real&shy;ist data&shy;punk who taught him&shy;self Ruby and Rails while liv&shy;ing in a stu&shy;dio above his broth&shy;er’s brew&shy;ery in Guang&shy;zhou, China. He is an open-source afi&shy;cion&shy;ado who be&shy;lieves that read&shy;ing source code is lib&shy;er&shy;at&shy;ing."
