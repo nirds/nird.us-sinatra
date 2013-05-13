@@ -17,16 +17,6 @@
         @include bottom_shade(rgba($pink, 0.6), rgba($pink, 0.1))
         @include shadow(0rem, 0rem, $flare, $flare / 2, rgba($pink, 0.15))
         @extend %fade_in_out
-      
-      &:before
-        position    : absolute
-        content     : ''
-        top         : 2rem
-        left        : 2rem
-        right       : 2rem
-        height      : 4rem
-        @include bottom_shade(rgba(white, 0.05), rgba(white, 0.01))
-        @include round(1.0rem)
     
       h1
         @extend %fade_in_out
@@ -95,8 +85,7 @@
 
   .specialty
     @include col(1, 1, $margin_p, $gutter_p)
-    margin:
-      top         : 1rem
+    
     float         : left
     h2
       text:

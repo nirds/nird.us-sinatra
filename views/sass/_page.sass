@@ -69,6 +69,14 @@ html
     size        : 62.5%
 
 .panel
+  position: relative
+    margin:
+      top         : 1rem
+      bottom      : 4rem
+    padding:
+      top         : 2rem
+      bottom      : 4rem
+
   %extend %box
   @include buffer($flare)
   @include round($radius)
@@ -77,5 +85,14 @@ html
     color       : $dark
     color       : rgba($dark, 0.5)
   @include bottom_shade(rgba($grey, 0.3), rgba($dark, 0.5))
+  &:before
+    position    : absolute
+    content     : ''
+    top         : 1rem
+    left        : 2rem
+    right       : 2rem
+    height      : 4rem
+    @include bottom_shade(rgba(white, 0.05), rgba(white, 0.001))
+    @include round(1.0rem)
       
   @extend %fade_in_out 
