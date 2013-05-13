@@ -1,11 +1,11 @@
 .logo_center
-  @include row($margin_p)
+  @include row($margin_p, $gutter_p)
   @media (min-width: 600px)
-    @include row($margin_t)
+    @include row($margin_t, $gutter_t)
   @media (min-width: 1024px)
-    @include row($margin_s)
+    @include row($margin_s, $gutter_s)
   @media (min-width: 1920px)
-    @include row($margin_l)
+    @include row($margin_l, $gutter_l)
 
 .logo
   @include col(1, 1, $margin_p, $gutter_p)
