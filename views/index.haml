@@ -4,8 +4,9 @@
   -@offerings.each_value do |offering|
     -if offering.homepage
       %div.offering{:id => offering.id}
-        %div.panel
-          %a.details{:href=>"#"}
+        %a.details{:href=>"#"}
+          %div.panel
+          
             %h1= offering.tagline
             %p=  offering.copy
 
@@ -19,5 +20,6 @@
             %div.container
               %img(src="#{person.image}")
             %figcaption
-              %h3= person.full_name
+              %h3.name= person.first_name
+              %h3.name= person.second_name
       %div.height_set
