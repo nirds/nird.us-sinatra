@@ -7,7 +7,7 @@
     %extend %box
     float         : left
     margin:
-      top         : 2rem
+      bottom      : 2rem
     .panel
       &:hover
         @extend %fade_in_out
@@ -49,6 +49,10 @@
       @include col(1, 1, $margin_t, $gutter_t)
     .offering
       @include col(1, 1, $margin_t, $gutter_t)
+
+  @media (min-width: 900px)
+    .offering
+      @include col(3, 1, $margin_t, $gutter_t)
   
   @media (min-width: 1024px)
     @include row($margin_s, $gutter_s)
