@@ -1,8 +1,9 @@
+$image_pad_1  : 1rem
+$image_pad_2  : 3rem
+$image_pad_3  : 4rem
+
 %container
   position    : relative
-  margin:
-    top       : 3rem
-    bottom    : 3rem
   width       : 200px
   height      : 200px 
   @extend %fade_in_out
@@ -14,11 +15,23 @@
 
 .people
   @include row($margin_p, $gutter_p)
+  .panel
+    padding:
+      bottom    : 3rem
   .team
     @include col(1, 1, $margin_p, $gutter_p)
     %extend %box
+
     .profile
       @include row(0, 0)
+      padding:
+        top     : $image_pad_1
+      @media (min-width: 768px)
+        padding:
+          top   : $image_pad_2
+      @media (min-width: 1024px)
+        padding:
+          top   : $image_pad_3
     
     .text
       @include col(1, 1, 0, 0)
@@ -34,16 +47,12 @@
           right: 4rem
         float : left
         h1
-          margin:
-            top: 1.6em
           text:
             align: left
           
     .image
       @include col(1, 1, 0, 0)
       @extend %box
-      padding:
-        left: 4rem
       .container
         @extend %container
         margin:
@@ -60,17 +69,19 @@
         .container
           width: 100%
           height: auto
-          margin:
-            top: 6.5rem
       @media (min-width: 1350px)
         .container
           width: 300px
       .twitter
         @extend %copy_font
         @extend %one_font
-        display: block
-        width: 100%
-        text-align: center
+        display: none
+        @media (min-width: 768px)
+          margin:
+            top: 1em
+          display: block
+          width: 100%
+          text-align: center
 
   h1
     @include col(1, 1, 0, 0)
@@ -91,6 +102,8 @@
     @extend %box
     display       : block
     float         : left
+    margin:
+      top         : 3rem
 
     a
       @extend %box
