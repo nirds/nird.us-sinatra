@@ -9,8 +9,12 @@
 
 .logo
   @include col(1, 1, $margin_p, $gutter_p)
+  margin:
+    top           : 7rem
   @media (min-width: 600px)
     @include col(1, 1, $margin_t, $gutter_t)
+    margin:
+      top           : 4rem
   @media (min-width: 1024px)
     @include col(1, 1, $margin_s, $gutter_s)
   @media (min-width: 1920px)
