@@ -1,6 +1,8 @@
 renee:
   id: "renee"
-  full_name: "Renée De Voursney"
+  full_name: "Renée De&nbsp;Voursney"
+  first_name: "Renée"
+  second_name: "De&nbsp;Voursney"
   image: "/images/renee_headshot_sq_bw.png"
   twitter: "gigglegirl4e"
   description:
@@ -11,6 +13,8 @@ renee:
 elise:
   id: "elise"
   full_name: "Elise Worthy"
+  first_name: "Elise"
+  second_name: "Worthy"
   image: "/images/elise_headshot_sq_bw.png"
   twitter: "eliseworthy"
   description:
@@ -22,6 +26,8 @@ elise:
 strand:
   id: "strand"
   full_name: "Strand McCutchen"
+  first_name: "Strand"
+  second_name: "McCutchen"
   image: "/images/strand_headshot_sq_bw.png"
   twitter: "strabd"
   description:
@@ -33,6 +39,8 @@ strand:
 adam:
   id: "adam"
   full_name: "Adam Hendricksen"
+  first_name: "Adam"
+  second_name: "Hendricksen"
   image: "/images/adam_headshot_sq_bw.png"
   twitter: "visionaryschin"
   description:
@@ -43,6 +51,8 @@ adam:
 betsy:
   id: "betsy"
   full_name: "Betsy Walker"
+  first_name: "Betsy"
+  second_name: "Walker"
   image: "/images/betsy_headshot_sq_bw.png"
   twitter: "etsyspy"
   description:
