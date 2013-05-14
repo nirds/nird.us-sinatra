@@ -11,6 +11,10 @@ before { load_yaml_into_hashie_variables }
 set :views, :sass => 'views/sass', :haml => 'views', :default => 'views'
 
 # Routing
+get '/respond.js' do
+  File.read '/public/respond.js'
+end
+
 get '/styles.css' do
   content_type 'text/css', :charset => 'utf-8'
   sass :styles
