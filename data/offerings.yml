@@ -13,20 +13,37 @@ teach:
     remote:
       heading: "Remote Trainings"
       paragraphs:
-        host: "We can host remote training sessions for your team, covering a range of development topics. Popular trainings include:"
-        customize: "We look forward to working with you to design a custom training program to fit your organization's needs."
+        host: "We can host re&shy;mote train&shy;ing ses&shy;sions for your team, cov&shy;er&shy;ing a range of de&shy;vel&shy;op&shy;ment top&shy;ics. Pop&shy;u&shy;lar train&shy;ings in&shy;clude:"
+        customize: "We look for&shy;ward to work&shy;ing with you to design a cus&shy;tom train&shy;ing pro&shy;gram to fit your or&shy;gan&shy;iz&shy;a&shy;tion's needs."
       bullets:
-        entreprenuers: "Individualized Rails training for Entreprenuers"
-        intro: "Introduction to Ruby and Rails for Developers"
+        entrepreneurs: "In&shy;di&shy;vidu&shy;al&shy;ized Rails train&shy;ing for En&shy;tre&shy;pren&shy;eurs"
+        intro: "In&shy;tro&shy;duc&shy;tion to Ruby and Rails for De&shy;velopers"
         testing: "Testing in Ruby"
     local:
       heading: "On-Site Trainings"
       paragraphs:
-        travel: "We are happy to travel to your workplace to teach you, anywhere in the world. Some places our consultants have taught are:"
+        travel: "We are happy to travel to your work&shy;place to teach you, any&shy;where in the world. Some places our con&shy;sult&shy;ants have taught are:"
+        travel2: "Con&shy;tact us for more de&shy;tails about schedul&shy;ing an on-site train&shy;ing."
       bullets:
         sf: "The Bay Area/Silicon Valley"
         nyc: "New York City"
+        atl: "Atlanta"
         berlin: "Berlin"
+  course_intro: "The fol&shy;low&shy;ing courses are de&shy;signed to get you up and run&shy;ning on Ruby and Rails. All courses are offered both re&shy;motely and on-site. Av&shy;er&shy;age class sizes typ&shy;ic&shy;ally range from 10-20 people. We can also work with you to design a cus&shy;tom train&shy;ing course that best suits the needs of your or&shy;gan&shy;iz&shy;a&shy;tion."
+  courses: 
+    ruby:
+      heading: "2 Day Ruby"
+      paragraphs: 
+        intro: "Ba&shy;sic In&shy;tro to Ruby course de&shy;signed for both novice pro&shy;gram&shy;mers (or those not fa&shy;mil&shy;i&shy;ar with OOP) who want to start off on the right foot and ex&shy;per&shy;i&shy;enced pro&shy;gram&shy;mers in&shy;ter&shy;ested in mi&shy;grat&shy;ing from ex&shy;ist&shy;ing lan&shy;guages such as Java, PHP, Py&shy;thon, etc."
+        prereqs: "The course as&shy;sumes you have ba&shy;sic ex&shy;per&shy;i&shy;ence in an&shy;oth&shy;er pro&shy;gram&shy;ming lan&shy;guage and are fa&shy;mil&shy;i&shy;ar with fun&shy;da&shy;ment&shy;al pro&shy;gram&shy;ming con&shy;cepts, such as con&shy;di&shy;tion&shy;als, loops, func&shy;tions/meth&shy;ods, etc. Note that this is a hands-on train&shy;ing course where you will be ex&shy;pec&shy;ted to de&shy;vel&shy;op ap&shy;plic&shy;a&shy;tions in Ruby."
+      bullets: 
+        setup: "Be able to setup the Ruby de&shy;vel&shy;op&shy;ment en&shy;vir&shy;on&shy;ment"
+        fundamentals: "Learn the fun&shy;da&shy;ment&shy;als of the Ruby lan&shy;guage"
+        libraries: "Learn about the built-in Ruby lib&shy;rar&shy;ies and APIs"
+        oop: "Learn the prin&shy;cipals of ob&shy;ject-ori&shy;ented pro&shy;gram&shy;ming in Ruby"
+        testing: "Prac&shy;tice test-driv&shy;en de&shy;vel&shy;op&shy;ment (TDD) in Ruby us&shy;ing RSpec"
+        gems: "Learn how to use ex&shy;tern&shy;al lib&shy;rar&shy;ies with Ruby Gems"
+        write: "Be able to write Ruby code with con&shy;fid&shy;ence!"
 partner:
   id: "partner"
   homepage: true

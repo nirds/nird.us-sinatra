@@ -19,3 +19,17 @@
       %ul
       -@offerings.teach.detail.local.bullets.each_value do |bullet|
         %li=bullet
+      %p
+        =@offerings.teach.detail.local.paragraphs.travel2 
+  %div.simple-box
+    %p=@offerings.teach.course_intro
+  %div.specialty
+    %div.panel
+      %h1=@offerings.teach.courses.ruby.heading
+      %p
+        =@offerings.teach.courses.ruby.paragraphs.intro
+      %ul
+      -@offerings.teach.courses.ruby.bullets.each_value do |bullet|
+        %li=bullet
+      %p
+        =@offerings.teach.courses.ruby.paragraphs.prereqs
