@@ -3,9 +3,10 @@
     %meta{:name=>"viewport", :content=>"width=device-width"}
     %title
       = @title
-    %script{:type=>"text/javascript", :src=>"/html5shiv.js"}
     %link{:rel => "stylesheet", :href => "/styles.css"}
-    %script{:type=>"text/javascript", :src=>"/respond.js"}
+    / [if IE]
+      %script{:type=>"text/javascript", :src=>"/respond.js"}
+      %script{:type=>"text/javascript", :src=>"/html5shiv.js"}
     %link{:rel => "shortcut icon", :href => "/images/NIRD_favicon.png"} 
   %header
     %nav.top
