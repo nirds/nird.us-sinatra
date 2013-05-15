@@ -28,8 +28,68 @@
       %h1=@offerings.teach.courses.ruby.heading
       %p
         =@offerings.teach.courses.ruby.paragraphs.intro
+      %p
+        =@offerings.teach.courses.rails.paragraphs.objectives
       %ul
       -@offerings.teach.courses.ruby.bullets.each_value do |bullet|
         %li=bullet
       %p
         =@offerings.teach.courses.ruby.paragraphs.prereqs
+  %div.specialty
+    %div.panel
+      %h1=@offerings.teach.courses.rails.heading
+      %p
+        =@offerings.teach.courses.rails.paragraphs.intro
+      %p
+        =@offerings.teach.courses.rails.paragraphs.objectives
+      %ul
+      -@offerings.teach.courses.rails.bullets.each_value do |bullet|
+        %li=bullet
+  %div.specialty
+    %div.panel
+      %h1=@offerings.teach.courses.bootcamp.heading
+      %p
+        =@offerings.teach.courses.bootcamp.paragraphs.intro
+      %p
+        =@offerings.teach.courses.bootcamp.paragraphs.objectives
+      %ul
+      -@offerings.teach.courses.bootcamp.bullets.each_value do |bullet|
+        %li=bullet
+      %p
+        =@offerings.teach.courses.bootcamp.paragraphs.prereqs
+  %div.specialty
+    %div.panel
+      %h1=@offerings.teach.courses.admin.heading
+      %p
+        =@offerings.teach.courses.admin.paragraphs.intro
+      %p
+        =@offerings.teach.courses.admin.paragraphs.target
+      %p
+        =@offerings.teach.courses.admin.paragraphs.objectives
+      %ul
+      -@offerings.teach.courses.admin.bullets.each_value do |bullet|
+        %li=bullet
+      %p
+        =@offerings.teach.courses.admin.paragraphs.prereqs
+  %div.specialty
+    %div.panel
+      %h1=@offerings.teach.feedback.heading
+      %p
+        =@offerings.teach.feedback.paragraphs.one
+    %div.panel
+      %p
+        =@offerings.teach.feedback.paragraphs.two
+  %div.specialty
+    %div.panel
+      %h1=@offerings.teach.opensource.heading
+      %p
+        =@offerings.teach.opensource.paragraphs.intro
+      %p
+        =@offerings.teach.opensource.paragraphs.try
+      %p
+        =@offerings.teach.opensource.paragraphs.guides
+      %p
+        =@offerings.teach.opensource.paragraphs.monk
+      %p
+        =@offerings.teach.opensource.paragraphs.koans
+
