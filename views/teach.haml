@@ -1,5 +1,5 @@
 %section.teach
-  %div.intro
+  %div.copy
     %div.panel
       %p=@offerings.teach.intro
   %div.specialty
@@ -22,8 +22,9 @@
         %li=bullet
       %p
         =@offerings.teach.detail.local.paragraphs.travel2 
-  %div.simple-box
-    %p=@offerings.teach.course_intro
+  %div.copy
+    %div.panel
+      %p=@offerings.teach.course_intro
   %div.specialty
     %div.panel
       %h1=@offerings.teach.courses.ruby.heading
@@ -72,15 +73,14 @@
         %li=bullet
       %p
         =@offerings.teach.courses.admin.paragraphs.prereqs
-  %div.specialty
+  %div.copy
     %div.panel
       %h1=@offerings.teach.feedback.heading
       %p
         =@offerings.teach.feedback.paragraphs.one
-    %div.panel
       %p
         =@offerings.teach.feedback.paragraphs.two
-  %div.specialty
+  %div.copy
     %div.panel
       %h1=@offerings.teach.opensource.heading
       %p
