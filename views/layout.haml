@@ -7,6 +7,10 @@
     / [if IE]
       %script{:type=>"text/javascript", :src=>"/respond.js"}
       %script{:type=>"text/javascript", :src=>"/html5shiv.js"}
+      %script{:type=>"text/javascript", :src=>"/jquery-1.9.1.min.js"}
+      %script{:type=>"text/javascript", :src=>"/jquery.fixBoxModel.js"}
+      %script
+        $('div').fixBoxModel();
     %link{:rel => "shortcut icon", :href => "/images/NIRD_favicon.png"} 
   %header
     %nav.top
