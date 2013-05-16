@@ -5,8 +5,12 @@ require 'hashie'
 require 'stripe'
 require 'money'
 require_relative 'helpers'
+require 'ostruct'
+require 'text/hyphen'
+require 'pry'
 
 before { load_yaml_into_hashie_variables }
+# before { soft_hyphenate_content }
 
 set :static => true
 set :public_folder => 'public'
@@ -96,4 +100,3 @@ end
 get '/*' do
   redirect to('/')
 end
-
