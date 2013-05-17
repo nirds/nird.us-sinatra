@@ -5,7 +5,6 @@ require 'hashie'
 require 'stripe'
 require 'money'
 require_relative 'helpers'
-require 'ostruct'
 require 'text/hyphen'
 require 'pry'
 
