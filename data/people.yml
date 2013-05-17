@@ -1,9 +1,9 @@
 renee:
   id: "renee"
-  full_name: "Renée De&nbsp;Voursney"
+  full_name: "[no-hyphen] Renée De&nbsp;Voursney"
   first_name: "Renée"
-  second_name: "De&nbsp;Voursney"
-  image: "/images/renee_headshot_sq_bw.png"
+  second_name: "[no-hyphen] De&nbsp;Voursney"
+  image: "[image] /images/renee_headshot_sq_bw.png"
   twitter: "gigglegirl4e"
   description:
     paragraph_1: "Pres&shy;id&shy;ent & Chief Ad&shy;ven&shy;ture Of&shy;ficer - Renée draws on her ex&shy;per&shy;i&shy;ence from a vari&shy;ety of pro&shy;jects, from high en&shy;ergy phys&shy;ics sim&shy;u&shy;la&shy;tions to fin&shy;an&shy;cial fore&shy;cast&shy;ing mod&shy;els, to provide key ex&shy;pert&shy;ise for NIRD’s cli&shy;ents in the areas of busi&shy;ness in&shy;tel&shy;li&shy;gence and soft&shy;ware de&shy;vel&shy;op&shy;ment. An avid Ruby de&shy;veloper, Ren&shy;ee con&shy;sults on pro&shy;jects for a di&shy;verse ar&shy;ray of com&shy;pan&shy;ies. She also teaches fre&shy;quent classes on Ruby, Rails, and everything else to new pro&shy;gram&shy;mers, ex&shy;per&shy;i&shy;enced pro&shy;gram&shy;mers, and some&shy;times to both at the same time!"
@@ -15,7 +15,7 @@ elise:
   full_name: "Elise Worthy"
   first_name: "Elise"
   second_name: "Worthy"
-  image: "/images/elise_headshot_sq_bw.png"
+  image: "[image] /images/elise_headshot_sq_bw.png"
   twitter: "eliseworthy"
   description:
     paragraph_1: "Elise worked in mar&shy;ket&shy;ing and product man&shy;age&shy;ment at Blue Box Group and At&shy;las Ac&shy;cel&shy;er&shy;at&shy;or be&shy;fore diving in&shy;to Ruby, Rails, and soft&shy;ware de&shy;vel&shy;op&shy;ment. A gradu&shy;ate of Hungry Academy at Liv&shy;ing&shy;So&shy;cial, Elise’s unique set of skills al&shy;low her to fo&shy;cus on soft&shy;ware from both product and en&shy;gin&shy;eer&shy;ing per&shy;spect&shy;ives, en&shy;abling her to quickly eval&shy;u&shy;ate and build the most vi&shy;able fea&shy;tures."
@@ -28,7 +28,7 @@ strand:
   full_name: "Strand McCutchen"
   first_name: "Strand"
   second_name: "McCutchen"
-  image: "/images/strand_headshot_sq_bw.png"
+  image: "[image] /images/strand_headshot_sq_bw.png"
   twitter: "strabd"
   description:
     paragraph_1: "Strand is a trans&shy;real&shy;ist data&shy;punk who taught him&shy;self Ruby and Rails while liv&shy;ing in a stu&shy;dio above his broth&shy;er’s brew&shy;ery in Guang&shy;zhou, China. He is an open-source afi&shy;cion&shy;ado who be&shy;lieves that read&shy;ing source code is lib&shy;er&shy;at&shy;ing."
@@ -41,7 +41,7 @@ adam:
   full_name: "Adam Hendricksen"
   first_name: "Adam"
   second_name: "Hendricksen"
-  image: "/images/adam_headshot_sq_bw.png"
+  image: "[image] /images/adam_headshot_sq_bw.png"
   twitter: "visionaryschin"
   description:
     paragraph_1: "After work&shy;ing as a rock&shy;et propul&shy;sion en&shy;gin&shy;eer at NASA and Boe&shy;ing, Adam de&shy;cided to turn in his pock&shy;et pro&shy;tect&shy;or for the ex&shy;cit&shy;ing world of web design. He fo&shy;cuses on build&shy;ing el&shy;eg&shy;ant web&shy;sites us&shy;ing re&shy;spons&shy;ive design tech&shy;niques, Ruby-on-Rails frame&shy;works, and cre&shy;at&shy;ive prob&shy;lem solv&shy;ing. Adam claims that he is con&shy;stantly learn&shy;ing, even when he’s teach&shy;ing the rest of us."
@@ -53,10 +53,10 @@ betsy:
   full_name: "Betsy Walker"
   first_name: "Betsy"
   second_name: "Walker"
-  image: "/images/betsy_headshot_sq_bw.png"
+  image: "[image] /images/betsy_headshot_sq_bw.png"
   twitter: "etsyspy"
   description:
-    paragraph_1: "Betsy en&shy;joys tack&shy;ling in&shy;ter&shy;est&shy;ing prob&shy;lems and re&shy;du&shy;cing chaos to or&shy;der, or at least to the level of or&shy;gan&shy;ized chaos. She has worked as a polit&shy;ic&shy;al or&shy;gan&shy;izer, done mar&shy;ket&shy;ing for a tech start-up, man&shy;aged a bakery, and taught preschool in Beijing, a vari&shy;ety of ex&shy;per&shy;i&shy;ence that she finds re&shy;mark&shy;ably use&shy;ful at NIRD." 
+    paragraph_1: "Betsy en&shy;joys tack&shy;ling in&shy;ter&shy;est&shy;ing prob&shy;lems and re&shy;du&shy;cing chaos to or&shy;der, or at least to the level of or&shy;gan&shy;ized chaos. She has worked as a polit&shy;ic&shy;al or&shy;gan&shy;izer, done mar&shy;ket&shy;ing for a tech start-up, man&shy;aged a bakery, and taught preschool in Beijing, a vari&shy;ety of ex&shy;per&shy;i&shy;ence that she finds re&shy;mark&shy;ably use&shy;ful at NIRD."
     paragraph_2: "Betsy brings ex&shy;cep&shy;tion&shy;al com&shy;mu&shy;nic&shy;a&shy;tion and or&shy;gan&shy;iz&shy;a&shy;tion&shy;al skills honed work&shy;ing on polit&shy;ic&shy;al cam&shy;paigns to the task of pro&shy;ject man&shy;age&shy;ment. Her fo&shy;cus is on mak&shy;ing sure that every&shy;one on the team has what they need to build a&shy;maz&shy;ing products. Betsy is fas&shy;cin&shy;ated by design prob&shy;lems, and en&shy;joys de&shy;vel&shy;op&shy;ing clean, el&shy;eg&shy;ant designs that res&shy;ult in ef&shy;fort&shy;less user ex&shy;per&shy;i&shy;ences. Less is more, and life is bet&shy;ter in Sans serif."
     paragraph_3: "In her spare time, Betsy en&shy;joys polit&shy;ic&shy;al vo&shy;lun&shy;teer&shy;ing, study&shy;ing for&shy;eign lan&shy;guages, and tak&shy;ing tango les&shy;sons."
     paragraph_4: "Spe&shy;cial&shy;ties: Pro&shy;ject man&shy;age&shy;ment, front-end design, UI design"

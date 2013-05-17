@@ -18,13 +18,21 @@ helpers do
 
   private
   def modify_strings(value)
-    if value.class == Hash      then value.each_value { |v| modify_strings v }
-    elsif value.class == String then value.replace(soft_hyphenate value)
+    if    value.class == Hash   then value.each_value { |v| modify_strings v }
+    elsif value.class == String then value.replace(soft_hyphenate value.to_s)
     end
   end
 
   def soft_hyphenate(string)
-    hh = Text::Hyphen.new(:language => 'en_us', :left => 2, :right => 2)
-    string.split(" ").map{ |word| hh.visualize(word, "&shy;") }.join(" ")
+    if first_word(string).match(/\[.*\]/)
+      string.split(" ")[1..-1].join(" ")
+    else
+      hh = Text::Hyphen.new(:language => 'en_us', :left => 2, :right => 2)
+      string.split(" ").map{ |word| hh.visualize(word, "&shy;") }.join(" ")
+    end
+  end
+
+  def first_word(string)
+    string.split(" ")[0] ? string.split(" ")[0] : ""
   end
 end
