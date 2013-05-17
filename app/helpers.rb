@@ -9,25 +9,17 @@ helpers do
   def load_yaml_into_hashie_variables
     Dir.glob("data/*.yml").each do |file|
       variable = /data\/(.*).yml/.match(file)[1]
-      instance_variable_set(:"@#{variable}", Hashie::Mash.new(YAML.load_file(file)))
-    end
-  end
+      yaml     = YAML.load_file file
 
-  def soft_hyphenate_content
-    content = [@offerings, @people]
-    content.each do |instance|
-      instance.each { |key, value| recursively_modify_strings key, value }
+      yaml.each_value { |value| modify_strings value }
+      instance_variable_set(:"@#{variable}", Hashie::Mash.new(yaml))
     end
   end
 
   private
-  def recursively_modify_strings(key, value)
-    if   value.class == Hashie::Mash
-      value.each do |key, value|
-        recursively_modify_strings key, value
-      end
-    elsif value.class == String
-      value = soft_hyphenate value
+  def modify_strings(value)
+    if value.class == Hash      then value.each_value { |v| modify_strings v }
+    elsif value.class == String then value.replace(soft_hyphenate value)
     end
   end
 
