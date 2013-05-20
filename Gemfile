@@ -16,4 +16,6 @@ gem 'shotgun'
 
 group :test do
   gem 'rspec', '~> 2.11.0'
+  gem 'rack-test'
+  gem 'capybara'
 end
