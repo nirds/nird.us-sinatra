@@ -12,7 +12,7 @@ gem "rvm-capistrano"
 gem "bundler"
 gem "money"
 gem 'stripe'
-gem 'shotgun'
+gem "sinatra-reloader", "~> 1.0"
 gem 'text-hyphen'
 gem 'pry'
 
