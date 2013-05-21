@@ -16,6 +16,33 @@ helpers do
     end
   end
 
+  def standardize_title(unique_title_portion)
+    "NIRD - #{unique_title_portion}"
+  end
+
+  def ensure_minimum_cents(cents)
+    [cents, 50].max
+  end
+
+  def extract_description(post_data)
+    customer = post_data[:organization]
+    project  = post_data[:project]
+    invoice  = post_data[:invoice]
+    "#{customer} - #{project} - #{invoice}"
+  end
+
+  def extract_stripe_customer(params)
+    Stripe::Customer.create(email: params[:post][:email],
+                            card:  params[:stripeToken] )
+  end
+
+  def create_charge(amount, customer, description)
+    Stripe::Charge.create(amount:      amount,
+                          customer:    customer.id,
+                          description: description,
+                          currency:    'usd' )
+  end
+
   private
   def modify_strings(value)
     if    value.class == Hash   then value.each_value { |v| modify_strings v }

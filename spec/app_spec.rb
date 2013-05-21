@@ -1,10 +1,19 @@
 require 'spec_helper'
 
 describe "nird.us App" do
-
   it "should respond to GET" do
     get '/'
     last_response.should be_ok
+  end
+
+  it "should respond to GET" do
+    get '/renee'
+    last_response.body.should include "Renée De&nbsp;Voursney"
+  end
+
+  it "should respond to GET" do
+    get '/build'
+    last_response.body.should include "NIRD - We Build"
   end
 
   it "should charge a customer" do
@@ -21,5 +30,4 @@ describe "nird.us App" do
   	post '/charge', params = post
     last_response.should be_ok
   end
-
 end
