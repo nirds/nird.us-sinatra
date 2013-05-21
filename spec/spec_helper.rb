@@ -2,6 +2,7 @@ require File.join(File.dirname(__FILE__), '..', 'app/app.rb')
 
 require 'sinatra'
 require 'rack/test'
+# require 'capybara/rspec'
 
 # setup test environment
 set :environment, :test

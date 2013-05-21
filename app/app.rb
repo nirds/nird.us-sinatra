@@ -1,19 +1,16 @@
 require 'sinatra'
+require "sinatra/reloader" if development?
 require 'sass'
 require 'yaml'
 require 'hashie'
 require 'stripe'
 require 'money'
 require_relative 'helpers'
+require_relative 'config'
 require 'text/hyphen'
 require 'pry'
 
 before { load_yaml_into_hashie_variables }
-# before { soft_hyphenate_content }
-
-set :static => true
-set :public_folder => 'public'
-set :views, :sass => 'views/sass', :haml => 'views', :default => 'views'
 
 # Routing
 get '/styles.css' do
@@ -41,52 +38,14 @@ get '/' do
   haml :index
 end
 
-def standardize_title( unique_title_portion )
-  "NIRD - #{unique_title_portion}"
-end
-
-# Stripe Functionality
-
-def ensure_minimum_cents( cents )
-  [ cents, 50 ].max
-end
-
-def extract_description( post_data )
-  customer = post_data[:organization]
-  project  = post_data[:project]
-  invoice  = post_data[:invoice]
-  return "#{customer} - #{project} - #{invoice}"
-end
-
-def extract_stripe_customer( params )
-  Stripe::Customer.create(
-    email: params[:post][:email],
-    card:  params[:stripeToken]
-  )
-end
-
-def create_charge(amount, customer, description)
-  Stripe::Charge.create(
-    :amount      => amount,
-    :customer    => customer.id,
-    :description => description,
-    :currency    => 'usd'
-  )
-end
-
-set :publishable_key, ENV['PUBLISHABLE_KEY']
-set :secret_key, ENV['SECRET_KEY']
-
-Stripe.api_key = settings.secret_key
-
 post '/charge' do
-  money       = Money.parse( params[:post][:cost] )
-  amount      = ensure_minimum_cents( money.cents )
-  customer    = extract_stripe_customer( params )
-  description = extract_description( params[:post] )
+  money       = Money.parse params[:post][:cost]
+  amount      = ensure_minimum_cents    money.cents
+  customer    = extract_stripe_customer params
+  description = extract_description     params[:post]
   charge      = create_charge(amount, customer, description)
 
-  @confirmed_charge = Money.us_dollar( charge.amount )
+  @confirmed_charge = Money.us_dollar charge.amount
   @title            = "NIRD - Thank You"
   haml :charge
 end
@@ -95,7 +54,6 @@ error Stripe::CardError do
   env['sinatra.error'].message
 end
 
-# Routing Continued
 get '/*' do
   redirect to('/')
 end
