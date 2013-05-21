@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-gem 'rack',     '~> 1.4.1'
-gem 'sinatra',  '~> 1.3.2'
+gem 'rack',     '~> 1.5.2'
+gem 'sinatra',  '~> 1.4.2'
 gem 'heroku',   '~> 2.25.0'
 gem 'haml',     '~> 3.1.7'
 gem 'sass',     '~> 3.2.5'
@@ -13,6 +13,8 @@ gem "bundler"
 gem "money"
 gem 'stripe'
 gem 'shotgun'
+gem 'text-hyphen'
+gem 'pry'
 
 group :test do
   gem 'rspec', '~> 2.11.0'
