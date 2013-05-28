@@ -13,20 +13,104 @@ teach:
     remote:
       heading: "Remote Trainings"
       paragraphs:
-        host: "We can host remote training sessions for your team, covering a range of development topics. Popular trainings include:"
-        customize: "We look forward to working with you to design a custom training program to fit your organization's needs."
+        host: "We can host re&shy;mote train&shy;ing ses&shy;sions for your team, cov&shy;er&shy;ing a range of de&shy;vel&shy;op&shy;ment top&shy;ics. Pop&shy;u&shy;lar train&shy;ings in&shy;clude:"
+        customize: "We look for&shy;ward to work&shy;ing with you to design a cus&shy;tom train&shy;ing pro&shy;gram to fit your or&shy;gan&shy;iz&shy;a&shy;tion's needs."
       bullets:
-        entreprenuers: "Individualized Rails training for Entreprenuers"
-        intro: "Introduction to Ruby and Rails for Developers"
+        entrepreneurs: "In&shy;di&shy;vidu&shy;al&shy;ized Rails train&shy;ing for En&shy;tre&shy;pren&shy;eurs"
+        intro: "In&shy;tro&shy;duc&shy;tion to Ruby and Rails for De&shy;velopers"
         testing: "Testing in Ruby"
     local:
       heading: "On-Site Trainings"
       paragraphs:
-        travel: "We are happy to travel to your workplace to teach you, anywhere in the world. Some places our consultants have taught are:"
+        travel: "We are happy to travel to your work&shy;place to teach you, any&shy;where in the world. Some places our con&shy;sult&shy;ants have taught are:"
+        travel2: "Con&shy;tact us for more de&shy;tails about schedul&shy;ing an on-site train&shy;ing."
       bullets:
         sf: "The Bay Area/Silicon Valley"
         nyc: "New York City"
+        atl: "Atlanta"
         berlin: "Berlin"
+  course_intro: "The fol&shy;low&shy;ing courses are de&shy;signed to get you up and run&shy;ning on Ruby and Rails. All courses are offered both re&shy;motely and on-site. Av&shy;er&shy;age class sizes typ&shy;ic&shy;ally range from 10-20 people. We can also work with you to design a cus&shy;tom train&shy;ing course that best suits the needs of your or&shy;gan&shy;iz&shy;a&shy;tion."
+  courses: 
+    ruby:
+      heading: "2 Day Ruby"
+      paragraphs: 
+        intro: "Ba&shy;sic In&shy;tro to Ruby course de&shy;signed for both novice pro&shy;gram&shy;mers (or those not fa&shy;mil&shy;i&shy;ar with OOP) who want to start off on the right foot and ex&shy;per&shy;i&shy;enced pro&shy;gram&shy;mers in&shy;ter&shy;ested in mi&shy;grat&shy;ing from ex&shy;ist&shy;ing lan&shy;guages such as Java, PHP, Py&shy;thon, etc."
+        objectives: "Course Ob&shy;ject&shy;ives:"
+        prereqs: "The course as&shy;sumes you have ba&shy;sic ex&shy;per&shy;i&shy;ence in an&shy;oth&shy;er pro&shy;gram&shy;ming lan&shy;guage and are fa&shy;mil&shy;i&shy;ar with fun&shy;da&shy;ment&shy;al pro&shy;gram&shy;ming con&shy;cepts, such as con&shy;di&shy;tion&shy;als, loops, func&shy;tions/meth&shy;ods, etc. Note that this is a hands-on train&shy;ing course where you will be ex&shy;pec&shy;ted to de&shy;vel&shy;op ap&shy;plic&shy;a&shy;tions in Ruby."
+      bullets: 
+        setup: "Be able to setup the Ruby de&shy;vel&shy;op&shy;ment en&shy;vir&shy;on&shy;ment"
+        fundamentals: "Learn the fun&shy;da&shy;ment&shy;als of the Ruby lan&shy;guage"
+        libraries: "Learn about the built-in Ruby lib&shy;rar&shy;ies and APIs"
+        oop: "Learn the prin&shy;cipals of ob&shy;ject-ori&shy;ented pro&shy;gram&shy;ming in Ruby"
+        testing: "Prac&shy;tice test-driv&shy;en de&shy;vel&shy;op&shy;ment (TDD) in Ruby us&shy;ing RSpec"
+        gems: "Learn how to use ex&shy;tern&shy;al lib&shy;rar&shy;ies with Ruby Gems"
+        write: "Be able to write Ruby code with con&shy;fid&shy;ence!"
+    rails:
+      heading: "3 Day Rails"
+      paragraphs: 
+        intro: "Ruby on Rails course de&shy;signed for de&shy;velopers with some web de&shy;vel&shy;op&shy;ment ex&shy;per&shy;i&shy;ence. Par&shy;ti&shy;cipants should be fa&shy;mil&shy;i&shy;ar with the gen&shy;er&shy;al prin&shy;ciples of ob&shy;ject ori&shy;ented pro&shy;gram&shy;ming (OOP)."
+        objectives: "Course Ob&shy;ject&shy;ives:"
+      bullets:
+        build: "Build a new Rails ap&shy;plic&shy;a&shy;tion from scratch"
+        setup: "Setup and man&shy;age data&shy;bases with mi&shy;gra&shy;tions"
+        routing: "Learn how to con&shy;fig&shy;ure Rails' rout&shy;ing"
+        test: "Prac&shy;tice test-driv&shy;en de&shy;vel&shy;op&shy;ment (TDD) with Rspec"
+        cucumber: "Learn about be&shy;ha&shy;vi&shy;or-driv&shy;en de&shy;vel&shy;op&shy;ment (BDD) with Cu&shy;cum&shy;ber"
+        ajax: "Learn how to add Ajax with JQuery"
+        active: "Learn how to lever&shy;age Act&shy;iveRecord with as&shy;so&shy;ci&shy;ations, val&shy;id&shy;a&shy;tions, and call&shy;backs"
+        rest: "Un&shy;der&shy;stand re&shy;sources and REST, and how to use them in a Rails ap&shy;plic&shy;a&shy;tion"
+        plugins: "Learn how to find and use plu&shy;gins"
+        options: "Un&shy;der&shy;stand the vari&shy;ous de&shy;ploy&shy;ment op&shy;tions for Rails ap&shy;plic&shy;a&shy;tions"
+        hugs: "Un&shy;der&shy;stand Rails' op&shy;tions and how to em&shy;brace or over&shy;ride them"
+    bootcamp:
+      heading: "5 Day Bootcamp"
+      paragraphs:
+        intro: "The 5 Day Ruby and Rails Boot&shy;camp com&shy;bines the two courses above in&shy;to one week-long work&shy;shop. Start&shy;ing with the ba&shy;sics of Ruby and Rails, you'll learn the full Rails' MVC stack, test&shy;ing tech&shy;niques, Ajax and even web ser&shy;vices. We'll work through the full life-cycle of a Rails pro&shy;ject, giv&shy;ing you ex&shy;per&shy;i&shy;ence with all fa&shy;cets of a typ&shy;ic&shy;al app."
+        objectives: "Course Ob&shy;ject&shy;ives:"
+        prereqs: "This course is de&shy;signed for de&shy;velopers with some web de&shy;vel&shy;op&shy;ment ex&shy;per&shy;i&shy;ence who wish to learn Ruby on Rails."
+      bullets: 
+        install: "Con&shy;fig&shy;ure and in&shy;stall Ruby and Rails"
+        basics: "Learn the ba&shy;sics of the Ruby lan&shy;guage"
+        build: "Build a new Rails ap&shy;plic&shy;a&shy;tion from scratch"
+        setup: "Setup and man&shy;age data&shy;bases with mi&shy;gra&shy;tions"
+        routing: "Learn how to con&shy;fig&shy;ure Rails' rout&shy;ing"
+        test: "Prac&shy;tice test-driv&shy;en de&shy;vel&shy;op&shy;ment (TDD) with Rspec"
+        cucumber: "Learn about be&shy;ha&shy;vi&shy;or-driv&shy;en de&shy;vel&shy;op&shy;ment (BDD) with Cu&shy;cum&shy;ber"
+        active: "Learn how to lever&shy;age Act&shy;iveRecord with as&shy;so&shy;ci&shy;ations, val&shy;id&shy;a&shy;tions, and call&shy;backs"
+        rest: "Un&shy;der&shy;stand re&shy;sources and REST, and how to use them in a Rails ap&shy;plic&shy;a&shy;tion"
+        plugins: "Learn how to find and use plu&shy;gins"
+        options: "Un&shy;der&shy;stand the vari&shy;ous de&shy;ploy&shy;ment op&shy;tions for Rails ap&shy;plic&shy;a&shy;tions"
+        hugs: "Un&shy;der&shy;stand Rails' op&shy;tions and how to em&shy;brace or over&shy;ride them"
+    admin:
+      heading: "2 Day Rails Administration"
+      paragraphs:
+        intro: "The 2 Day Ruby-on-Rails Ad&shy;min&shy;is&shy;tra&shy;tion course cov&shy;ers the ins-and-outs of man&shy;aging Ruby-on-Rails ap&shy;plic&shy;a&shy;tions in a pro&shy;duc&shy;tion en&shy;vir&shy;on&shy;ment. Stu&shy;dents will learn the pros and cons of vari&shy;ous serv&shy;er con&shy;fig&shy;ur&shy;a&shy;tions and how to build them out, how to de&shy;ploy new ver&shy;sions of Rails ap&shy;plic&shy;a&shy;tions with the push of a but&shy;ton, mon&shy;it&shy;or&shy;ing, per&shy;form&shy;ance tun&shy;ing, se&shy;cur&shy;ity-proof&shy;ing, and scal&shy;ing Rails ap&shy;plic&shy;a&shy;tions to meet real-world de&shy;mands."
+        target: "The course is de&shy;signed for web/ap&shy;plic&shy;a&shy;tion serv&shy;er ad&shy;min&shy;is&shy;trat&shy;ors who need to be able to in&shy;stall, con&shy;fig&shy;ure, run, se&shy;cure, and tune Ruby-on-Rails ap&shy;plic&shy;a&shy;tion de&shy;ploy&shy;ments. Sys&shy;tem ar&shy;chi&shy;tects and RoR de&shy;velopers can also be&shy;ne&shy;fit from this train&shy;ing."
+        objectives: "Course Ob&shy;ject&shy;ives:"
+        prereqs: "To get the most out of this course, stu&shy;dents should be fa&shy;mil&shy;i&shy;ar with the ba&shy;sic prin&shy;ciples of web/ap&shy;plic&shy;a&shy;tion serv&shy;er ad&shy;min&shy;is&shy;tra&shy;tion."
+      bullets:
+        explain: "Ex&shy;plain the prin&shy;ciples of Ruby on Rails (RoR) web ap&shy;plic&shy;a&shy;tion frame&shy;work to your col&shy;leagues"
+        setup: "In&shy;stall, setup, and de&shy;ploy RoR-based ap&shy;plic&shy;a&shy;tions on Unix-type en&shy;vir&shy;on&shy;ments"
+        pros: "Un&shy;der&shy;stand the pros and cons of vari&shy;ous RoR de&shy;ploy&shy;ment con&shy;fig&shy;ur&shy;a&shy;tions"
+        button: "Man&shy;age ap&shy;plic&shy;a&shy;tion up&shy;dates with a push of a but&shy;ton"
+        monitor: "Mon&shy;it&shy;or ap&shy;plic&shy;a&shy;tions in real-time"
+        troubleshoot: "Troubleshoot com&shy;mon ap&shy;plic&shy;a&shy;tion is&shy;sues"
+        secure: "Se&shy;cure your RoR en&shy;vir&shy;on&shy;ments"
+        size: "Un&shy;der&shy;stand how to size your RoR de&shy;ploy&shy;ments based on ex&shy;pec&shy;ted us&shy;age scen&shy;ari&shy;os"
+        scale: "Per&shy;form&shy;ance-tune and scale your RoR ap&shy;plic&shy;a&shy;tions"
+  feedback: 
+    heading: "Feedback"
+    paragraphs:
+      one: "“This in&shy;struct&shy;or knows her stuff, and is so gen&shy;er&shy;ous with shar&shy;ing her hard-earned know&shy;ledge, not just about Ruby on Rails but about pro&shy;gram&shy;ming and be&shy;ing part of the Open Source com&shy;munity in gen&shy;er&shy;al. Wheth&shy;er or not I end up us&shy;ing Rails in the fu&shy;ture (which is de&shy;pend&shy;ent upon my work en&shy;vir&shy;on&shy;ment, not on how I feel about Rails; I like it very much!), I will be a bet&shy;ter pro&shy;gram&shy;mer in gen&shy;er&shy;al thanks to the ex&shy;per&shy;i&shy;ence I had in this class. Paige - Reed Col&shy;lege" 
+      two: "“I loved the last day of the class, where we worked on pairs and had fun while learn&shy;ing and cod&shy;ing in Ruby. The in&shy;struct&shy;or was will&shy;ing to an&shy;swer many ques&shy;tions. She was ex&shy;tremely know&shy;ledge&shy;able on ruby gems, plu&shy;gins and de&shy;vel&shy;op&shy;ment tools. She was very help&shy;ful when we got stuck on something. I thought the class was ex&shy;cel&shy;lent.” Jose - Ore&shy;gon State Uni&shy;versity"
+  opensource:
+    heading: "Open Source Ruby/Rails"
+    paragraphs:
+      intro: "If you’re new to Ruby, these are some great re&shy;sources to get you star&shy;ted:"
+      try: "Try Ruby!"
+      guides: "Rails Guides - Getting Started with Rails"
+      monk: "RubyMonk - Interactive Ruby Tutorials"
+      koans: "Ruby Koans"
 partner:
   id: "partner"
   homepage: true
