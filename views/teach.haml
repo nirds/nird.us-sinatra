@@ -35,6 +35,9 @@
         %li=bullet
       %p
         =@offerings.teach.courses.ruby.paragraphs.prereqs
+      %div.button-footprint
+        %a.button{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
+          Learn More
   %div.specialty
     %div.panel
       %h1=@offerings.teach.courses.rails.heading
@@ -45,6 +48,9 @@
       %ul
       -@offerings.teach.courses.rails.bullets.each_value do |bullet|
         %li=bullet
+      %div.button-footprint
+        %a.button{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
+          Learn More
   %div.specialty
     %div.panel
       %h1=@offerings.teach.courses.bootcamp.heading
@@ -57,6 +63,9 @@
         %li=bullet
       %p
         =@offerings.teach.courses.bootcamp.paragraphs.prereqs
+      %div.button-footprint
+        %a.button{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
+          Learn More
   %div.specialty
     %div.panel
       %h1=@offerings.teach.courses.admin.heading
@@ -71,6 +80,9 @@
         %li=bullet
       %p
         =@offerings.teach.courses.admin.paragraphs.prereqs
+      %div.button-footprint
+        %a.button{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
+          Learn More
   %div.specialty
     %div.panel
       %h1=@offerings.teach.feedback.heading
@@ -92,4 +104,5 @@
         =@offerings.teach.opensource.paragraphs.monk
       %p
         =@offerings.teach.opensource.paragraphs.koans
+      
 
