@@ -9,8 +9,13 @@ require_relative 'helpers'
 require_relative 'config'
 require 'text/hyphen'
 require 'pry'
+require 'split'
 
 before { load_yaml_into_hashie_variables }
+
+# Split A/B Testing
+enable :sessions
+helpers Split::Helper
 
 # Routing
 get '/styles.css' do

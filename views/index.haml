@@ -6,8 +6,10 @@
       %div.offering{:id => offering.id}
         %a.details{:href=>"#"}
           %div.panel
-          
-            %h1= offering.tagline
+            - if offering.tagline_b
+              %h1= ab_test 'build_test', offering.tagline, offering.tagline_b
+            - else
+              %h1= offering.tagline
             %p=  offering.copy
 
 %section.people
