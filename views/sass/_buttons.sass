@@ -1,0 +1,20 @@
+.button-footprint
+  text-align : center
+.button
+  background-color: $pink
+  +bottom_shade($pink, darken($pink, 10%))
+  @extend %copy_font
+  @extend %two_font
+  @extend %bright_font
+  +round($radius)
+  display   : inline-block
+  text-align: center
+  margin:
+    top     : 1rem 
+    bottom  : 1rem
+  padding   : 0.2em 0.5em 0.2em 0.5em
+  &:hover
+    color: $bright
+    background-color: lighten($pink, 10%)
+    +bottom_shade(lighten($pink, 10%), $pink)
+    +shadow(0rem, 0rem, $flare, $flare / 2, rgba($pink, 0.15))
