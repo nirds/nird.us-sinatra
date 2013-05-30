@@ -8,28 +8,18 @@ teach:
   homepage: true
   tagline: "We Teach"
   copy: "Our skilled team is pas&shy;sion&shy;ate about shar&shy;ing our ex&shy;pert&shy;ise, and will pro&shy;vide world class train&shy;ing in Ruby on Rails. We are able to pro&shy;vide all your Ruby stack train&shy;ing needs from be&shy;gin&shy;ner les&shy;sons in ba&shy;sic ruby to ad&shy;vanced top&shy;ics like scal&shy;ing or big data."
-  intro: "Why Ruby? Ruby is ver&shy;sat&shy;ile, easy to code in, and hon&shy;estly a lot of fun. It’s used by thou&shy;sands of com&shy;pan&shy;ies and mil&shy;lions of people every day. It’s also easy to learn, be&shy;cause Ruby was writ&shy;ten for hu&shy;mans, not ma&shy;chines. If you’ve nev&shy;er touched code be&shy;fore, Ruby is a great place to start. For ex&shy;per&shy;i&shy;enced pro&shy;gram&shy;mers, we prom&shy;ise Ruby will rap&shy;idly be&shy;come your new fa&shy;vor&shy;ite pro&shy;gram&shy;ming lan&shy;guage. Here at NIRD, we’re pas&shy;sion&shy;ate about Ruby and Ruby-on-Rails, and we can’t wait to share that ex&shy;per&shy;i&shy;ence with you."
   detail:
     remote:
-      heading: "Remote Trainings"
-      paragraphs:
-        host: "We can host re&shy;mote train&shy;ing ses&shy;sions for your team, cov&shy;er&shy;ing a range of de&shy;vel&shy;op&shy;ment top&shy;ics. Pop&shy;u&shy;lar train&shy;ings in&shy;clude:"
-        customize: "We look for&shy;ward to work&shy;ing with you to design a cus&shy;tom train&shy;ing pro&shy;gram to fit your or&shy;gan&shy;iz&shy;a&shy;tion's needs."
       bullets:
         entrepreneurs: "In&shy;di&shy;vidu&shy;al&shy;ized Rails train&shy;ing for En&shy;tre&shy;pren&shy;eurs"
         intro: "In&shy;tro&shy;duc&shy;tion to Ruby and Rails for De&shy;velopers"
         testing: "Testing in Ruby"
     local:
-      heading: "On-Site Trainings"
-      paragraphs:
-        travel: "We are happy to travel to your work&shy;place to teach you, any&shy;where in the world. Some places our con&shy;sult&shy;ants have taught are:"
-        travel2: "Con&shy;tact us for more de&shy;tails about schedul&shy;ing an on-site train&shy;ing."
       bullets:
         sf: "The Bay Area/Silicon Valley"
         nyc: "New York City"
         atl: "Atlanta"
         berlin: "Berlin"
-  course_intro: "The fol&shy;low&shy;ing courses are de&shy;signed to get you up and run&shy;ning on Ruby and Rails. All courses are offered both re&shy;motely and on-site. Av&shy;er&shy;age class sizes typ&shy;ic&shy;ally range from 10-20 people. We can also work with you to design a cus&shy;tom train&shy;ing course that best suits the needs of your or&shy;gan&shy;iz&shy;a&shy;tion."
   courses: 
     ruby:
       heading: "2 Day Ruby"

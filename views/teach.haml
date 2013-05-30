@@ -1,30 +1,34 @@
 %section.teach
   %div.copy
     %div.panel
-      %p=@offerings.teach.intro
+      %p
+        Why Ruby? Ruby is ver­sat­ile, easy to code in, and hon­estly a lot of fun. It’s used by thou­sands of com­pan­ies and mil­lions of people every day. It’s also easy to learn, be­cause Ruby was writ­ten for hu­mans, not ma­chines. If you’ve nev­er touched code be­fore, Ruby is a great place to start. For ex­per­i­enced pro­gram­mers, we prom­ise Ruby will rap­idly be­come your new fa­vor­ite pro­gram­ming lan­guage. Here at NIRD, we’re pas­sion­ate about Ruby and Ruby-on-Rails, and we can’t wait to share that ex­per­i­ence with you.
   %div.specialty
     %div.panel
-      %h1=@offerings.teach.detail.remote.heading
+      %h1
+        Remote Trainings
       %p
-        =@offerings.teach.detail.remote.paragraphs.host
+        We can host remote training sessions for your team, covering a range of development topics. Popular trainings include:
       %ul
       -@offerings.teach.detail.remote.bullets.each_value do |bullet|
         %li=bullet
       %p
-        =@offerings.teach.detail.remote.paragraphs.customize
+        We look forward to working with you to design a custom training program to fit your organization's needs.
   %div.specialty
     %div.panel
-      %h1=@offerings.teach.detail.local.heading
+      %h1
+        On-Site Trainings
       %p
-        =@offerings.teach.detail.local.paragraphs.travel
+        We are happy to travel to your workplace to teach you, anywhere in the world. Some places our consultants have taught are:
       %ul
       -@offerings.teach.detail.local.bullets.each_value do |bullet|
         %li=bullet
       %p
-        =@offerings.teach.detail.local.paragraphs.travel2 
+        Contact us for more details about scheduling an on-site training.
   %div.copy
     %div.panel
-      %p=@offerings.teach.course_intro
+      %p
+        The following courses are designed to get you up and running on Ruby and Rails. All courses are offered both remotely and on-site. Average class sizes typically range from 10-20 people. We can also work with you to design a custom training course that best suits the needs of your organization.
   %div.specialty
     %div.panel
       %h1=@offerings.teach.courses.ruby.heading
