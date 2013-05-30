@@ -2,7 +2,6 @@ build:
   id: "build"
   homepage: true
   tagline: "We Build"
-  tagline_b: "We Assemble"
   copy: "Based on your tech&shy;nic&shy;al re&shy;quire&shy;ments, we can build your soph&shy;ist&shy;ic&shy;ated web ap&shy;plic&shy;a&shy;tions us&shy;ing Ruby on Rails, Sin&shy;a&shy;tra, or Re&shy;finery&shy;CMS. We are a full&#8208;&#8203;stack Ruby de&shy;vel&shy;op&shy;ment team. With NIRD you can watch your app grow from a concept to a full fea&shy;tured site."
 teach:
   id: "teach"
@@ -31,14 +30,14 @@ teach:
         atl: "Atlanta"
         berlin: "Berlin"
   course_intro: "The fol&shy;low&shy;ing courses are de&shy;signed to get you up and run&shy;ning on Ruby and Rails. All courses are offered both re&shy;motely and on-site. Av&shy;er&shy;age class sizes typ&shy;ic&shy;ally range from 10-20 people. We can also work with you to design a cus&shy;tom train&shy;ing course that best suits the needs of your or&shy;gan&shy;iz&shy;a&shy;tion."
-  courses: 
+  courses:
     ruby:
       heading: "2 Day Ruby"
-      paragraphs: 
+      paragraphs:
         intro: "Ba&shy;sic In&shy;tro to Ruby course de&shy;signed for both novice pro&shy;gram&shy;mers (or those not fa&shy;mil&shy;i&shy;ar with OOP) who want to start off on the right foot and ex&shy;per&shy;i&shy;enced pro&shy;gram&shy;mers in&shy;ter&shy;ested in mi&shy;grat&shy;ing from ex&shy;ist&shy;ing lan&shy;guages such as Java, PHP, Py&shy;thon, etc."
         objectives: "Course Ob&shy;ject&shy;ives:"
         prereqs: "The course as&shy;sumes you have ba&shy;sic ex&shy;per&shy;i&shy;ence in an&shy;oth&shy;er pro&shy;gram&shy;ming lan&shy;guage and are fa&shy;mil&shy;i&shy;ar with fun&shy;da&shy;ment&shy;al pro&shy;gram&shy;ming con&shy;cepts, such as con&shy;di&shy;tion&shy;als, loops, func&shy;tions/meth&shy;ods, etc. Note that this is a hands-on train&shy;ing course where you will be ex&shy;pec&shy;ted to de&shy;vel&shy;op ap&shy;plic&shy;a&shy;tions in Ruby."
-      bullets: 
+      bullets:
         setup: "Be able to setup the Ruby de&shy;vel&shy;op&shy;ment en&shy;vir&shy;on&shy;ment"
         fundamentals: "Learn the fun&shy;da&shy;ment&shy;als of the Ruby lan&shy;guage"
         libraries: "Learn about the built-in Ruby lib&shy;rar&shy;ies and APIs"
@@ -48,7 +47,7 @@ teach:
         write: "Be able to write Ruby code with con&shy;fid&shy;ence!"
     rails:
       heading: "3 Day Rails"
-      paragraphs: 
+      paragraphs:
         intro: "Ruby on Rails course de&shy;signed for de&shy;velopers with some web de&shy;vel&shy;op&shy;ment ex&shy;per&shy;i&shy;ence. Par&shy;ti&shy;cipants should be fa&shy;mil&shy;i&shy;ar with the gen&shy;er&shy;al prin&shy;ciples of ob&shy;ject ori&shy;ented pro&shy;gram&shy;ming (OOP)."
         objectives: "Course Ob&shy;ject&shy;ives:"
       bullets:
@@ -69,7 +68,7 @@ teach:
         intro: "The 5 Day Ruby and Rails Boot&shy;camp com&shy;bines the two courses above in&shy;to one week-long work&shy;shop. Start&shy;ing with the ba&shy;sics of Ruby and Rails, you'll learn the full Rails' MVC stack, test&shy;ing tech&shy;niques, Ajax and even web ser&shy;vices. We'll work through the full life-cycle of a Rails pro&shy;ject, giv&shy;ing you ex&shy;per&shy;i&shy;ence with all fa&shy;cets of a typ&shy;ic&shy;al app."
         objectives: "Course Ob&shy;ject&shy;ives:"
         prereqs: "This course is de&shy;signed for de&shy;velopers with some web de&shy;vel&shy;op&shy;ment ex&shy;per&shy;i&shy;ence who wish to learn Ruby on Rails."
-      bullets: 
+      bullets:
         install: "Con&shy;fig&shy;ure and in&shy;stall Ruby and Rails"
         basics: "Learn the ba&shy;sics of the Ruby lan&shy;guage"
         build: "Build a new Rails ap&shy;plic&shy;a&shy;tion from scratch"
@@ -99,10 +98,10 @@ teach:
         secure: "Se&shy;cure your RoR en&shy;vir&shy;on&shy;ments"
         size: "Un&shy;der&shy;stand how to size your RoR de&shy;ploy&shy;ments based on ex&shy;pec&shy;ted us&shy;age scen&shy;ari&shy;os"
         scale: "Per&shy;form&shy;ance-tune and scale your RoR ap&shy;plic&shy;a&shy;tions"
-  feedback: 
+  feedback:
     heading: "Feedback"
     paragraphs:
-      one: "“This in&shy;struct&shy;or knows her stuff, and is so gen&shy;er&shy;ous with shar&shy;ing her hard-earned know&shy;ledge, not just about Ruby on Rails but about pro&shy;gram&shy;ming and be&shy;ing part of the Open Source com&shy;munity in gen&shy;er&shy;al. Wheth&shy;er or not I end up us&shy;ing Rails in the fu&shy;ture (which is de&shy;pend&shy;ent upon my work en&shy;vir&shy;on&shy;ment, not on how I feel about Rails; I like it very much!), I will be a bet&shy;ter pro&shy;gram&shy;mer in gen&shy;er&shy;al thanks to the ex&shy;per&shy;i&shy;ence I had in this class. Paige - Reed Col&shy;lege" 
+      one: "“This in&shy;struct&shy;or knows her stuff, and is so gen&shy;er&shy;ous with shar&shy;ing her hard-earned know&shy;ledge, not just about Ruby on Rails but about pro&shy;gram&shy;ming and be&shy;ing part of the Open Source com&shy;munity in gen&shy;er&shy;al. Wheth&shy;er or not I end up us&shy;ing Rails in the fu&shy;ture (which is de&shy;pend&shy;ent upon my work en&shy;vir&shy;on&shy;ment, not on how I feel about Rails; I like it very much!), I will be a bet&shy;ter pro&shy;gram&shy;mer in gen&shy;er&shy;al thanks to the ex&shy;per&shy;i&shy;ence I had in this class. Paige - Reed Col&shy;lege"
       two: "“I loved the last day of the class, where we worked on pairs and had fun while learn&shy;ing and cod&shy;ing in Ruby. The in&shy;struct&shy;or was will&shy;ing to an&shy;swer many ques&shy;tions. She was ex&shy;tremely know&shy;ledge&shy;able on ruby gems, plu&shy;gins and de&shy;vel&shy;op&shy;ment tools. She was very help&shy;ful when we got stuck on something. I thought the class was ex&shy;cel&shy;lent.” Jose - Ore&shy;gon State Uni&shy;versity"
   opensource:
     heading: "Open Source Ruby/Rails"
@@ -118,4 +117,4 @@ partner:
   tagline: "We Partner"
   copy: "With our unique com&shy;bin&shy;a&shy;tion of tech&shy;nic&shy;al cap&shy;ab&shy;il&shy;ity and train&shy;ing skills, we can help your or&shy;gan&shy;iz&shy;a&shy;tion grow along side your app. As we build, we will bring your team up to speed to main&shy;tain and ex&shy;tend your app."
 pay:
-  tagline: "Make a Payment" 
+  tagline: "Make a Payment"

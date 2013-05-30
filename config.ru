@@ -7,9 +7,10 @@ Bundler.require
 
 require "./app/app"
 
-config = YAML.load(File.read("secrets.yml"))[:split_dashboard]
+SECRETS = YAML.load(File.read("secrets.yml"))
 Split::Dashboard.use Rack::Auth::Basic do |username, password|
-  username == config[:username] && password == config[:password]
+  username == SECRETS[:split_dashboard][:username]
+  password == SECRETS[:split_dashboard][:password]
 end
 
 run Rack::URLMap.new \
