@@ -1,3 +1,11 @@
+Before you can do anything, you now need to setup Redis (it is sortof like a database from the bizarro universe where Superman is evil and Lex Luther is a benevolent scientist)
+
+Type this:
+  'brew install redis'
+
+Then turn it on with this:
+  'redis-server /usr/local/etc/redis.conf'
+
 
 To run the application in a development environment, run the following command.
 
