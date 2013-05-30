@@ -12,6 +12,10 @@ require 'split'
 
 class NirdApp < Sinatra::Base
   helpers Sinatra::NirdHelpers
+
+  helpers Split::Helper
+  enable :sessions
+
   configure do
     set static: true
     set public_folder: 'public'
@@ -25,11 +29,6 @@ class NirdApp < Sinatra::Base
 
   before { load_yaml_into_hashie_variables }
 
-  # Split A/B Testing
-  enable :sessions
-  helpers Split::Helper
-
-  # Routing
   get '/styles.css' do
     content_type 'text/css', :charset => 'utf-8'
     sass :styles
