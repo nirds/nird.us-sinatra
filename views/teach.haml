@@ -1,6 +1,7 @@
 %section.teach
-  %div.simple-box
-    %p=@offerings.teach.intro
+  %div.copy
+    %div.panel
+      %p=@offerings.teach.intro
   %div.specialty
     %div.panel
       %h1=@offerings.teach.detail.remote.heading
@@ -21,8 +22,9 @@
         %li=bullet
       %p
         =@offerings.teach.detail.local.paragraphs.travel2 
-  %div.simple-box
-    %p=@offerings.teach.course_intro
+  %div.copy
+    %div.panel
+      %p=@offerings.teach.course_intro
   %div.specialty
     %div.panel
       %h1=@offerings.teach.courses.ruby.heading
@@ -51,6 +53,7 @@
       %div.button-footprint
         %a.button{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
           Learn More
+%section.teach
   %div.specialty
     %div.panel
       %h1=@offerings.teach.courses.bootcamp.heading
@@ -83,15 +86,14 @@
       %div.button-footprint
         %a.button{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
           Learn More
-  %div.specialty
+  %div.copy
     %div.panel
       %h1=@offerings.teach.feedback.heading
       %p
         =@offerings.teach.feedback.paragraphs.one
-    %div.panel
       %p
         =@offerings.teach.feedback.paragraphs.two
-  %div.specialty
+  %div.copy
     %div.panel
       %h1=@offerings.teach.opensource.heading
       %p
@@ -104,5 +106,3 @@
         =@offerings.teach.opensource.paragraphs.monk
       %p
         =@offerings.teach.opensource.paragraphs.koans
-      
-
