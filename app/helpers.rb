@@ -46,20 +46,30 @@ module Sinatra
                             currency:    'usd' )
     end
 
+    def soft_hyphenate(string)
+      hh = Text::Hyphen.new(:language => 'en_us', :left => 2, :right => 2)
+        string.split(" ").map{ |word| hh.visualize(word, "&shy;") }.join(" ")
+    end
+
     private
     def modify_strings(value)
-      if    value.class == Hash   then value.each_value { |v| modify_strings v }
-      elsif value.class == String then value.replace(soft_hyphenate value.to_s)
+      if value.class == Hash
+        value.each_value { |v| modify_strings v }
+      elsif value.class == String
+        value.replace(soft_hyphenate_or_clear_bracket value.to_s)
       end
     end
 
-    def soft_hyphenate(string)
+    def soft_hyphenate_or_clear_bracket(string)
       if first_word(string).match(/\[.*\]/)
-        string.split(" ")[1..-1].join(" ")
+        remove_front_bracket(string)
       else
-        hh = Text::Hyphen.new(:language => 'en_us', :left => 2, :right => 2)
-        string.split(" ").map{ |word| hh.visualize(word, "&shy;") }.join(" ")
+        soft_hyphenate(string)
       end
+    end
+
+    def remove_front_bracket(string)
+      string.split(" ")[1..-1].join(" ")
     end
 
     def first_word(string)
