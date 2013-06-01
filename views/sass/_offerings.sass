@@ -89,12 +89,20 @@
     +col(1, 1, 0, 0)
     @extend %clearfix
     margin-bottom: 1rem
+    a
+      padding     : 1rem
   .os-icon
     +col(6, 1, 0, 0)
     float         : left
+    img
+      width       : 100%
+      height      : auto
+    
   .os-copy
     +col(6, 5, 0, 0)
     float         : left
+    p, a
+      padding-left: 2rem
 
   @media (min-width: 768px)
     @include row($margin_t, $gutter_t)
