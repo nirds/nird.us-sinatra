@@ -4,7 +4,7 @@
   -@offerings.each_value do |offering|
     -if offering.homepage
       %div.offering{:id => offering.id}
-        %a.details{:href=>"#"}
+        %a.details{:href=>"/#{offering.id}"}
           %div.panel
           
             %h1= offering.tagline
