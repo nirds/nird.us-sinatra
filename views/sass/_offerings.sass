@@ -75,6 +75,27 @@
   .copy
     @include col(1, 1, $margin_p, $gutter_p)
     float         : left
+    .comrades
+      list-style-type: none
+      +col(1, 1, 0, 0)
+      @extend %clearfix
+    .comrade
+      margin: 0
+      text-align: center
+      @media (min-width: 810px)
+        padding:
+          left      : 1rem
+          right     : 1rem
+        float: left
+        border:
+          left      : solid 1px $light
+          right     : solid 1px $light
+      &:first-child
+        border:
+          left    : 0
+      &:last-child
+        border:
+          right   : 0
   .specialty
     @include col(1, 1, $margin_p, $gutter_p)
     margin        : 1rem
