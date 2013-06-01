@@ -50,6 +50,16 @@ $flare        : 1rem
   // W3C Markup, IE10 Release Preview */
   background-image: radial-gradient(circle closest-side at center $top, $lamp 0%, $shade $wid), url($image)
 
+%clearfix
+  zoom                    : 1
+  &:before, &:after
+    content               : "\0020"
+    display               : block
+    height                : 0
+    overflow              : hidden
+  &:after
+    clear                 : both
+
 %fade_in_out
   $time   : 0.1s
   -webkit-transition      : all $time ease-in-out
@@ -74,11 +84,10 @@ a img
 .panel
   position: relative
     margin:
-      top         : 1rem
-      bottom      : 4rem
-    padding:
-      top         : 2rem
-      bottom      : 4rem
+      top       : 1rem
+      bottom    : 4rem
+  h1, p, a
+    padding     : 1rem
 
   %extend %box
   @include buffer($flare)
@@ -92,10 +101,11 @@ a img
     position    : absolute
     content     : ''
     top         : 1rem
-    left        : 2rem
-    right       : 2rem
+    left        : 1rem
+    right       : 1rem
     height      : 4rem
     @include bottom_shade(rgba(white, 0.05), rgba(white, 0.001))
     @include round(1.0rem)
-      
+  margin:
+    top         : 5rem    
   @extend %fade_in_out 
