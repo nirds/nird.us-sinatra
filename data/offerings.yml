@@ -69,7 +69,7 @@ teach:
         size: "Un&shy;der&shy;stand how to size your RoR de&shy;ploy&shy;ments based on ex&shy;pec&shy;ted us&shy;age scen&shy;ari&shy;os"
         scale: "Per&shy;form&shy;ance-tune and scale your RoR ap&shy;plic&shy;a&shy;tions"
 partner:
-  id: "partner"
+  id: "[no-hyphen] partner"
   homepage: true
   tagline: "We Partner"
   copy: "With our unique com&shy;bin&shy;a&shy;tion of tech&shy;nic&shy;al cap&shy;ab&shy;il&shy;ity and train&shy;ing skills, we can help your or&shy;gan&shy;iz&shy;a&shy;tion grow along side your app. As we build, we will bring your team up to speed to main&shy;tain and ex&shy;tend your app."
