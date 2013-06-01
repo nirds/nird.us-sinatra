@@ -68,6 +68,9 @@
     text-align    : center
   p, li
     color         : $bright
+  a 
+    @extend %copy_font
+    @extend %one_font
 
   .copy
     @include col(1, 1, $margin_p, $gutter_p)
@@ -75,6 +78,17 @@
   .specialty
     @include col(1, 1, $margin_p, $gutter_p)
     float         : left
+  .display
+    +col(1, 1, 0, 0)
+    @extend %clearfix
+    margin-bottom: 1rem
+  .os-icon
+    +col(6, 1, 0, 0)
+    float         : left
+  .os-copy
+    +col(6, 5, 0, 0)
+    float         : left
+
 
   @media (min-width: 768px)
     @include row($margin_t, $gutter_t)
