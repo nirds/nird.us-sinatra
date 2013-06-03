@@ -13,14 +13,17 @@ To run the application in a development environment, run the following command.
 
 Starting the application requires a secrets.yml file in your base directory, which looks something like this:
 
-``` yaml
+1) Make This File:
+/nird.us-sinatra/secrets.yml
+
+2) Insert this in it:
 :split_dashboard:
   :username: "admin"
   :password: "dinosaurs sauce precinct fetch"
 :stripe:
   :publishable: "pk_KRWWNieKEVApVZJvRndJSzbluAXq9"
   :secret: "Sf5wDKFm2URuJ6oLzTJXBoj4aOQTelm0"
-```
+
 Note that those nasty keys are actual stripe test keys, that will be visible on the test section of NIRD's stripe account.
 
 This file is ignored by git, and needs to be setup for production environments.
