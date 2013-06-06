@@ -1,3 +1,17 @@
+$image_pad_1  : 1rem
+$image_pad_2  : 3rem
+$image_pad_3  : 4rem
+
+%container
+  position    : relative
+  width       : 200px
+  height      : 200px
+
+%logo
+  img
+    width       : 100%
+    height      : auto
+
 .offerings
   @include row($margin_p, $gutter_p)
 
@@ -98,10 +112,56 @@
     p, a
       padding-left: 2rem
 
+  .gallery
+  .friend
+    @include col(1, 1, 0, 0)
+    @extend %box
+    display       : block
+    float         : left
+    margin:
+      top         : 3rem
+
+    a
+      @extend %box
+      display     : block
+      width       : 200px
+      margin      : auto auto
+      &:hover
+        h3
+          @extend %fade_in_out
+          color   : $pink
+
+    .container
+      @extend %container
+      @extend %logo
+
+    h3
+      text:
+        align     : center
+      margin:
+        top       : 1rem
+        bottom    : 1rem
+        left      : 1rem
+        right     : 1rem
+      @extend %fade_in_out
+    p
+      text:
+        align     : center
+
+  .height_set
+    display       : inline-block
+    width         : 100%
+
+  @media (min-width: 480px)
+    .friend
+      @include col(2, 1, 0, 0)
+
   @media (min-width: 768px)
     @include row($margin_t, $gutter_t)
     .specialty
       @include col(2, 1, $margin_t, $gutter_t)
+    .friend
+      @include col(3, 1, 0, 0)
 
   @media (min-width: 900px)
     @include row($margin_t, $gutter_t)

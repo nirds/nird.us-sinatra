@@ -1,0 +1,25 @@
+marakana:
+  id: "marakana"
+  name: "Marakana"
+  image: "[image] /images/marakana_logo_sq.png"
+  link: "[no-hyphen] http://marakana.com/"
+brandworthy:
+  id: "brandworthy"
+  name: "Brandworthy"
+  image: "[image] /images/brandworthy_logo_sq.png"
+  link: "[no-hyphen] http://bebrandworthy.com/"
+uw:
+  id: "uw"
+  name: "University of Washington"
+  image: "[image] /images/uw_logo_sq.png"
+  link: "[no-hyphen] http://www.pce.uw.edu/certificates/ruby-programming.html"
+bluebox:
+  id: "bluebox"
+  name: "Blue Box Group"
+  image: "[image] /images/blue_box_logo.png"
+  link: "[no-hyphen] https://bluebox.net/"
+vigilanteweb:
+  id: "vigilanteweb"
+  name: "Vigilante Web"
+  image: "[image] /images/vigilanteweb_logo_sq.png"
+  link: "[no-hyphen] http://vigilanteweb.com/"
