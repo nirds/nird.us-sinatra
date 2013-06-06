@@ -1,16 +1,16 @@
-$image_pad_1  : 1rem
-$image_pad_2  : 3rem
-$image_pad_3  : 4rem
+$image_pad_1      : 1rem
+$image_pad_2      : 3rem
+$image_pad_3      : 4rem 
 
 %container
-  position    : relative
-  width       : 200px
-  height      : 200px
+  position        : relative
+  width           : 200px
+  height          : 200px
 
 %logo
   img
-    width       : 100%
-    height      : auto
+    width         : 100%
+    height        : auto
 
 .offerings
   @include row($margin_p, $gutter_p)
@@ -83,27 +83,7 @@ $image_pad_3  : 4rem
   .copy
     @include col(1, 1, $margin_p, $gutter_p)
     float         : left
-    .comrades
-      list-style-type: none
-      +col(1, 1, 0, 0)
-      @extend %clearfix
-    .comrade
-      margin: 0
-      text-align: center
-      @media (min-width: 810px)
-        padding:
-          left      : 1rem
-          right     : 1rem
-        float: left
-        border:
-          left      : solid 1px $light
-          right     : solid 1px $light
-      &:first-child
-        border:
-          left    : 0
-      &:last-child
-        border:
-          right   : 0
+
   .specialty
     @include col(1, 1, $margin_p, $gutter_p)
     margin        : 1rem
@@ -120,6 +100,7 @@ $image_pad_3  : 4rem
     margin-bottom: 1rem
     a
       padding     : 1rem
+ 
   .os-icon
     +col(6, 1, 0, 0)
     float         : left
@@ -131,9 +112,8 @@ $image_pad_3  : 4rem
     +col(6, 5, 0, 0)
     float         : left
     p, a
-      padding-left: 2rem
+      padding-left: 4rem
 
-  .gallery
   .friend
     @include col(1, 1, 0, 0)
     @extend %box
