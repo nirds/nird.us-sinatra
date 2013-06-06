@@ -3,3 +3,9 @@ jeremy:
   name: "[no-hyphen] Jeremy Hinegardner"
   image: "[image] /images/jeremy.png"
   link: "[no-hyphen] https://twitter.com/copiousfreetime"
+railsbridge:
+  id: "railsbridge"
+  name: "[no-hyphen] RailsBridge"
+  image: "[image] /images/railsbridge_sq.png"
+  link: "[no-hyphen] http://www.meetup.com/SeattleRailsBridge/"
+
