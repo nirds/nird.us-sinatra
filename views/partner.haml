@@ -7,30 +7,23 @@
       %p= soft_hyphenate("When you work with NIRD, you’re also connected to a great ecosystem of talented developers, cutting-edge designers, and tech companies throughout the industry. We draw on these resources every day, and if we think that someone else might be a better fit for what you need, we’ll connect you.")
   %div.copy
     %div.panel
-      %h1
-        Here are some of our partners:
-      %ul.comrades
-        %li.comrade
-          %a{:href=>"http://marakana.com/"}
-            Marakana
-        %li.comrade
-          %a{:href=>"http://bebrandworthy.com/"}
-            Brandworthy
-        %li.comrade
-          %a{:href=>"http://www.pce.uw.edu/certificates/ruby-programming.html"}
-            University of Washington
-        %li.comrade
-          %a{:href=>"https://bluebox.net/"}
-            Blue Box Group
-        %li.comrade
-          %a{:href=>"http://vigilanteweb.com/"}
-            VigilantWeb
-      %h1
-        Friends of NIRD
-      %ul.comrades
-        %li.comrade
-          %a{:href=>"https://twitter.com/copiousfreetime"}
-            Jeremy Hinegardner 
-        %li.comrade
-          %a{:href=>"http://www.meetup.com/SeattleRailsBridge/"}
-            RailsBridge 
+      %h1 Here are some of our partners:
+      %div.friends
+        -@partners.each_value do |friend|
+          %figure.friend
+            %a{:id => friend.id,:href=> "#{friend.link}"}
+              %div.container
+                %img(src="#{friend.image}")
+              %figcaption
+                %h3.name= friend.name
+        %div.height_set
+      %h1 Friends of NIRD
+      %div.friends
+        -@friends.each_value do |friend|
+          %figure.friend
+            %a{:id => friend.id,:href=> "#{friend.link}"}
+              %div.container
+                %img(src="#{friend.image}")
+              %figcaption
+                %h3.name= friend.name
+        %div.height_set
