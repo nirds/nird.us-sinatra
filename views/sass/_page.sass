@@ -16,7 +16,7 @@ $gutter_s     : 5%
 $margin_l     : 10%
 $gutter_l     : 5%
 
-$radius       : 1rem
+$radius       : 0.1rem
 $flare        : 1rem
 
 
@@ -83,11 +83,15 @@ a img
 
 .panel
   position: relative
-    margin:
-      top       : 1rem
-      bottom    : 4rem
+  margin:
+    top       : 1rem
+    bottom    : 4rem
   h1, p
-    padding     : 1rem
+    padding:
+      top       : 1rem
+      bottom    : 1rem
+      left      : 2rem
+      right     : 2rem
 
   %extend %box
   @include buffer($flare)
@@ -100,12 +104,12 @@ a img
   &:before
     position    : absolute
     content     : ''
-    top         : 1rem
-    left        : 1rem
-    right       : 1rem
+    top         : $radius
+    left        : $radius
+    right       : $radius
     height      : 4rem
     @include bottom_shade(rgba(white, 0.05), rgba(white, 0.001))
-    @include round(1.0rem)
+    @include round($radius)
   margin:
     top         : 5rem    
   @extend %fade_in_out 
