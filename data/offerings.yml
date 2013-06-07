@@ -18,7 +18,6 @@ teach:
       bullets:
         sf: "The Bay Area/Silicon Valley"
         nyc: "New York City"
-        atl: "Atlanta"
         berlin: "Berlin"
   courses: 
     ruby:
@@ -44,7 +43,7 @@ teach:
         options: "Un&shy;der&shy;stand the vari&shy;ous de&shy;ploy&shy;ment op&shy;tions for Rails ap&shy;plic&shy;a&shy;tions"
         hugs: "Un&shy;der&shy;stand Rails' op&shy;tions and how to em&shy;brace or over&shy;ride them"
     bootcamp:
-      bullets: 
+      bullets:
         install: "Con&shy;fig&shy;ure and in&shy;stall Ruby and Rails"
         basics: "Learn the ba&shy;sics of the Ruby lan&shy;guage"
         build: "Build a new Rails ap&shy;plic&shy;a&shy;tion from scratch"
@@ -74,4 +73,4 @@ partner:
   tagline: "We Partner"
   copy: "With our unique com&shy;bin&shy;a&shy;tion of tech&shy;nic&shy;al cap&shy;ab&shy;il&shy;ity and train&shy;ing skills, we can help your or&shy;gan&shy;iz&shy;a&shy;tion grow along side your app. As we build, we will bring your team up to speed to main&shy;tain and ex&shy;tend your app."
 pay:
-  tagline: "Make a Payment" 
+  tagline: "Make a Payment"

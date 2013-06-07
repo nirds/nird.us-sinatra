@@ -1,47 +1,50 @@
 %section.teach
   %div.copy
     %div.panel
-      %p
-        Why Ruby? Ruby is ver­sat­ile, easy to code in, and hon­es&shy;tly a lot of fun. It’s used by thou­sands of com­pan­ies and mil­lions of people every day. It’s also easy to learn, be­cause Ruby was writ­ten for hu­mans, not ma­chines. If you’ve nev­er touched code be­fore, Ruby is a great place to start. For ex­per­i­en&shy;ced pro­gram­mers, we prom­ise Ruby will rap­idly be­come your new fa­vor­ite pro­gram­ming lan­guage. Here at NIRD, we’re pas­sion­ate about Ruby and Ruby-on-Rails, and we can’t wait to share that ex­per­i­en&shy;ce with you.
+      %img{:rel=>"Ruby icon", :style => "width: 100px; margin: 1em 2em 0em 1em; float: left;", :src=>"/images/ruby_logo.png"}
+      %p= soft_hyphenate("Why Ruby? Ruby is ver­sat­ile, easy to code in, and hon­estly a lot of fun. It’s used by thou­sands of com­pan­ies and mil­lions of people every day. It’s also easy to learn, be­cause Ruby was writ­ten for hu­mans, not ma­chines. If you’ve nev­er touched code be­fore, Ruby is a great place to start. For ex­per­i­enced pro­gram­mers, we prom­ise Ruby will rap­idly be­come your new fa­vor­ite pro­gram­ming lan­guage. Here at NIRD, we’re pas­sion­ate about Ruby and Ruby-on-Rails, and we can’t wait to share that ex­per­i­ence with you.")
   %div.specialty
     %div.panel
+      %img{:rel=>"Laptop icon", :style => "width: 100px; margin: 0.5em 1em 0em 1em; float: left;", :src=>"/images/laptop_icon_r2.png"}
       %h1
         Remote Trainings
-      %p
-        We can host re&shy;mote train&shy;ing ses&shy;sions for your team, cov&shy;er&shy;ing a range of de&shy;vel&shy;op&shy;ment top&shy;ics. Pop&shy;u&shy;lar train&shy;ings in&shy;clude:
+      %p= soft_hyphenate("We can host remote training sessions for your team, covering a range of development topics. Popular trainings include:")
       %ul
       -@offerings.teach.detail.remote.bullets.each_value do |bullet|
         %li=bullet
-      %p
-        We look for&shy;ward to work&shy;ing with you to design a cus&shy;tom train&shy;ing pro&shy;gram to fit your or&shy;gan&shy;iz&shy;a&shy;tion's needs.
+      %p= soft_hyphenate("We look forward to working with you to design a custom training program to fit your organization's needs.")
+      %div.button-footprint
+        %a.button{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
+          Contact Us
   %div.specialty
     %div.panel
+      %img{:rel=>"Eiffel Tower icon", :style => "width: 100px; position: relative; top: -5em; float: right;", :src=>"/images/eiffel_tower.png"}
       %h1
         On-Site Trainings
-      %p
-        We are happy to travel to your work&shy;place to teach you, any&shy;where in the world. Some places our con&shy;sult&shy;ants have taught are:
+      %p= soft_hyphenate("We are happy to travel to your workplace to teach you, anywhere in the world. Some places our consultants have taught are:")
       %ul
       -@offerings.teach.detail.local.bullets.each_value do |bullet|
         %li=bullet
-      %p
-        Con&shy;tact us for more de&shy;tails about schedul&shy;ing an on-site train&shy;ing.
+      %p= soft_hyphenate("Contact us for more details about scheduling an on-site training.")
+      %div.button-footprint
+        %a.button{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
+          Contact Us
   %div.copy
     %div.panel
-      %p
-        The fol&shy;low&shy;ing courses are de&shy;signed to get you up and run&shy;ning on Ruby and Rails. All courses are offered both re&shy;motely and on-site. Av&shy;er&shy;age class sizes typ&shy;ic&shy;ally range from 10-20 people. We can also work with you to design a cus&shy;tom train&shy;ing course that best suits the needs of your or&shy;gan&shy;iz&shy;a&shy;tion.
+      %h1
+        NIRD Classes
+      %p= soft_hyphenate("The following courses are designed to get you up and running on Ruby and Rails. All courses are offered both remotely and on-site. Average class sizes typically range from 10-20 people. We can also work with you to design a custom training course that best suits the needs of your organization.")
   %div.specialty
     %div.panel
       %h1
         2 Day Ruby
+      %p= soft_hyphenate("Basic Intro to Ruby course designed for both novice programmers (or those not familiar with OOP) who want to start off on the right foot and experienced programmers interested in migrating from existing languages such as Java, PHP, Python, etc.")
       %p
-        Ba&shy;sic In&shy;tro to Ruby course de&shy;signed for both novice pro&shy;gram&shy;mers (or those not fa&shy;mil&shy;i&shy;ar with OOP) who want to start off on the right foot and ex&shy;per&shy;i&shy;enced pro&shy;gram&shy;mers in&shy;ter&shy;ested in mi&shy;grat&shy;ing from ex&shy;ist&shy;ing lan&shy;guages such as Java, PHP, Py&shy;thon, etc.
-      %p
-        Course Ob&shy;ject&shy;ives:
+        Course Objectives:
       %ul
       -@offerings.teach.courses.ruby.bullets.each_value do |bullet|
         %li=bullet
-      %p
-        The course as&shy;sumes you have ba&shy;sic ex&shy;per&shy;i&shy;ence in an&shy;oth&shy;er pro&shy;gram&shy;ming lan&shy;guage and are fa&shy;mil&shy;i&shy;ar with fun&shy;da&shy;ment&shy;al pro&shy;gram&shy;ming con&shy;cepts, such as con&shy;di&shy;tion&shy;als, loops, func&shy;tions/meth&shy;ods, etc. Note that this is a hands-on train&shy;ing course where you will be ex&shy;pec&shy;ted to de&shy;vel&shy;op ap&shy;plic&shy;a&shy;tions in Ruby.
+      %p= soft_hyphenate("The course assumes you have basic experience in another programming language and are familiar with fundamental programming concepts, such as conditionals, loops, functions/methods, etc. Note that this is a hands-on training course where you will be expected to develop applications in Ruby.")
       %div.button-footprint
         %a.button{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
           Learn More
@@ -49,10 +52,9 @@
     %div.panel
       %h1
         3 Day Rails
+      %p= soft_hyphenate("Ruby on Rails course designed for developers with some web development experience. Participants should be familiar with the general principles of object oriented programming (OOP).")
       %p
-        Ruby on Rails course de&shy;signed for de&shy;velopers with some web de&shy;vel&shy;op&shy;ment ex&shy;per&shy;i&shy;ence. Par&shy;ti&shy;cipants should be fa&shy;mil&shy;i&shy;ar with the gen&shy;er&shy;al prin&shy;ciples of ob&shy;ject ori&shy;ented pro&shy;gram&shy;ming (OOP).
-      %p
-        Course Ob&shy;ject&shy;ives:
+        Course Objectives:
       %ul
       -@offerings.teach.courses.rails.bullets.each_value do |bullet|
         %li=bullet
@@ -64,15 +66,13 @@
     %div.panel
       %h1
         5 Day Bootcamp
+      %p= soft_hyphenate("The 5 Day Ruby and Rails Bootcamp combines the two courses above into one week-long workshop. Starting with the basics of Ruby and Rails, you'll learn the full Rails' MVC stack, testing techniques, Ajax and even web services. We'll work through the full life-cycle of a Rails project, giving you experience with all facets of a typical app.")
       %p
-        The 5 Day Ruby and Rails Boot&shy;camp com&shy;bines the two courses above in&shy;to one week-long work&shy;shop. Start&shy;ing with the ba&shy;sics of Ruby and Rails, you'll learn the full Rails' MVC stack, test&shy;ing tech&shy;niques, Ajax and even web ser&shy;vices. We'll work through the full life-cycle of a Rails pro&shy;ject, giv&shy;ing you ex&shy;per&shy;i&shy;ence with all fa&shy;cets of a typ&shy;ic&shy;al app.
-      %p
-        Course Ob&shy;ject&shy;ives:
+        Course Objectives:
       %ul
       -@offerings.teach.courses.bootcamp.bullets.each_value do |bullet|
         %li=bullet
-      %p
-        This course is de&shy;signed for de&shy;velopers with some web de&shy;vel&shy;op&shy;ment ex&shy;per&shy;i&shy;ence who wish to learn Ruby on Rails.
+      %p= soft_hyphenate("This course is designed for developers with some web development experience who wish to learn Ruby on Rails.")
       %div.button-footprint
         %a.button{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
           Learn More
@@ -80,17 +80,14 @@
     %div.panel
       %h1
         2 Day Rails Administration
+      %p= soft_hyphenate("The 2 Day Ruby-on-Rails Administration course covers the ins-and-outs of managing Ruby-on-Rails applications in a production environment. Students will learn the pros and cons of various server configurations and how to build them out, how to deploy new versions of Rails applications with the push of a button, monitoring, performance tuning, security-proofing, and scaling Rails applications to meet real-world demands.")
+      %p= soft_hyphenate("The course is designed for web/application server administrators who need to be able to install, configure, run, secure, and tune Ruby-on-Rails application deployments. System architects and RoR developers can also benefit from this training.")
       %p
-        The 2 Day Ruby-on-Rails Ad&shy;min&shy;is&shy;tra&shy;tion course cov&shy;ers the ins-and-outs of man&shy;aging Ruby-on-Rails ap&shy;plic&shy;a&shy;tions in a pro&shy;duc&shy;tion en&shy;vir&shy;on&shy;ment. Stu&shy;dents will learn the pros and cons of vari&shy;ous serv&shy;er con&shy;fig&shy;ur&shy;a&shy;tions and how to build them out, how to de&shy;ploy new ver&shy;sions of Rails ap&shy;plic&shy;a&shy;tions with the push of a but&shy;ton, mon&shy;it&shy;or&shy;ing, per&shy;form&shy;ance tun&shy;ing, se&shy;cur&shy;ity-proof&shy;ing, and scal&shy;ing Rails ap&shy;plic&shy;a&shy;tions to meet real-world de&shy;mands.
-      %p
-        The course is de&shy;signed for web/ap&shy;plic&shy;a&shy;tion serv&shy;er ad&shy;min&shy;is&shy;trat&shy;ors who need to be able to in&shy;stall, con&shy;fig&shy;ure, run, se&shy;cure, and tune Ruby-on-Rails ap&shy;plic&shy;a&shy;tion de&shy;ploy&shy;ments. Sys&shy;tem ar&shy;chi&shy;tects and RoR de&shy;velopers can also be&shy;ne&shy;fit from this train&shy;ing.
-      %p
-        Course Ob&shy;ject&shy;ives:
+        Course Objectives:
       %ul
       -@offerings.teach.courses.admin.bullets.each_value do |bullet|
         %li=bullet
-      %p
-        To get the most out of this course, stu&shy;dents should be fa&shy;mil&shy;i&shy;ar with the ba&shy;sic prin&shy;ciples of web/ap&shy;plic&shy;a&shy;tion serv&shy;er ad&shy;min&shy;is&shy;tra&shy;tion.
+      %p= soft_hyphenate("To get the most out of this course, students should be familiar with the basic principles of web/application server administration.")
       %div.button-footprint
         %a.button{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
           Learn More
@@ -98,16 +95,13 @@
     %div.panel
       %h1
         Feedback
-      %p
-        “This in&shy;struct&shy;or knows her stuff, and is so gen&shy;er&shy;ous with shar&shy;ing her hard-earned know&shy;ledge, not just about Ruby on Rails but about pro&shy;gram&shy;ming and be&shy;ing part of the Open Source com&shy;munity in gen&shy;er&shy;al. Wheth&shy;er or not I end up us&shy;ing Rails in the fu&shy;ture (which is de&shy;pend&shy;ent upon my work en&shy;vir&shy;on&shy;ment, not on how I feel about Rails; I like it very much!), I will be a bet&shy;ter pro&shy;gram&shy;mer in gen&shy;er&shy;al thanks to the ex&shy;per&shy;i&shy;ence I had in this class." Paige - Reed Col&shy;lege
-      %p
-        I loved the last day of the class, where we worked on pairs and had fun while learn&shy;ing and cod&shy;ing in Ruby. The in&shy;struct&shy;or was will&shy;ing to an&shy;swer many ques&shy;tions. She was ex&shy;tremely know&shy;ledge&shy;able on ruby gems, plu&shy;gins and de&shy;vel&shy;op&shy;ment tools. She was very help&shy;ful when we got stuck on something. I thought the class was ex&shy;cel&shy;lent.” Jose - Ore&shy;gon State Uni&shy;versity
+      %p= soft_hyphenate("“This instructor knows her stuff, and is so generous with sharing her hard-earned knowledge, not just about Ruby on Rails but about programming and being part of the Open Source community in general. Whether or not I end up using Rails in the future (which is dependent upon my work environment, not on how I feel about Rails; I like it very much!), I will be a better programmer in general thanks to the experience I had in this class.” Paige - Reed College")
+      %p= soft_hyphenate("“I loved the last day of the class, where we worked on pairs and had fun while learning and coding in Ruby. The instructor was willing to answer many questions. She was extremely knowledgeable on ruby gems, plugins and development tools. She was very helpful when we got stuck on something. I thought the class was excellent.” Jose - Oregon State University")
   %div.copy
     %div.panel
       %h1
         Open Source Ruby/Rails
-      %p
-        If you’re new to Ruby, these are some great re&shy;sources to get you star&shy;ted:
+      %p{:style => "text-align: center; margin-bottom: 1em;"} If you’re new to Ruby, these are some great resources to get you started:
       %div.display  
         %div.os-icon
           %a.image{:href=>"http://tryruby.org/levels/1/challenges/0"}
@@ -115,8 +109,7 @@
         %div.os-copy
           %a{:href=>"http://tryruby.org/levels/1/challenges/0"}
             Try Ruby
-          %p
-            This is a great intro to Ruby. The tutorial runs in your web browser, no downloading required. If you've never used Ruby before, this is a great place to get a taste of Ruby.
+          %p= soft_hyphenate("This is a fun intro to Ruby. The tutorial runs in your web browser, no downloading required. If you've never used Ruby before, this is a great place to try it out.")
       %div.display
         %div.os-icon
           %a.image{:href=>"http://guides.rubyonrails.org/getting_started.html"}
@@ -124,8 +117,7 @@
         %div.os-copy
           %a{:href=>"http://guides.rubyonrails.org/getting_started.html"}
             Rails Guides
-          %p
-            This guide covers getting up and running with Ruby on Rails. It's designed for beginners who want to get started with a Rails application from scratch. It does not assume that you have any prior experience with Rails. 
+          %p= soft_hyphenate("This guide covers getting up and running with Ruby-on-Rails. It's designed for beginners who want to get started building a Rails application from scratch. It does not assume that you have any prior experience with Rails.")
       %div.display
         %div.os-icon
           %a{:href=>"http://rubymonk.com/"}
@@ -133,15 +125,12 @@
         %div.os-copy
           %a{:href=>"http://rubymonk.com/"}
             RubyMonk
-          %p
-            For hands-on learners, RubyMonk offers a great interactive course that lets you run the code in your web browser while offering plenty of small projects as "homework" examples so you can test your coding skills as you progress through the course. Highly recommended if you dislike video tutorials.
+          %p= soft_hyphenate("For hands-on learners, RubyMonk offers a great interactive course that lets you run the code in your web browser while offering plenty of small projects as “homework” examples so you can test your coding skills. Highly recommended if you dislike video tutorials.")
       %div.display
         %div.os-icon
           %a{:href=>"http://rubykoans.com/"}
-            %img{:rel=>"Ruby Koans icon", :src=>"/images/ruby_koans_logo.png"}
+            %img{:rel=>"Ruby Koans icon", :src=>"/images/ruby_koans_logo1.png"}
         %div.os-copy
           %a{:href=>"http://rubykoans.com/"}
             Ruby Koans
-          %p
-            The Ruby Koans are a bit more existential than RubyMonk, but the same principle applies: learn by doing. If you've always wanted to spend a few years on a mountaintop learning the secrets of the universe this might be a good place to start. We can't promise you'll reach enlightenment, but you code skills will improve rapidly if you keep at it consistently. 
-
+          %p= soft_hyphenate("The Ruby Koans are a bit more existential than RubyMonk, but the same principle applies: learn by doing. If you've always wanted to spend a few years on a mountaintop learning the secrets of the universe this might be a good place to start. We can't promise you'll reach enlightenment, but your coding skills will improve rapidly if you keep at it consistently.")

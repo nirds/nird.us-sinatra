@@ -1,31 +1,29 @@
 %section.partner
   %div.copy
     %div.panel
-      %p
-        Great work is the result of great relationships. It's a simple yet powerful concept that is the basis for everything we do at NIRD.
-      %p
-        Each project is an opportunity for new challenges, new solutions and, most importantly, building productive relationships with our clients.
-      %p
-        NIRD has the technical skills to help realize your ideas. We can take your project from a sketch on the back of a napkin to a fully developed product that’s ready to take on the world. Whether you need a full project team, a single developer, or a technical strategy to get you headed in the right direction, NIRD will be there every step of the way. We believe in the power of great ideas to change the world, and we’ll work with you to make that change a reality.
-      %p
-        When you work with NIRD, you’re also connected to a great ecosystem of talented developers, cutting-edge designers, and tech companies throughout the industry. We draw on these resources every day, and if we think that someone else might be a better fit for what you need, we’ll connect you. 
+      %p= soft_hyphenate("Great work is the result of great relationships. It's a simple yet powerful concept that is the basis for everything we do at NIRD.")
+      %p= soft_hyphenate("Each project is an opportunity for new challenges, new solutions and, most importantly, building productive relationships with our clients.")
+      %p= soft_hyphenate("NIRD has the technical skills to help realize your ideas. We can take your project from a sketch on the back of a napkin to a fully developed product that’s ready to take on the world. Whether you need a full project team, a single developer, or a technical strategy to get you headed in the right direction, NIRD will be there every step of the way. We believe in the power of great ideas to change the world, and we’ll work with you to make that change a reality.")
+      %p= soft_hyphenate("When you work with NIRD, you’re also connected to a great ecosystem of talented developers, cutting-edge designers, and tech companies throughout the industry. We draw on these resources every day, and if we think that someone else might be a better fit for what you need, we’ll connect you.")
   %div.copy
     %div.panel
-      %h1
-        Here are some of our partners:
-      %a{:href=>"http://marakana.com/"}
-        Marakana
-      %a{:href=>"http://bebrandworthy.com/"}
-        Brandworthy  
-      %a{:href=>"http://www.pce.uw.edu/certificates/ruby-programming.html"}
-        University of Washington | 
-      %a{:href=>"https://bluebox.net/"}
-        Blue Box Group 
-      %a{:href=>"http://vigilanteweb.com/"}
-        VigilanteWeb
-      %h1
-        Friends of NIRD
-      %a{:href=>"https://twitter.com/copiousfreetime"}
-        Jeremy Hinegardner 
-      %a{:href=>"http://www.meetup.com/SeattleRailsBridge/"}
-        RailsBridge 
+      %h1 Here are some of our partners:
+      %div.friends
+        -@partners.each_value do |friend|
+          %figure.friend
+            %a{:id => friend.id,:href=> "#{friend.link}"}
+              %div.container
+                %img(src="#{friend.image}")
+              %figcaption
+                %h3.name= friend.name
+        %div.height_set
+      %h1 Friends of NIRD
+      %div.friends
+        -@friends.each_value do |friend|
+          %figure.friend
+            %a{:id => friend.id,:href=> "#{friend.link}"}
+              %div.container
+                %img(src="#{friend.image}")
+              %figcaption
+                %h3.name= friend.name
+        %div.height_set

@@ -5,55 +5,75 @@ require 'yaml'
 require 'hashie'
 require 'stripe'
 require 'money'
-require_relative 'helpers'
-require_relative 'config'
 require 'text/hyphen'
+require_relative 'helpers'
 require 'pry'
+require 'split'
 
-before { load_yaml_into_hashie_variables }
+class NirdApp < Sinatra::Base
+  helpers Sinatra::NirdHelpers
 
-# Routing
-get '/styles.css' do
-  content_type 'text/css', :charset => 'utf-8'
-  sass :styles
-end
+  helpers Split::Helper
+  enable :sessions
 
-get '/:verb' do |verb|
-  verb_down = verb.downcase
-  pass unless @offerings.has_key?( verb_down )
-  @title = standardize_title( @offerings[verb_down].tagline )
-  haml verb_down.to_sym
-end
+  stripe_keys = YAML.load(File.read("secrets.yml"))[:stripe]
 
-get '/:person' do |person|
-  person_down = person.downcase
-  pass unless @people.has_key?( person_down )
-  @person = @people[person_down]
-  @title = @person.full_name
-  haml :person
-end
+  configure do
+    
+    set static: true
+    set public_folder: 'public'
+    set :views, sass: 'views/sass', haml: 'views', default: 'views'
 
-get '/' do
-  @title  = "NIRD"
-  haml :index
-end
+    set :publishable_key, stripe_keys[:publishable]
+    set :secret_key,      stripe_keys[:secret]
 
-post '/charge' do
-  money       = Money.parse params[:post][:cost]
-  amount      = ensure_minimum_cents    money.cents
-  customer    = extract_stripe_customer params
-  description = extract_description     params[:post]
-  charge      = create_charge(amount, customer, description)
+    Stripe.api_key = settings.secret_key
+  end
 
-  @confirmed_charge = Money.us_dollar charge.amount
-  @title            = "NIRD - Thank You"
-  haml :charge
-end
+  before { load_yaml_into_hashie_variables }
 
-error Stripe::CardError do
-  env['sinatra.error'].message
-end
+  get '/styles.css' do
+    content_type 'text/css', :charset => 'utf-8'
+    sass :styles
+  end
 
-get '/*' do
-  redirect to('/')
+  get '/:verb' do |verb|
+    verb_down = verb.downcase
+    pass unless @offerings.has_key?( verb_down )
+    @title = standardize_title( @offerings[verb_down].tagline )
+    haml verb_down.to_sym
+  end
+
+  get '/:person' do |person|
+    person_down = person.downcase
+    pass unless @people.has_key?( person_down )
+    @person = @people[person_down]
+    @title = @person.full_name
+    haml :person
+  end
+
+  get '/' do
+    @title  = "NIRD"
+    haml :index
+  end
+
+  post '/charge' do
+    money       = Money.parse params[:post][:cost]
+    amount      = ensure_minimum_cents    money.cents
+    customer    = extract_stripe_customer params
+    description = extract_description     params[:post]
+    charge      = create_charge(amount, customer, description)
+
+    @confirmed_charge = Money.us_dollar charge.amount
+    @title            = "NIRD - Thank You"
+    haml :charge
+  end
+
+  error Stripe::CardError do
+    env['sinatra.error'].message
+  end
+
+  get '/*' do
+    redirect to('/')
+  end
 end

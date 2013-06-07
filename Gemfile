@@ -15,6 +15,7 @@ gem 'stripe'
 gem "sinatra-reloader", "~> 1.0"
 gem 'text-hyphen'
 gem 'pry'
+gem 'split', '~> 0.6.1'
 
 group :test do
   gem 'rspec', '~> 2.11.0'
