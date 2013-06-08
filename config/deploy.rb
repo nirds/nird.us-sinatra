@@ -27,7 +27,7 @@ set :deploy_via, :remote_cache
 namespace :deploy do
 
   task :create_sym_links do
-    run "cd #{release_path}/config && ln -s /var/www/shared/secrets.yml secrets.yml"
+    run "cd #{release_path} && ln -s #{shared_path}/secrets.yml secrets.yml"
   end
 
   task :start do ; end
