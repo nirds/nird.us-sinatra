@@ -22,8 +22,14 @@ role :app, domain
 role :db,  domain, :primary => true
  
 set :deploy_via, :remote_cache
+
  
 namespace :deploy do
+
+  task :create_sym_links do
+    run "cd #{release_path}/config && ln -s /var/www/shared/secrets.yml secrets.yml"
+  end
+
   task :start do ; end
   task :stop do ; end
   # Assumes you are using Passenger
@@ -49,3 +55,5 @@ namespace :deploy do
     end
   end
 end
+
+after "deploy:update_code",  "deploy:create_sym_links"
