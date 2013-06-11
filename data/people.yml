@@ -36,19 +36,6 @@ strand:
     paragraph_3: "When he’s not coding, Strand likes to ride his bike, write, and consume fancy beers and cheeses."
     paragraph_4: "Specialties: Ruby on Rails development, troubleshooting, writing, simplifying"
     paragraph_5: ""
-chris:
-  id: "chris"
-  full_name: "Chris Spring"
-  first_name: "Chris"
-  second_name: "Spring"
-  image: "[image] /images/chris_headshot.png"
-  twitter: "autonomous"
-  description:
-    paragraph_1: " "
-    paragraph_2: " "
-    paragraph_3: " "
-    paragraph_4: " "
-    paragraph_5: ""
 adam:
   id: "adam"
   full_name: "Adam Hendricksen"
