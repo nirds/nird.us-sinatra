@@ -9,6 +9,7 @@ require 'text/hyphen'
 require_relative 'helpers'
 require 'pry'
 require 'split'
+require 'mail'
 
 class NirdApp < Sinatra::Base
   helpers Sinatra::NirdHelpers
@@ -17,9 +18,10 @@ class NirdApp < Sinatra::Base
   enable :sessions
 
   stripe_keys = YAML.load(File.read("secrets.yml"))[:stripe]
+  mandrill_keys = YAML.load(File.read("secrets.yml"))[:mandrill]
 
   configure do
-    
+
     set static: true
     set public_folder: 'public'
     set :views, sass: 'views/sass', haml: 'views', default: 'views'
@@ -29,6 +31,16 @@ class NirdApp < Sinatra::Base
 
     Stripe.api_key = settings.secret_key
   end
+
+  Mail.defaults do
+  delivery_method :smtp, {
+    :port      => 587,
+    :address   => "smtp.mandrillapp.com",
+    :user_name => mandrill_keys[:user_name],
+    :password  => mandrill_keys[:password]
+    }
+  end
+
 
   before { load_yaml_into_hashie_variables }
 
@@ -68,6 +80,17 @@ class NirdApp < Sinatra::Base
     @title            = "NIRD - Thank You"
     haml :charge
   end
+
+  get '/contact' do
+    haml :contact
+  end
+
+  post '/contact' do
+    body = mail_body(params[:post])
+    contact_mailer(body)
+    haml :contact_recieved
+  end
+
 
   error Stripe::CardError do
     env['sinatra.error'].message

@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'mail'
 
 module Sinatra
   module NirdHelpers
@@ -49,6 +50,28 @@ module Sinatra
     def soft_hyphenate(string)
       hh = Text::Hyphen.new(:language => 'en_us', :left => 2, :right => 2)
         string.split(" ").map{ |word| hh.visualize(word, "&shy;") }.join(" ")
+    end
+
+    def mail_body(post_data)
+      name = post_data[:name]
+      email = post_data[:email]
+      organization = post_data[:organization]
+      phone = post_data[:phone]
+      message = post_data[:message]
+      "Contact Name: #{name}
+      Organization: #{organization}
+      Message: #{message}
+      E-mail: #{email}
+      Phone: #{phone}"
+    end
+
+    def contact_mailer(body)
+      mail = Mail.deliver do
+        to "info@nird.us"
+        from "info@nird.us"
+        subject "NIRD Inquiry"
+        body "#{body}"
+      end
     end
 
     private
