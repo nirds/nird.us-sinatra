@@ -1,0 +1,43 @@
+%section.contact_method
+  %form.contact_form{:action => "/contact", :method => "post"}
+    %div.panel
+      %h1 Contact us
+
+      %div.contact_field
+        %label.contact.name{:name => 'post[name]'}
+          Name:
+        %div.input
+          %input.contact.name{:name => 'post[name]', :type => 'text'}
+
+      %div.contact_field
+        %label.contact.organization{:name => 'post[organization]'}
+          Organization:
+        %div.input
+          %input.contact.organization{:name => 'post[organization]', :type => 'text'}
+
+      %div.contact_field
+        %label.contact.email{:name => 'post[email]'}
+          Email:
+        %div.input
+          %input.contact.email{:name => 'post[email]', :type => 'text'}
+
+      %div.contact_field
+        %label.contact.phone{:name => 'post[phone]'}
+          Phone:
+        %div.input
+          %input.contact.phone{:name => 'post[phone]', :type => 'text'}
+
+      %div.contact_field
+        %label.contact.message{:name => 'post[message]'}
+          Send us a message:
+        %div.input
+          %textarea.contact.message{:name => 'post[message]', :type => 'text-area'}
+
+      %div.contact_field
+        %input{:type => "submit", :value => "Send", :class => "button"}
+
+
+      %p
+        %strong
+          Thanks!
+    %div.height_set
