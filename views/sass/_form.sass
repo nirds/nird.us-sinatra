@@ -14,7 +14,7 @@
       top         : 1rem
       left        : 1rem
       right       : 1rem
-      
+
     .input
       position    : absolute
       bottom      : 1rem
@@ -49,7 +49,7 @@
   @media (min-width: 480px)
     .pay_field
       +col(2, 1, 0, 0)
-  
+
   @media (min-width: 768px)
     @include row($margin_t, $gutter_t)
     .stripe_form
@@ -63,7 +63,7 @@
       @include col(1, 1, $margin_s, $gutter_s)
     .pay_field
       +col(3, 1, 0, 0)
-  
+
   @media (min-width: 1920px)
     @include row($margin_l, $gutter_l)
     .stripe_form
@@ -85,6 +85,79 @@
 
     @media (min-width: 1024px)
       +col(1, 1, $margin_s, $gutter_s)
-    
+
     @media (min-width: 1920px)
       +col(1, 1, $margin_l, $gutter_l)
+
+.contact_method
+  @include row($margin_p, $gutter_p)
+  .contact_form
+    @include col(1, 1, $margin_p, $gutter_p)
+  .contact_field
+    +col(1, 1, 0, 0)
+    @extend %box
+    height        : 7.5rem
+    float         : left
+    position      : relative
+    label
+      @extend h3
+      position    : absolute
+      top         : 1rem
+      left        : 1rem
+      right       : 1rem
+
+    .input
+      position    : absolute
+      bottom      : 1rem
+      left        : 1rem
+      right       : 1rem
+      input
+        width     : 100%
+  .contact
+    float         : right
+    .contact-button-el
+      position    : absolute
+      bottom      : 0rem
+      right       : 1rem
+
+
+  %form_text
+    display       : block
+    text:
+      align       : center
+    width         : 100%
+
+  h1
+    @extend %form_text
+    margin        : 1rem
+
+  p
+    @extend %form_text
+    margin-bottom : 1rem
+    padding:
+      top         : 2rem
+
+  @media (min-width: 480px)
+    .contact_field
+      +col(2, 1, 0, 0)
+
+  @media (min-width: 768px)
+    @include row($margin_t, $gutter_t)
+    .contact_form
+      @include col(1, 1, $margin_t, $gutter_t)
+    .contact_field
+      +col(3, 1, 0, 0)
+
+  @media (min-width: 1024px)
+    @include row($margin_s, $gutter_s)
+    .contact_form
+      @include col(1, 1, $margin_s, $gutter_s)
+    .contact_field
+      +col(3, 1, 0, 0)
+
+  @media (min-width: 1920px)
+    @include row($margin_l, $gutter_l)
+    .contact_form
+      @include col(1, 1, $margin_l, $gutter_l)
+    .contact_field
+      +col(3, 1, 0, 0)
