@@ -1,8 +1,8 @@
-.pay_method
+.contact_method
   @include row($margin_p, $gutter_p)
-  .stripe_form
+  .form
     @include col(1, 1, $margin_p, $gutter_p)
-  .pay_field
+  .field
     +col(1, 1, 0, 0)
     @extend %box
     height        : 7.5rem
@@ -22,12 +22,14 @@
       right       : 1rem
       input
         width     : 100%
-  .stripe
-    float         : right
-    .stripe-button-el
+
+    .textarea
       position    : absolute
-      bottom      : 0rem
+      bottom      : 1rem
+      left        : 1rem
       right       : 1rem
+      input
+        width     : 100%
 
 
   %form_text
@@ -46,45 +48,32 @@
     padding:
       top         : 2rem
 
+
   @media (min-width: 480px)
-    .pay_field
+    .field
       +col(2, 1, 0, 0)
 
   @media (min-width: 768px)
     @include row($margin_t, $gutter_t)
-    .stripe_form
+    .form
       @include col(1, 1, $margin_t, $gutter_t)
-    .pay_field
-      +col(3, 1, 0, 0)
+    .field
+      +col(4, 1, 0, 0)
 
   @media (min-width: 1024px)
     @include row($margin_s, $gutter_s)
-    .stripe_form
+    .form
       @include col(1, 1, $margin_s, $gutter_s)
-    .pay_field
-      +col(3, 1, 0, 0)
+    .field
+      +col(4, 1, 0, 0)
 
   @media (min-width: 1920px)
     @include row($margin_l, $gutter_l)
-    .stripe_form
+    .form
       @include col(1, 1, $margin_l, $gutter_l)
-    .pay_field
-      +col(3, 1, 0, 0)
+    .field
+      +col(4, 1, 0, 0)
 
-.payment_received
-  @extend .pay_method
-  h2
-    display       : block
-    +col(1, 1, $margin_p, $gutter_p)
-    text:
-      align       : center
-    padding:
-      top         : 5rem
-    @media (min-width: 768px)
-      +col(1, 1, $margin_t, $gutter_t)
-
-    @media (min-width: 1024px)
-      +col(1, 1, $margin_s, $gutter_s)
-
-    @media (min-width: 1920px)
-      +col(1, 1, $margin_l, $gutter_l)
+.contact_clearfix
+  height: 1px
+  clear: both
