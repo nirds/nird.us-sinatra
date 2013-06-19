@@ -86,3 +86,16 @@ chris:
     paragraph_3: "Specialties: Ruby, Rails, database design, scaling strategies"
     paragraph_4: " "
     paragraph_5: ""
+lauren:
+  id: "[no-hyphen] lauren"
+  full_name: "Lauren Hughs"
+  first_name: "Lauren"
+  second_name: "Hughs"
+  image: "[image] /images/lauren_headshot_sq_bw.png"
+  twitter: "LeEastridge"
+  description:
+    paragraph_1: "After a successful career as a chemical research engineer at the University of Washington (too successful--they wouldn’t let her learn anything new), Lauren escaped from the labs in search of new adventures. Fortunately for us, she thought Ruby on Rails looked like a fun challenge. Lauren is a graduate of CodeFellows and has worked as a freelance Ruby on Rails consultant. In addition to web development, she has a strong background in measurement science and multivariate data analysis."
+    paragraph_2: "Lauren’s hobbies include hiking, biking, and applying the scientific method in situations where it may not be entirely appropriate."
+    paragraph_3: "Specialties: Ruby on Rails development, data analysis"
+    paragraph_4: " "
+    paragraph_5: ""

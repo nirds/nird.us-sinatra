@@ -12,6 +12,7 @@
 					%h1=@person.full_name
 					-@person.description.each_value do |paragraphs|
 						%p=paragraphs
+				-if @person.twitter && @person.twitter.length > 0
 					%a.twitter.bottom(href="https://twitter.com/#{@person.twitter}")
 						Twitter: @#{@person.twitter}
 			%div.height_set
