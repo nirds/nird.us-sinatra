@@ -68,7 +68,7 @@ module Sinatra
 
     def contact_mailer(body)
       mail = Mail.deliver do
-        to "lauren@nird.us"
+        to "info@nird.us"
         from "info@nird.us"
         subject "NIRD Inquiry"
         body "#{body}"
