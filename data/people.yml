@@ -36,6 +36,19 @@ strand:
     paragraph_3: "When he’s not coding, Strand likes to ride his bike, write, and consume fancy beers and cheeses."
     paragraph_4: "Specialties: Ruby on Rails development, troubleshooting, writing, simplifying"
     paragraph_5: ""
+chris:
+  id: "chris"
+  full_name: "Chris Spring"
+  first_name: "Chris"
+  second_name: "Spring"
+  image: "[image] /images/chris_headshot.png"
+  twitter: "autonomous"
+  description:
+    paragraph_1: "Chris Spring brings years of experience and a razor-sharp wit to the challenge of building products that are blazing fast and easily scalable. Before joining NIRD, Chris was a lead developer at Mad Mimi. He is a founder and organizer of his local Coffee&Code, a weekly meet-up for developers, and organizes RubyOnBeer, a monthly gathering of Ruby developers. Chris also regularly speaks at tech conferences."
+    paragraph_2: "Chris spends his free time organizing Ruby meet-ups, teaching yoga, and playing terrible chess."
+    paragraph_3: "Specialties: Ruby, Rails, database design, scaling strategies"
+    paragraph_4: " "
+    paragraph_5: ""
 adam:
   id: "adam"
   full_name: "Adam Hendricksen"
