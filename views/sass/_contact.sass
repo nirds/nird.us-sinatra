@@ -5,7 +5,7 @@
   .contact_field
     +col(1, 1, 0, 0)
     @extend %box
-    height        : 9rem
+    height        : 7.5rem
     float         : left
     position      : relative
     label
@@ -73,3 +73,7 @@
       @include col(1, 1, $margin_l, $gutter_l)
     .contact_field
       +col(4, 1, 0, 0)
+
+.contact_clearfix
+  height: 1px
+  clear: both

@@ -2,7 +2,6 @@
   %form.contact_form{:action => "/contact", :method => "post"}
     %div.panel
       %h1 Contact us
-      %p Nird info:
 
       %div.contact_field
         %label.contact.name{:name => 'post[name]'}
@@ -37,5 +36,6 @@
       %div.contact_field
         %input{:type => "submit", :value => "Send", :class => "button"}
       %p
+      %div.contact_clearfix
 
     %div.height_set
