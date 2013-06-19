@@ -3,7 +3,7 @@
   .form
     @include col(1, 1, $margin_p, $gutter_p)
   .field
-    +col(1, 1, 0, 0)
+    +col(2, 1, 0, 0)
     @extend %box
     height        : 7.5rem
     float         : left
@@ -22,14 +22,9 @@
       right       : 1rem
       input
         width     : 100%
-
-    .textarea
-      position    : absolute
-      bottom      : 1rem
-      left        : 1rem
-      right       : 1rem
-      input
+      textarea
         width     : 100%
+
 
 
   %form_text
@@ -39,17 +34,14 @@
     width         : 100%
 
   .error
-    @extend %box
+    +col(2, 1, 0, 0)
+    @extend h3
     height        : 7.5rem
     float         : right
     position      : relative
-
-  %error_text
-    @extend h3
-    position    : absolute
-      bottom      : 1rem
-      left        : 1rem
-      right       : 1rem
+    top           : 4.5rem
+    left          : 1rem
+    right         : 1rem
 
   h1
     @extend %form_text
@@ -86,6 +78,10 @@
       @include col(1, 1, $margin_l, $gutter_l)
     .field
       +col(2, 1, 0, 0)
+
+.textarea_clearfix
+  height: 10rem
+  clear: both
 
 .contact_clearfix
   height: 1px

@@ -13,10 +13,7 @@
       %div.error
         -if form.failed?
           -if form.failed_on?(:name)
-            %h3
-              Please fill in your name.
-        -else
-          %div.error_text
+            Please fill in your name.
 
       %div.field
         %label{:name => :organization}
@@ -24,7 +21,7 @@
         %div.input
           %input{:name => :organization, :type => 'text'}
 
-      %div.field
+      %div.error
 
       %div.field
         %label{:name => :email}
@@ -32,14 +29,10 @@
         %div.input
           %input{:name => :email, :type => 'text'}
 
-      %div.field
+      %div.error
         -if form.failed?
           -if form.failed_on?(:email)
-            %h3
-              Please fill in your email address.
-        -else
-          %div.error_text
-
+            Please fill in your email address.
 
       %div.field
         %label{:name => :phone}
@@ -47,7 +40,8 @@
         %div.input
           %input{:name => :phone, :type => 'text'}
 
-      %div.field
+      %div.error
+      %div.contact_clearfix
 
       %div.field
         %label{:name => :message}
@@ -55,13 +49,12 @@
         %div.input
           %textarea{:name => :message, :type => 'text-area'}
 
-      %div.field
+      %div.error
         -if form.failed?
           -if form.failed_on?(:email)
-            %h3
-              Please include a short message.
-        -else
-          %div.error_text
+            Please include a short message.
+
+      %div.textarea_clearfix
 
       %div.field
         %input{:type => "submit", :value => "Send", :class => "button"}

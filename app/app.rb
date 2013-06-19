@@ -95,10 +95,8 @@ class NirdApp < Sinatra::Base
     end
 
     if form.failed?
-      puts "OOPS"
       haml :contact
     else
-      puts "YESSS"
       body = mail_body(params)
       contact_mailer(body)
       haml :contact_recieved
