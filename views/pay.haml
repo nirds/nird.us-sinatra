@@ -34,10 +34,10 @@
 
       %div.pay_field.stripe
         %script.stripe-button{:src => "https://checkout.stripe.com/v2/checkout.js", :'data-key' => "#{settings.publishable_key}"}
-  
+
       %p
         %strong
-          %a{:href=>"mailto:payments@nird.us?Subject=Payment%20Inquiry"}
+          %a{:href=>"/contact"}
             Contact Us
         if you have any questions.
     %div.height_set
