@@ -1,41 +1,63 @@
 %section.contact_method
-  %form.contact_form{:action => "/contact", :method => "post"}
+  %form{:action => "/contact", :method => "post"}
     %div.panel
       %h1 Contact us
+      %p Nird Contact Info
 
-      %div.contact_field
-        %label.contact.name{:name => 'post[name]'}
-          Name:
+      -if form.failed?
+        -if form.failed_on?(:name)
+          %p Please fill in your name.
+        -if form.failed_on?(:email)
+          %p Please fill in your email address.
+        -if form.failed_on?(:message)
+          %p Please include a short message.
+
+      %div.field
+        %label{:name => :name}
+          * Name:
         %div.input
-          %input.contact.name{:name => 'post[name]', :type => 'text'}
+          %input{:name => :name, :type => 'text'}
 
-      %div.contact_field
-        %label.contact.organization{:name => 'post[organization]'}
+      %div.field
+        %label{:name => :organization}
           Organization:
         %div.input
-          %input.contact.organization{:name => 'post[organization]', :type => 'text'}
+          %input{:name => :organization, :type => 'text'}
 
-      %div.contact_field
-        %label.contact.email{:name => 'post[email]'}
-          Email:
+      %div.field
+        %label{:name => :email}
+          * Email:
         %div.input
-          %input.contact.email{:name => 'post[email]', :type => 'text'}
+          %input{:name => :email, :type => 'text'}
 
-      %div.contact_field
-        %label.contact.phone{:name => 'post[phone]'}
+      %div.field
+        %label{:name => :phone}
           Phone:
         %div.input
-          %input.contact.phone{:name => 'post[phone]', :type => 'text'}
+          %input{:name => :phone, :type => 'text'}
 
+<<<<<<< HEAD
       %div.contact_field
         %label.contact.message{:name => 'post[message]'}
           Send us a message:
         %div.textarea
           %textarea.contact.message{:name => 'post[message]', :type => 'text'}
+=======
+      %div.field
+        %label{:name => :message}
+          * Send us a message:
+        %div.input
+          %textarea{:name => :message, :type => 'text-area'}
+>>>>>>> form-validations
 
-      %div.contact_field
+      %div.field
         %input{:type => "submit", :value => "Send", :class => "button"}
+<<<<<<< HEAD
       %p
       %div.contact_clearfix
 
+=======
+
+      %div.contact_clearfix
+>>>>>>> form-validations
     %div.height_set

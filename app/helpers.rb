@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'mail'
+require 'sinatra/formkeeper'
 
 module Sinatra
   module NirdHelpers
@@ -52,12 +53,12 @@ module Sinatra
         string.split(" ").map{ |word| hh.visualize(word, "&shy;") }.join(" ")
     end
 
-    def mail_body(post_data)
-      name = post_data[:name]
-      email = post_data[:email]
-      organization = post_data[:organization]
-      phone = post_data[:phone]
-      message = post_data[:message]
+    def mail_body(params)
+      name = params["name"]
+      email = params["email"]
+      organization = params["organization"]
+      phone = params["phone"]
+      message = params["message"]
       "Contact Name: #{name}
       Organization: #{organization}
       Message: #{message}

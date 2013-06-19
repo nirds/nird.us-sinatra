@@ -1,8 +1,8 @@
 .contact_method
   @include row($margin_p, $gutter_p)
-  .contact_form
+  .form
     @include col(1, 1, $margin_p, $gutter_p)
-  .contact_field
+  .field
     +col(1, 1, 0, 0)
     @extend %box
     height        : 7.5rem
@@ -50,28 +50,28 @@
 
 
   @media (min-width: 480px)
-    .contact_field
+    .field
       +col(2, 1, 0, 0)
 
   @media (min-width: 768px)
     @include row($margin_t, $gutter_t)
-    .contact_form
+    .form
       @include col(1, 1, $margin_t, $gutter_t)
-    .contact_field
+    .field
       +col(4, 1, 0, 0)
 
   @media (min-width: 1024px)
     @include row($margin_s, $gutter_s)
-    .contact_form
+    .form
       @include col(1, 1, $margin_s, $gutter_s)
-    .contact_field
+    .field
       +col(4, 1, 0, 0)
 
   @media (min-width: 1920px)
     @include row($margin_l, $gutter_l)
-    .contact_form
+    .form
       @include col(1, 1, $margin_l, $gutter_l)
-    .contact_field
+    .field
       +col(4, 1, 0, 0)
 
 .contact_clearfix

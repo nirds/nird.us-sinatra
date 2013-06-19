@@ -10,8 +10,10 @@ require_relative 'helpers'
 require 'pry'
 require 'split'
 require 'mail'
+require 'sinatra/formkeeper'
 
 class NirdApp < Sinatra::Base
+  register Sinatra::FormKeeper
   helpers Sinatra::NirdHelpers
 
   helpers Split::Helper
@@ -86,9 +88,21 @@ class NirdApp < Sinatra::Base
   end
 
   post '/contact' do
-    body = mail_body(params[:post])
-    contact_mailer(body)
-    haml :contact_recieved
+    form do
+      field :name, :present => true
+      field :email, :present => true
+      field :message, :present => true, :length => 5..250
+    end
+
+    if form.failed?
+      puts "OOPS"
+      haml :contact
+    else
+      puts "YESSS"
+      body = mail_body(params)
+      contact_mailer(body)
+      haml :contact_recieved
+    end
   end
 
 
