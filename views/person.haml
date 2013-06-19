@@ -5,8 +5,9 @@
 				%div.image
 					%div.container
 						%img(src="#{@person.image}")
-					%a.twitter.top(href="https://twitter.com/#{@person.twitter}")
-						Twitter: @#{@person.twitter}
+					-if @person.twitter && @person.twitter.length > 0
+						%a.twitter.top(href="https://twitter.com/#{@person.twitter}")
+							Twitter: @#{@person.twitter}
 				%div.text
 					%h1=@person.full_name
 					-@person.description.each_value do |paragraphs|

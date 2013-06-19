@@ -36,17 +36,17 @@ strand:
     paragraph_3: "When he’s not coding, Strand likes to ride his bike, write, and consume fancy beers and cheeses."
     paragraph_4: "Specialties: Ruby on Rails development, troubleshooting, writing, simplifying"
     paragraph_5: ""
-chris:
-  id: "chris"
-  full_name: "Chris Spring"
-  first_name: "Chris"
-  second_name: "Spring"
-  image: "[image] /images/chris_headshot.png"
-  twitter: "autonomous"
+mel:
+  id: "mel"
+  full_name: "Mel Quark"
+  first_name: "Mel"
+  second_name: "Quark"
+  image: "[image] /images/mel_headshot_sq_bw.png"
+  twitter:
   description:
-    paragraph_1: "Chris Spring brings years of experience and a razor-sharp wit to the challenge of building products that are blazing fast and easily scalable. Before joining NIRD, Chris was a lead developer at Mad Mimi. He is a founder and organizer of his local Coffee&Code, a weekly meet-up for developers, and organizes RubyOnBeer, a monthly gathering of Ruby developers. Chris also regularly speaks at tech conferences."
-    paragraph_2: "Chris spends his free time organizing Ruby meet-ups, teaching yoga, and playing terrible chess."
-    paragraph_3: "Specialties: Ruby, Rails, database design, scaling strategies"
+    paragraph_1: "Mel began her career working on driver development at NVIDIA. Since escaping the Texas heat for rainy Seattle, she has expanded her skill set to include technical writing, UX design, project management, and web development using Ruby on Rails, Linux, and JavaScript. Mel has a knack for UI design, and a talent for mentoring new developers."
+    paragraph_2: "Mel spends her free time confronting her fear of fire and broken glass by taking flameworking classes; practicing yoga; jogging; and trying new hobbies (currently: drawing)."
+    paragraph_3: "Specialties: Ruby on Rails development, UI/UX design"
     paragraph_4: " "
     paragraph_5: ""
 adam:
@@ -73,3 +73,16 @@ betsy:
     paragraph_2: "Betsy brings exceptional communication and organizational skills honed working on political campaigns to the task of project management. Her focus is on making sure that everyone on the team has what they need to build amazing products. Betsy is fascinated by design problems, and enjoys developing clean, elegant designs that result in effortless user experiences. Less is more, and life is better in Sans serif."
     paragraph_3: "In her spare time, Betsy enjoys political volunteering, studying foreign languages, and taking tango lessons."
     paragraph_4: "Specialties: Project management, front-end design, UI design"
+chris:
+  id: "chris"
+  full_name: "Chris Spring"
+  first_name: "Chris"
+  second_name: "Spring"
+  image: "[image] /images/chris_headshot.png"
+  twitter: "autonomous"
+  description:
+    paragraph_1: "Chris Spring brings years of experience and a razor-sharp wit to the challenge of building products that are blazing fast and easily scalable. Before joining NIRD, Chris was a lead developer at Mad Mimi. He is a founder and organizer of his local Coffee&Code, a weekly meet-up for developers, and organizes RubyOnBeer, a monthly gathering of Ruby developers. Chris also regularly speaks at tech conferences."
+    paragraph_2: "Chris spends his free time organizing Ruby meet-ups, teaching yoga, and playing terrible chess."
+    paragraph_3: "Specialties: Ruby, Rails, database design, scaling strategies"
+    paragraph_4: " "
+    paragraph_5: ""
