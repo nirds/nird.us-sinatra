@@ -38,6 +38,19 @@
       align       : center
     width         : 100%
 
+  .error
+    @extend %box
+    height        : 7.5rem
+    float         : right
+    position      : relative
+
+  %error_text
+    @extend h3
+    position    : absolute
+      bottom      : 1rem
+      left        : 1rem
+      right       : 1rem
+
   h1
     @extend %form_text
     margin        : 1rem
@@ -58,21 +71,21 @@
     .form
       @include col(1, 1, $margin_t, $gutter_t)
     .field
-      +col(4, 1, 0, 0)
+      +col(2, 1, 0, 0)
 
   @media (min-width: 1024px)
     @include row($margin_s, $gutter_s)
     .form
       @include col(1, 1, $margin_s, $gutter_s)
     .field
-      +col(4, 1, 0, 0)
+      +col(2, 1, 0, 0)
 
   @media (min-width: 1920px)
     @include row($margin_l, $gutter_l)
     .form
       @include col(1, 1, $margin_l, $gutter_l)
     .field
-      +col(4, 1, 0, 0)
+      +col(2, 1, 0, 0)
 
 .contact_clearfix
   height: 1px

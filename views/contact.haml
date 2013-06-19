@@ -4,19 +4,19 @@
       %h1 Contact us
       %p Nird Contact Info
 
-      -if form.failed?
-        -if form.failed_on?(:name)
-          %p Please fill in your name.
-        -if form.failed_on?(:email)
-          %p Please fill in your email address.
-        -if form.failed_on?(:message)
-          %p Please include a short message.
-
       %div.field
         %label{:name => :name}
           * Name:
         %div.input
           %input{:name => :name, :type => 'text'}
+
+      %div.error
+        -if form.failed?
+          -if form.failed_on?(:name)
+            %h3
+              Please fill in your name.
+        -else
+          %div.error_text
 
       %div.field
         %label{:name => :organization}
@@ -25,10 +25,21 @@
           %input{:name => :organization, :type => 'text'}
 
       %div.field
+
+      %div.field
         %label{:name => :email}
           * Email:
         %div.input
           %input{:name => :email, :type => 'text'}
+
+      %div.field
+        -if form.failed?
+          -if form.failed_on?(:email)
+            %h3
+              Please fill in your email address.
+        -else
+          %div.error_text
+
 
       %div.field
         %label{:name => :phone}
@@ -36,28 +47,24 @@
         %div.input
           %input{:name => :phone, :type => 'text'}
 
-<<<<<<< HEAD
-      %div.contact_field
-        %label.contact.message{:name => 'post[message]'}
-          Send us a message:
-        %div.textarea
-          %textarea.contact.message{:name => 'post[message]', :type => 'text'}
-=======
+      %div.field
+
       %div.field
         %label{:name => :message}
           * Send us a message:
         %div.input
           %textarea{:name => :message, :type => 'text-area'}
->>>>>>> form-validations
+
+      %div.field
+        -if form.failed?
+          -if form.failed_on?(:email)
+            %h3
+              Please include a short message.
+        -else
+          %div.error_text
 
       %div.field
         %input{:type => "submit", :value => "Send", :class => "button"}
-<<<<<<< HEAD
-      %p
-      %div.contact_clearfix
-
-=======
 
       %div.contact_clearfix
->>>>>>> form-validations
     %div.height_set
