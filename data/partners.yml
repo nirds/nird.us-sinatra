@@ -23,3 +23,8 @@ vigilanteweb:
   name: "Vigilante Web"
   image: "[image] /images/vigilanteweb_logo_sq.png"
   link: "[no-hyphen] http://vigilanteweb.com/"
+division:
+  id: "division"
+  name: "Division by Zero"
+  image: "[image] /images/divisionbyzero_logo.png"
+  link: "[no-hyphen] http://overnothing.com/"

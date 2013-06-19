@@ -44,9 +44,9 @@ chris:
   image: "[image] /images/chris_headshot.png"
   twitter: "autonomous"
   description:
-    paragraph_1: " "
-    paragraph_2: " "
-    paragraph_3: " "
+    paragraph_1: "Chris Spring brings years of experience and a razor-sharp wit to the challenge of building products that are blazing fast and easily scalable. Before joining NIRD, Chris was a lead developer at Mad Mimi. He is a founder and organizer of his local Coffee&Code, a weekly meet-up for developers, and organizes RubyOnBeer, a monthly gathering of Ruby developers. Chris also regularly speaks at tech conferences."
+    paragraph_2: "Chris spends his free time organizing Ruby meet-ups, teaching yoga, and playing terrible chess."
+    paragraph_3: "Specialties: Ruby, Rails, database design, scaling strategies"
     paragraph_4: " "
     paragraph_5: ""
 adam:
