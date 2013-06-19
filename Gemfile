@@ -17,6 +17,7 @@ gem 'text-hyphen'
 gem 'pry'
 gem 'split', '~> 0.6.1'
 gem 'mail'
+gem 'sinatra-formkeeper'
 
 group :test do
   gem 'rspec', '~> 2.11.0'

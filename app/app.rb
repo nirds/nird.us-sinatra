@@ -10,6 +10,7 @@ require_relative 'helpers'
 require 'pry'
 require 'split'
 require 'mail'
+require 'sinatra/formkeeper'
 
 class NirdApp < Sinatra::Base
   helpers Sinatra::NirdHelpers

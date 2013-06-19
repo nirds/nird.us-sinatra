@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'mail'
+require 'sinatra/formkeeper'
 
 module Sinatra
   module NirdHelpers
@@ -67,7 +68,7 @@ module Sinatra
 
     def contact_mailer(body)
       mail = Mail.deliver do
-        to "info@nird.us"
+        to "lauren@nird.us"
         from "info@nird.us"
         subject "NIRD Inquiry"
         body "#{body}"
