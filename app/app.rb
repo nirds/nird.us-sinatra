@@ -95,7 +95,8 @@ class NirdApp < Sinatra::Base
     end
 
     if form.failed?
-      haml :contact
+      output = haml :contact
+      fill_in_form(output)
     else
       body = mail_body(params)
       contact_mailer(body)
