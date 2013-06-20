@@ -78,11 +78,9 @@ class NirdApp < Sinatra::Base
       field :cost, :present => true
     end
     if form.failed?
-      puts "OOPS"
       output = haml :pay
       fill_in_form(output)
     else
-      puts "YESSS"
       money       = Money.parse params[:cost]
       amount      = ensure_minimum_cents    money.cents
       customer    = extract_stripe_customer params

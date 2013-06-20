@@ -3,7 +3,7 @@
   .stripe_form
     @include col(1, 1, $margin_p, $gutter_p)
   .pay_field
-    +col(1, 1, 0, 0)
+    +col(4, 2, 0, 0, 0.5, 0)
     @extend %box
     height        : 7.5rem
     float         : left
@@ -17,7 +17,7 @@
 
     .input
       position    : absolute
-      bottom      : 1rem
+      top         : 4rem
       left        : 1rem
       right       : 1rem
       input
@@ -25,6 +25,7 @@
   .stripe
     float         : right
     .stripe-button-el
+      display     : none
       position    : absolute
       bottom      : 0rem
       right       : 1rem
@@ -35,6 +36,13 @@
     text:
       align       : center
     width         : 100%
+
+  .error
+    position    : absolute
+    top         : 1rem
+    right       : 1rem
+    h3
+      color: $pink
 
   h1
     @extend %form_text
@@ -48,28 +56,28 @@
 
   @media (min-width: 480px)
     .pay_field
-      +col(2, 1, 0, 0)
+      +col(1, 1, 0, 0)
 
   @media (min-width: 768px)
     @include row($margin_t, $gutter_t)
     .stripe_form
       @include col(1, 1, $margin_t, $gutter_t)
     .pay_field
-      +col(3, 1, 0, 0)
+      +col(4, 2, 0, 0, 0.5, 0)
 
   @media (min-width: 1024px)
     @include row($margin_s, $gutter_s)
     .stripe_form
       @include col(1, 1, $margin_s, $gutter_s)
     .pay_field
-      +col(3, 1, 0, 0)
+      +col(4, 2, 0, 0, 0.5, 0)
 
   @media (min-width: 1920px)
     @include row($margin_l, $gutter_l)
     .stripe_form
       @include col(1, 1, $margin_l, $gutter_l)
     .pay_field
-      +col(3, 1, 0, 0)
+      +col(4, 2, 0, 0, 0.5, 0)
 
 .payment_received
   @extend .pay_method
@@ -88,3 +96,7 @@
 
     @media (min-width: 1920px)
       +col(1, 1, $margin_l, $gutter_l)
+
+.payment_clearfix
+  height: 1px
+  clear: both

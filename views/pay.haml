@@ -15,6 +15,11 @@
         %div.input
           %input.customer.email{:name => :email, :type => 'text'}
 
+        %div.error
+          -if form.failed?
+            -if form.failed_on?(:email)
+              %h3 Please fill in your email address.
+
       %div.pay_field
         %label.customer.project{:name => :project }
           Project:
@@ -33,9 +38,21 @@
         %div.input
           %input.amount{:name => :cost, :type => 'text', :placeholder => 'USD'}
 
-      %div.pay_field.stripe
-        %script.stripe-button{:src => "https://checkout.stripe.com/v2/checkout.js", :'data-key' => "#{settings.publishable_key}"}
+        %div.error
+          -if form.failed?
+            -if form.failed_on?(:cost)
+              %h3 Please enter a payment amount.
 
+      %div.field
+        %input{:type => "submit", :value => "Make a Payment", :class => "button"}
+
+      %script.stripe-button{:src => "https://checkout.stripe.com/v2/checkout.js", :'data-key' => "#{settings.publishable_key}"}
+
+      -if request.post? && !form.failed?
+        %script
+          $(".stripe-button-el").click();
+
+      %div.payment_clearfix
       %p
         %strong
           %a{:href=>"/contact"}
