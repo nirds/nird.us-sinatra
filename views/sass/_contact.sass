@@ -3,7 +3,7 @@
   .form
     @include col(1, 1, $margin_p, $gutter_p)
   .field
-    +col(2, 1, 0, 0)
+    +col(4, 2, 0, 0, 0.5, 0)
     @extend %box
     height        : 7.5rem
     float         : left
@@ -17,14 +17,18 @@
 
     .input
       position    : absolute
-      bottom      : 1rem
+      top         : 4rem
       left        : 1rem
       right       : 1rem
       input
         width     : 100%
       textarea
         width     : 100%
-
+        height    : 10rem
+        &.input
+          bottom  : 1rem
+  .tall
+    height        : 15rem
 
 
   %form_text
@@ -34,14 +38,11 @@
     width         : 100%
 
   .error
-    +col(2, 1, 0, 0)
-    @extend h3
-    height        : 7.5rem
-    float         : right
-    position      : relative
-    top           : 4.5rem
-    left          : 1rem
-    right         : 1rem
+    position    : absolute
+    top         : 1rem
+    right       : 1rem
+    h3
+      color: gold
 
   h1
     @extend %form_text
@@ -56,28 +57,28 @@
 
   @media (min-width: 480px)
     .field
-      +col(2, 1, 0, 0)
+      +col(1, 1, 0, 0)
 
   @media (min-width: 768px)
     @include row($margin_t, $gutter_t)
     .form
       @include col(1, 1, $margin_t, $gutter_t)
     .field
-      +col(2, 1, 0, 0)
+      +col(4, 2, 0, 0, 0.5, 0)
 
   @media (min-width: 1024px)
     @include row($margin_s, $gutter_s)
     .form
       @include col(1, 1, $margin_s, $gutter_s)
     .field
-      +col(2, 1, 0, 0)
+      +col(4, 2, 0, 0, 0.5, 0)
 
   @media (min-width: 1920px)
     @include row($margin_l, $gutter_l)
     .form
       @include col(1, 1, $margin_l, $gutter_l)
     .field
-      +col(2, 1, 0, 0)
+      +col(4, 2, 0, 0, 0.5, 0)
 
 .textarea_clearfix
   height: 10rem

@@ -11,7 +11,7 @@
 
       %div.pay_field
         %label.customer.email{:name => :email }
-          Email:
+          * Email:
         %div.input
           %input.customer.email{:name => :email, :type => 'text'}
 
@@ -28,7 +28,8 @@
           %input.customer.invoice{:name => :invoice, :type => 'text', :placeholder => 'Invoice Number'}
 
       %div.pay_field
-        %label.amount{:name => :cost } Amount:
+        %label.amount{:name => :cost }
+          * Amount:
         %div.input
           %input.amount{:name => :cost, :type => 'text', :placeholder => 'USD'}
 
