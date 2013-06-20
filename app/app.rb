@@ -72,15 +72,27 @@ class NirdApp < Sinatra::Base
   end
 
   post '/charge' do
-    money       = Money.parse params[:post][:cost]
-    amount      = ensure_minimum_cents    money.cents
-    customer    = extract_stripe_customer params
-    description = extract_description     params[:post]
-    charge      = create_charge(amount, customer, description)
+    form do
+      VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+      field :email, :present => true, :regexp => VALID_EMAIL_REGEX
+      field :cost, :present => true
+    end
+    if form.failed?
+      puts "OOPS"
+      output = haml :pay
+      fill_in_form(output)
+    else
+      puts "YESSS"
+      money       = Money.parse params[:cost]
+      amount      = ensure_minimum_cents    money.cents
+      customer    = extract_stripe_customer params
+      description = extract_description     params
+      charge      = create_charge(amount, customer, description)
 
-    @confirmed_charge = Money.us_dollar charge.amount
-    @title            = "NIRD - Thank You"
-    haml :charge
+      @confirmed_charge = Money.us_dollar charge.amount
+      @title            = "NIRD - Thank You"
+      haml :charge
+    end
   end
 
   get '/contact' do
@@ -89,8 +101,9 @@ class NirdApp < Sinatra::Base
 
   post '/contact' do
     form do
+      VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
       field :name, :present => true
-      field :email, :present => true
+      field :email, :present => true, :regexp => VALID_EMAIL_REGEX
       field :message, :present => true, :length => 5..250
     end
 

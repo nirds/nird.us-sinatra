@@ -29,15 +29,15 @@ module Sinatra
       [cents, 50].max
     end
 
-    def extract_description(post_data)
-      customer = post_data[:organization]
-      project  = post_data[:project]
-      invoice  = post_data[:invoice]
+    def extract_description(params)
+      customer = params[:organization]
+      project  = params[:project]
+      invoice  = params[:invoice]
       "#{customer} - #{project} - #{invoice}"
     end
 
     def extract_stripe_customer(params)
-      Stripe::Customer.create(email: params[:post][:email],
+      Stripe::Customer.create(email: params[:email],
                               card:  params[:stripeToken] )
     end
 
