@@ -2,6 +2,9 @@
   @include row($margin_p, $gutter_p)
   .stripe_form
     @include col(1, 1, $margin_p, $gutter_p)
+
+    .hidden
+      display     : none
   .pay_field
     +col(4, 2, 0, 0, 0.5, 0)
     @extend %box
