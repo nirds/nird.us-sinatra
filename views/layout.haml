@@ -12,10 +12,10 @@
       %script{:type=>"text/javascript", :src=>"/jquery.fixBoxModel.js"}
       %script
         $('div').fixBoxModel();
-    %link{:rel => "shortcut icon", :href => "/images/NIRD_favicon.png"} 
+    %link{:rel => "shortcut icon", :href => "/images/NIRD_favicon.png"}
   %header
     %nav.top
-      %a.action{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
+      %a.action{:href=>"/contact"}
         Contact NIRD
       %a.pay{:href=>"/pay"}
         Make a Payment
@@ -36,12 +36,12 @@
         %a.home{:href=>"/"}
           %h1 NIRD
           %h2 Northwest Independent Ruby Development
-    
+
     = yield
 
   %footer
     %div
-      %p © Northwest Independent Ruby Development, LLC 2013. 
+      %p © Northwest Independent Ruby Development, LLC 2013.
     %div
-      %a.action{:href=>"mailto:info@nird.us?Subject=Tell%20Me%20More"}
+      %a.action{:href=>"/contact"}
         Contact NIRD

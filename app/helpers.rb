@@ -1,4 +1,6 @@
 require 'sinatra/base'
+require 'mail'
+require 'sinatra/formkeeper'
 
 module Sinatra
   module NirdHelpers
@@ -27,15 +29,15 @@ module Sinatra
       [cents, 50].max
     end
 
-    def extract_description(post_data)
-      customer = post_data[:organization]
-      project  = post_data[:project]
-      invoice  = post_data[:invoice]
+    def extract_description(params)
+      customer = params[:organization]
+      project  = params[:project]
+      invoice  = params[:invoice]
       "#{customer} - #{project} - #{invoice}"
     end
 
     def extract_stripe_customer(params)
-      Stripe::Customer.create(email: params[:post][:email],
+      Stripe::Customer.create(email: params[:email],
                               card:  params[:stripeToken] )
     end
 
@@ -49,6 +51,28 @@ module Sinatra
     def soft_hyphenate(string)
       hh = Text::Hyphen.new(:language => 'en_us', :left => 2, :right => 2)
         string.split(" ").map{ |word| hh.visualize(word, "&shy;") }.join(" ")
+    end
+
+    def mail_body(params)
+      name = params["name"]
+      email = params["email"]
+      organization = params["organization"]
+      phone = params["phone"]
+      message = params["message"]
+      "Contact Name: #{name}
+      Organization: #{organization}
+      Message: #{message}
+      E-mail: #{email}
+      Phone: #{phone}"
+    end
+
+    def contact_mailer(body)
+      mail = Mail.deliver do
+        to "info@nird.us"
+        from "info@nird.us"
+        subject "NIRD Inquiry"
+        body "#{body}"
+      end
     end
 
     private
