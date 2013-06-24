@@ -23,6 +23,9 @@ Starting the application requires a secrets.yml file in your base directory, whi
 :stripe:
   :publishable: "pk_KRWWNieKEVApVZJvRndJSzbluAXq9"
   :secret: "Sf5wDKFm2URuJ6oLzTJXBoj4aOQTelm0"
+:mandrill:
+  :user_name: "info@nird.us"
+  :password: "DoczGZMtJM9oZYMyYx-lEw"
 
 Note that those nasty keys are actual stripe test keys, that will be visible on the test section of NIRD's stripe account.
 
