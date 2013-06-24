@@ -4,40 +4,60 @@
       %h1 Make a Payment
 
       %div.pay_field
-        %label.customer.organization{:name => 'post[organization]'}
+        %label.customer.organization{:name => :organization }
           Organization:
         %div.input
-          %input.customer.organization{:name => 'post[organization]', :type => 'text'}
+          %input.customer.organization{:name => :organization, :type => 'text'}
 
       %div.pay_field
-        %label.customer.email{:name => 'post[email]'}
-          Email:
+        %label.customer.email{:name => :email }
+          * Email:
         %div.input
-          %input.customer.email{:name => 'post[email]', :type => 'text'}
+          %input.customer.email{:name => :email, :type => 'text'}
+
+        %div.error
+          -if form.failed?
+            -if form.failed_on?(:email)
+              %h3 Please fill in your email address.
 
       %div.pay_field
-        %label.customer.project{:name => 'post[project]'}
+        %label.customer.project{:name => :project }
           Project:
         %div.input
-          %input.customer.project{:name => 'post[project]', :type => 'text'}
+          %input.customer.project{:name => :project, :type => 'text'}
 
       %div.pay_field
-        %label.customer.invoice{:name => 'post[invoice]'}
+        %label.customer.invoice{:name => :invoice }
           Invoice Number:
         %div.input
-          %input.customer.invoice{:name => 'post[invoice]', :type => 'text', :placeholder => 'Invoice Number'}
+          %input.customer.invoice{:name => :invoice, :type => 'text', :placeholder => 'Invoice Number'}
 
       %div.pay_field
-        %label.amount{:name => 'post[cost]'} Amount:
+        %label.amount{:name => :cost }
+          * Amount:
         %div.input
-          %input.amount{:name => 'post[cost]',:type => 'text', :placeholder => 'USD'}
+          %input.amount{:name => :cost, :type => 'text', :placeholder => 'USD'}
 
-      %div.pay_field.stripe
+        %div.error
+          -if form.failed?
+            -if form.failed_on?(:cost)
+              %h3 Please enter a payment amount.
+
+      %div.pay_field
+        %input{:type => "submit", :value => "Make a Payment", :class => "button"}
+
+      %div.hidden
         %script.stripe-button{:src => "https://checkout.stripe.com/v2/checkout.js", :'data-key' => "#{settings.publishable_key}"}
-  
+
+      -if request.post?
+        -unless form.failed?
+          %script
+            $(".stripe-button-el").click();
+
+      %div.payment_clearfix
       %p
         %strong
-          %a{:href=>"mailto:payments@nird.us?Subject=Payment%20Inquiry"}
+          %a{:href=>"/contact"}
             Contact Us
         if you have any questions.
     %div.height_set
