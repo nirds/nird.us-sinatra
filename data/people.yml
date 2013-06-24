@@ -4,7 +4,7 @@ renee:
   first_name: "Renée"
   second_name: "[no-hyphen] De&nbsp;Voursney"
   image: "[image] /images/renee_headshot_sq_bw.png"
-  twitter: "gigglegirl4e"
+  twitter: "no-hyphen] gigglegirl4e"
   description:
     paragraph_1: "President & Chief Adventure Officer - Renée draws on her experience from a variety of projects, from high energy physics simulations to financial forecasting models, to provide key expertise for NIRD’s clients in the areas of business intelligence and software development. An avid Ruby developer, Renee consults on projects for a diverse array of companies. She also teaches frequent classes on Ruby, Rails, and everything else to new programmers, experienced programmers, and sometimes to both at the same time!"
     paragraph_2: "Before founding NIRD, Renee utilized her background in computer science and economics to create innovative solutions for leading organizations in the telecommunications, aerospace, and high tech industries. An expert in agile development and a technical leader in the Ruby on Rails software community, she co-founded Seattle RailsBridge and frequently presents at Ruby conferences all over the world."
@@ -16,7 +16,7 @@ elise:
   first_name: "Elise"
   second_name: "Worthy"
   image: "[image] /images/elise_headshot_sq_bw.png"
-  twitter: "eliseworthy"
+  twitter: "no-hyphen] eliseworthy"
   description:
     paragraph_1: "Elise worked in marketing and product management at Blue Box Group and Atlas Accelerator before diving into Ruby, Rails, and software development. A graduate of Hungry Academy at LivingSocial, Elise’s unique set of skills allow her to focus on software from both product and engineering perspectives, enabling her to quickly evaluate and build the most viable features."
     paragraph_2: "Elise excels at product development, user story creation, marketing plan creation and execution, and go-to-market strategy. On the engineering side, she enjoys mid- to front-stack development using Ruby, Rails, and JavaScript. Elise is a big fan of agile methodologies, tracking with Pivotal Tracker, pairing, and TDD."
@@ -29,7 +29,7 @@ strand:
   first_name: "Strand"
   second_name: "McCutchen"
   image: "[image] /images/strand_headshot_sq_bw.png"
-  twitter: "strabd"
+  twitter: "no-hyphen] strabd"
   description:
     paragraph_1: "Strand is a transrealist datapunk who taught himself Ruby and Rails while living in a studio above his brother’s brewery in Guangzhou, China. He is an open-source aficionado who believes that reading source code is liberating."
     paragraph_2: "He has worked as a co-op cashier, a technical writer, a web content producer, a treasurer for a makerspace, and a web developer. Strand is a full stack developer who enjoys bouncing around the levels of web applications, from Rails, to the command line, to jQuery and Sass."
@@ -55,7 +55,7 @@ adam:
   first_name: "Adam"
   second_name: "Hendricksen"
   image: "[image] /images/adam_headshot_sq_bw.png"
-  twitter: "visionaryschin"
+  twitter: "[no-hyphen] visionaryschin"
   description:
     paragraph_1: "After working as a rocket propulsion engineer at NASA and Boeing, Adam decided to turn in his pocket protector for the exciting world of web design. He focuses on building elegant websites using responsive design techniques, Ruby-on-Rails frameworks, and creative problem solving. Adam claims that he is constantly learning, even when he’s teaching the rest of us."
     paragraph_2: "On the weekends, Adam spends his time biking, banging on his drums, and arguing that chicken is a vegetable."
@@ -67,7 +67,7 @@ betsy:
   first_name: "Betsy"
   second_name: "Walker"
   image: "[image] /images/betsy_headshot_sq_bw.png"
-  twitter: "etsyspy"
+  twitter: "[no-hyphen] etsyspy"
   description:
     paragraph_1: "Betsy enjoys tackling interesting problems and reducing chaos to order, or at least to the level of organized chaos. She has worked as a political organizer, done marketing for a tech start-up, managed a bakery, and taught preschool in Beijing, a variety of experience that she finds remarkably useful at NIRD."
     paragraph_2: "Betsy brings exceptional communication and organizational skills honed working on political campaigns to the task of project management. Her focus is on making sure that everyone on the team has what they need to build amazing products. Betsy is fascinated by design problems, and enjoys developing clean, elegant designs that result in effortless user experiences. Less is more, and life is better in Sans serif."
@@ -79,7 +79,7 @@ chris:
   first_name: "Chris"
   second_name: "Spring"
   image: "[image] /images/chris_headshot.png"
-  twitter: "autonomous"
+  twitter: "[no-hyphen] autonomous"
   description:
     paragraph_1: "Chris Spring brings years of experience and a razor-sharp wit to the challenge of building products that are blazing fast and easily scalable. Before joining NIRD, Chris was a lead developer at Mad Mimi. He is a founder and organizer of his local Coffee&Code, a weekly meet-up for developers, and organizes RubyOnBeer, a monthly gathering of Ruby developers. Chris also regularly speaks at tech conferences."
     paragraph_2: "Chris spends his free time organizing Ruby meet-ups, teaching yoga, and playing terrible chess."
@@ -92,10 +92,23 @@ lauren:
   first_name: "Lauren"
   second_name: "Hughs"
   image: "[image] /images/lauren_headshot_sq_bw.png"
-  twitter: "LeEastridge"
+  twitter: "[no-hyphen] LeEastridge" 
   description:
     paragraph_1: "After a successful career as a chemical research engineer at the University of Washington (too successful--they wouldn’t let her learn anything new), Lauren escaped from the labs in search of new adventures. Fortunately for us, she thought Ruby on Rails looked like a fun challenge. Lauren is a graduate of CodeFellows and has worked as a freelance Ruby on Rails consultant. In addition to web development, she has a strong background in measurement science and multivariate data analysis."
     paragraph_2: "Lauren’s hobbies include hiking, biking, and applying the scientific method in situations where it may not be entirely appropriate."
     paragraph_3: "Specialties: Ruby on Rails development, data analysis"
     paragraph_4: " "
+    paragraph_5: ""
+cheri:
+  id: "[no-hyphen] cheri"
+  full_name: "Cheri Allen"
+  first_name: "Cheri"
+  second_name: "Allen"
+  image: "[image] /images/cheri_headshot.png"
+  twitter: "[no-hyphen] cherimallen"
+  description:
+    paragraph_1: "Cheri Allen brings a strong visual aesthetic and a delightful sense of fun honed by her work in sculpture and photography to the field of front-end design. She creates strong visual metaphors that convey information in unique and interesting ways, and backs up those design skills with a broad technical skill set that includes Rails, CSS, and JavaScript. Cheri is also a dedicated educator, committed to expanding access to technical education opportunities for people from a wide variety of backgrounds."
+    paragraph_2: "Cheri brings her talents and energy to organizing RailsBridge workshops and managing the LGBT Library at Gay City. In her free time, she enjoys reading, sewing, and making dinosaur noises."
+    paragraph_3: "Specialties: Ruby on Rails development, front-end design, education"
+    paragraph_4: ""
     paragraph_5: ""
