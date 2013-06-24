@@ -1,6 +1,6 @@
 .contact_method
   @include row($margin_p, $gutter_p)
-  .address
+  .address 
     @extend p
     line-height : 1
   .form
@@ -30,6 +30,12 @@
         height    : 10rem
         &.input
           bottom  : 1rem
+    .button
+      @extend button
+      float       : left
+      margin-left: 1rem
+      padding     : 0.2rem 2rem 0.2rem 2rem
+
   .tall
     height        : 15rem
 
