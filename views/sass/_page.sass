@@ -50,7 +50,7 @@ $flare        : 1rem
   // W3C Markup, IE10 Release Preview */
   background-image: radial-gradient(circle closest-side at center $top, $lamp 0%, $shade $wid), url($image)
 
-%clearfix
+.clearfix
   zoom                    : 1
   &:before, &:after
     content               : "\0020"
@@ -107,5 +107,5 @@ a img
     @include bottom_shade(rgba(white, 0.05), rgba(white, 0.001))
     @include round(1.0rem)
   margin:
-    top         : 5rem    
-  @extend %fade_in_out 
+    top         : 5rem
+  @extend %fade_in_out
