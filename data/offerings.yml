@@ -2,12 +2,12 @@ build:
   id: "build"
   homepage: true
   tagline: "We Build"
-  copy: "Based on your tech&shy;nic&shy;al re&shy;quire&shy;ments, we can build your soph&shy;ist&shy;ic&shy;ated web ap&shy;plic&shy;a&shy;tions us&shy;ing Ruby on Rails, Sin&shy;a&shy;tra, or Re&shy;finery&shy;CMS. We are a full&#8208;&#8203;stack Ruby de&shy;vel&shy;op&shy;ment team. With NIRD you can watch your app grow from a concept to a full fea&shy;tured site."
+  copy: "Based on your tech&shy;nic&shy;al re&shy;quire&shy;ments, we can build your soph&shy;ist&shy;ic&shy;ated web ap&shy;plic&shy;a&shy;tions us&shy;ing Ruby on Rails, Sin&shy;a&shy;tra, or Re&shy;finery&shy;CMS. We are a full&#8208;&#8203;stack de&shy;vel&shy;op&shy;ment team, able to grow an app from a concept to a full fea&shy;tured site."
 teach:
   id: "teach"
   homepage: true
   tagline: "We Teach"
-  copy: "Our skilled team is pas&shy;sion&shy;ate about shar&shy;ing our ex&shy;pert&shy;ise, and will pro&shy;vide world class train&shy;ing in Ruby on Rails. We are able to pro&shy;vide all your Ruby stack train&shy;ing needs from be&shy;gin&shy;ner les&shy;sons in ba&shy;sic ruby to ad&shy;vanced top&shy;ics like scal&shy;ing or big data."
+  copy: "Our skilled team is pas&shy;sion&shy;ate about shar&shy;ing our ex&shy;pert&shy;ise, and will pro&shy;vide world class train&shy;ing in Ruby on Rails. We are able to pro&shy;vide for all your train&shy;ing needs, from les&shy;sons in ba&shy;sic ruby to ad&shy;vanced top&shy;ics like scal&shy;ing or big data."
   detail:
     remote:
       bullets:
@@ -19,9 +19,9 @@ teach:
         sf: "The Bay Area/Silicon Valley"
         nyc: "New York City"
         berlin: "Berlin"
-  courses: 
+  courses:
     ruby:
-      bullets: 
+      bullets:
         setup: "Be able to setup the Ruby de&shy;vel&shy;op&shy;ment en&shy;vir&shy;on&shy;ment"
         fundamentals: "Learn the fun&shy;da&shy;ment&shy;als of the Ruby lan&shy;guage"
         libraries: "Learn about the built-in Ruby lib&shy;rar&shy;ies and APIs"
@@ -71,6 +71,6 @@ partner:
   id: "[no-hyphen] partner"
   homepage: true
   tagline: "We Partner"
-  copy: "With our unique com&shy;bin&shy;a&shy;tion of tech&shy;nic&shy;al cap&shy;ab&shy;il&shy;ity and train&shy;ing skills, we can help your or&shy;gan&shy;iz&shy;a&shy;tion grow along side your app. As we build, we will bring your team up to speed to main&shy;tain and ex&shy;tend your app."
+  copy: "With our unique com&shy;bin&shy;a&shy;tion of tech&shy;nic&shy;al cap&shy;ab&shy;il&shy;ity and teach&shy;ing skills, we can help your or&shy;gan&shy;iz&shy;a&shy;tion grow along&shy;side your app. As we build, we can train your team on main&shy;taining and ex&shy;tending your Rails, Sinatra, or Refinery app."
 pay:
   tagline: "Make a Payment"
