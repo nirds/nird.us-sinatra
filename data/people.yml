@@ -23,19 +23,6 @@ elise:
     paragraph_3: "In her free time, Elise’s hobbies include gluten-free baking, running, hiking, reading classic novels, and enjoying sunny afternoons in the park."
     paragraph_4: "Specialties: Ruby on Rails development, JavaScript, marketing strategy, product management."
     paragraph_5: ""
-strand:
-  id: "strand"
-  full_name: "Strand McCutchen"
-  first_name: "Strand"
-  second_name: "McCutchen"
-  image: "[image] /images/strand_headshot_sq_bw.png"
-  twitter: "no-hyphen] strabd"
-  description:
-    paragraph_1: "Strand is a transrealist datapunk who taught himself Ruby and Rails while living in a studio above his brother’s brewery in Guangzhou, China. He is an open-source aficionado who believes that reading source code is liberating."
-    paragraph_2: "He has worked as a co-op cashier, a technical writer, a web content producer, a treasurer for a makerspace, and a web developer. Strand is a full stack developer who enjoys bouncing around the levels of web applications, from Rails, to the command line, to jQuery and Sass."
-    paragraph_3: "When he’s not coding, Strand likes to ride his bike, write, and consume fancy beers and cheeses."
-    paragraph_4: "Specialties: Ruby on Rails development, troubleshooting, writing, simplifying"
-    paragraph_5: ""
 mel:
   id: "mel"
   full_name: "Mel Quark"
