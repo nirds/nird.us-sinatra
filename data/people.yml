@@ -99,3 +99,14 @@ cheri:
     paragraph_3: "Specialties: Ruby on Rails development, front-end design, education"
     paragraph_4: ""
     paragraph_5: ""
+megan:
+  id: "[no-hyphen] megan"
+  full_name: "Megan Kiest-McFarland"
+  first_name: "Megan"
+  second_name: "Kiest-McFarland"
+  image: "[image] /images/megan_headshot.png"
+  twitter: 
+  description:
+    paragraph_1: "Megan is highly skilled in the use of Java, SQL, and XML. A true full-stack developer, she pairs her solid programming skills with an eye for good design. Megan worked on business enterprise software at Expeditors International before moving to Palo Alto to build online education tools as an advanced software engineer at Aplia, a subsidiary of Cengage Learning. After five years in the Bay Area, Megan jumped at the chance to return to Seattle and work on new projects at NIRD."
+    paragraph_2: "Megan spends her free time cooking, creating stained glass, and rewiring her century old house in Ballard."
+    paragraph_3: "Specialties: Java, XML, SQL"
