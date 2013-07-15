@@ -6,6 +6,7 @@ jeremy:
 railsbridge:
   id: "railsbridge"
   name: "[no-hyphen] RailsBridge"
-  image: "[image] /images/railsbridge_sq.png"
+  image: "[image] /images/railsbridge.png"
   link: "[no-hyphen] http://www.meetup.com/SeattleRailsBridge/"
 
+ 

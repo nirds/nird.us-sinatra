@@ -3,7 +3,7 @@ renee:
   full_name: "[no-hyphen] Renée De&nbsp;Voursney"
   first_name: "Renée"
   second_name: "[no-hyphen] De&nbsp;Voursney"
-  image: "[image] /images/renee_headshot_sq_bw.png"
+  image: "[image] /images/renee_headshot.png"
   twitter: "no-hyphen] gigglegirl4e"
   description:
     paragraph_1: "President & Chief Adventure Officer - Renée draws on her experience from a variety of projects, from high energy physics simulations to financial forecasting models, to provide key expertise for NIRD’s clients in the areas of business intelligence and software development. An avid Ruby developer, Renee consults on projects for a diverse array of companies. She also teaches frequent classes on Ruby, Rails, and everything else to new programmers, experienced programmers, and sometimes to both at the same time!"
@@ -15,7 +15,7 @@ elise:
   full_name: "Elise Worthy"
   first_name: "Elise"
   second_name: "Worthy"
-  image: "[image] /images/elise_headshot_sq_bw.png"
+  image: "[image] /images/elise_headshot.png"
   twitter: "no-hyphen] eliseworthy"
   description:
     paragraph_1: "Elise worked in marketing and product management at Blue Box Group and Atlas Accelerator before diving into Ruby, Rails, and software development. A graduate of Hungry Academy at LivingSocial, Elise’s unique set of skills allow her to focus on software from both product and engineering perspectives, enabling her to quickly evaluate and build the most viable features."
@@ -28,7 +28,7 @@ mel:
   full_name: "Mel Quark"
   first_name: "Mel"
   second_name: "Quark"
-  image: "[image] /images/mel_headshot_sq_bw.png"
+  image: "[image] /images/mel_headshot.png"
   twitter:
   description:
     paragraph_1: "Mel began her career working on driver development at NVIDIA. Since escaping the Texas heat for rainy Seattle, she has expanded her skill set to include technical writing, UX design, project management, and web development using Ruby on Rails, Linux, and JavaScript. Mel has a knack for UI design, and a talent for mentoring new developers."
@@ -41,7 +41,7 @@ adam:
   full_name: "Adam Hendricksen"
   first_name: "Adam"
   second_name: "Hendricksen"
-  image: "[image] /images/adam_headshot_sq_bw.png"
+  image: "[image] /images/adam_headshot.png"
   twitter: "[no-hyphen] visionaryschin"
   description:
     paragraph_1: "After working as a rocket propulsion engineer at NASA and Boeing, Adam decided to turn in his pocket protector for the exciting world of web design. He focuses on building elegant websites using responsive design techniques, Ruby-on-Rails frameworks, and creative problem solving. Adam claims that he is constantly learning, even when he’s teaching the rest of us."
@@ -53,7 +53,7 @@ betsy:
   full_name: "Betsy Walker"
   first_name: "Betsy"
   second_name: "Walker"
-  image: "[image] /images/betsy_headshot_sq_bw.png"
+  image: "[image] /images/betsy_headshot.png"
   twitter: "[no-hyphen] etsyspy"
   description:
     paragraph_1: "Betsy enjoys tackling interesting problems and reducing chaos to order, or at least to the level of organized chaos. She has worked as a political organizer, done marketing for a tech start-up, managed a bakery, and taught preschool in Beijing, a variety of experience that she finds remarkably useful at NIRD."
@@ -78,7 +78,7 @@ lauren:
   full_name: "Lauren Hughs"
   first_name: "Lauren"
   second_name: "Hughs"
-  image: "[image] /images/lauren_headshot_sq_bw.png"
+  image: "[image] /images/lauren_headshot.png"
   twitter: "[no-hyphen] LeEastridge" 
   description:
     paragraph_1: "After a successful career as a chemical research engineer at the University of Washington (too successful--they wouldn’t let her learn anything new), Lauren escaped from the labs in search of new adventures. Fortunately for us, she thought Ruby on Rails looked like a fun challenge. Lauren is a graduate of CodeFellows and has worked as a freelance Ruby on Rails consultant. In addition to web development, she has a strong background in measurement science and multivariate data analysis."
@@ -99,3 +99,14 @@ cheri:
     paragraph_3: "Specialties: Ruby on Rails development, front-end design, education"
     paragraph_4: ""
     paragraph_5: ""
+megan:
+  id: "[no-hyphen] megan"
+  full_name: "Megan Kiest-McFarland"
+  first_name: "Megan Kiest-"
+  second_name: "[no-hyphen] McFarland"
+  image: "[image] /images/megan_headshot.png"
+  twitter: 
+  description:
+    paragraph_1: "Megan is highly skilled in the use of Java, SQL, and XML. A true full-stack developer, she pairs her solid programming skills with an eye for good design. Megan worked on business enterprise software at Expeditors International before moving to Palo Alto to build online education tools as an advanced software engineer at Aplia, a subsidiary of Cengage Learning. After five years in the Bay Area, Megan jumped at the chance to return to Seattle and work on new projects at NIRD."
+    paragraph_2: "Megan spends her free time cooking, creating stained glass, and rewiring her century old house in Ballard."
+    paragraph_3: "Specialties: Java, XML, SQL"

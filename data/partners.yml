@@ -1,30 +1,30 @@
 marakana:
   id: "marakana"
   name: "Marakana"
-  image: "[image] /images/marakana_logo_sq.png"
+  image: "[image] /images/marakana.png"
   link: "[no-hyphen] http://marakana.com/"
 brandworthy:
   id: "brandworthy"
   name: "Brandworthy"
-  image: "[image] /images/brandworthy_logo_sq.png"
+  image: "[image] /images/brandworthy.png"
   link: "[no-hyphen] http://bebrandworthy.com/"
 uw:
   id: "uw"
   name: "University of Washington"
-  image: "[image] /images/uw_logo_sq.png"
+  image: "[image] /images/uw_logo.png"
   link: "[no-hyphen] http://www.pce.uw.edu/certificates/ruby-programming.html"
 bluebox:
   id: "bluebox"
   name: "Blue Box Group"
-  image: "[image] /images/blue_box_logo.png"
+  image: "[image] /images/blue_box.png"
   link: "[no-hyphen] https://bluebox.net/"
 vigilanteweb:
   id: "vigilanteweb"
   name: "Vigilante Web"
-  image: "[image] /images/vigilanteweb_logo_sq.png"
+  image: "[image] /images/vigilanteweb.png"
   link: "[no-hyphen] http://vigilanteweb.com/"
 division:
   id: "division"
   name: "Division by Zero"
-  image: "[image] /images/divisionbyzero_logo.png"
+  image: "[image] /images/divisionbyzero.png"
   link: "[no-hyphen] http://overnothing.com/"
