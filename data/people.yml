@@ -102,8 +102,8 @@ cheri:
 megan:
   id: "[no-hyphen] megan"
   full_name: "Megan Kiest-McFarland"
-  first_name: "Megan"
-  second_name: "Kiest-McFarland"
+  first_name: "Megan Kiest-"
+  second_name: "[no-hyphen] McFarland"
   image: "[image] /images/megan_headshot.png"
   twitter: 
   description:
