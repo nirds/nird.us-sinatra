@@ -23,6 +23,17 @@ elise:
     paragraph_3: "In her free time, Elise’s hobbies include gluten-free baking, running, hiking, reading classic novels, and enjoying sunny afternoons in the park."
     paragraph_4: "Specialties: Ruby on Rails development, JavaScript, marketing strategy, product management."
     paragraph_5: ""
+kerri:
+  id: "[no-hyphen] kerri"
+  full_name: "Kerri Miller"
+  first_name: "Kerri"
+  second_name: "Miller"
+  image: "[image] /images/kerri_headshot.png"
+  twitter: "[no-hyphen] kerrizor"
+  description:
+    paragraph_1: "Kerri Miller is a Ruby, Perl, and PHP developer with an art degree. She has worked at enterprise companies, international ad agencies, boutique consultancies, start-ups, and every place in between. Notable career choices include lighting designer, marionette puppeteer, sous chef, and professional poker player. As a senior software developer, Kerri has worked on projects ranging from small “corner shop” websites to large-scale internet campaigns for major brands. Kerri speaks frequently at national and international tech conferences. In addition, she mentors and teaches technology students and interns through RailsBridge and other programs."
+    paragraph_2: "When she’s not coding or travelling to conferences, Kerri enjoys hiking, collecting Vespas, and working with glass."
+    paragraph_3: "Specialties: Ruby/Rails, Perl, PHP"
 mel:
   id: "mel"
   full_name: "Mel Quark"
@@ -36,18 +47,6 @@ mel:
     paragraph_3: "Specialties: Ruby on Rails development, UI/UX design"
     paragraph_4: " "
     paragraph_5: ""
-adam:
-  id: "adam"
-  full_name: "Adam Hendricksen"
-  first_name: "Adam"
-  second_name: "Hendricksen"
-  image: "[image] /images/adam_headshot.png"
-  twitter: "[no-hyphen] visionaryschin"
-  description:
-    paragraph_1: "After working as a rocket propulsion engineer at NASA and Boeing, Adam decided to turn in his pocket protector for the exciting world of web design. He focuses on building elegant websites using responsive design techniques, Ruby-on-Rails frameworks, and creative problem solving. Adam claims that he is constantly learning, even when he’s teaching the rest of us."
-    paragraph_2: "On the weekends, Adam spends his time biking, banging on his drums, and arguing that chicken is a vegetable."
-    paragraph_3: "Specialties: front-end development, UX design"
-    paragraph_4: ""
 betsy:
   id: "betsy"
   full_name: "Betsy Walker"
@@ -60,6 +59,18 @@ betsy:
     paragraph_2: "Betsy brings exceptional communication and organizational skills honed working on political campaigns to the task of project management. Her focus is on making sure that everyone on the team has what they need to build amazing products. Betsy is fascinated by design problems, and enjoys developing clean, elegant designs that result in effortless user experiences. Less is more, and life is better in Sans serif."
     paragraph_3: "In her spare time, Betsy enjoys political volunteering, studying foreign languages, and taking tango lessons."
     paragraph_4: "Specialties: Project management, front-end design, UI design"
+adam:
+  id: "adam"
+  full_name: "Adam Hendricksen"
+  first_name: "Adam"
+  second_name: "Hendricksen"
+  image: "[image] /images/adam_headshot.png"
+  twitter: "[no-hyphen] visionaryschin"
+  description:
+    paragraph_1: "After working as a rocket propulsion engineer at NASA and Boeing, Adam decided to turn in his pocket protector for the exciting world of web design. He focuses on building elegant websites using responsive design techniques, Ruby-on-Rails frameworks, and creative problem solving. Adam claims that he is constantly learning, even when he’s teaching the rest of us."
+    paragraph_2: "On the weekends, Adam spends his time biking, banging on his drums, and arguing that chicken is a vegetable."
+    paragraph_3: "Specialties: front-end development, UX design"
+    paragraph_4: ""
 chris:
   id: "chris"
   full_name: "Chris Spring"
@@ -110,3 +121,6 @@ megan:
     paragraph_1: "Megan is highly skilled in the use of Java, SQL, and XML. A true full-stack developer, she pairs her solid programming skills with an eye for good design. Megan worked on business enterprise software at Expeditors International before moving to Palo Alto to build online education tools as an advanced software engineer at Aplia, a subsidiary of Cengage Learning. After five years in the Bay Area, Megan jumped at the chance to return to Seattle and work on new projects at NIRD."
     paragraph_2: "Megan spends her free time cooking, creating stained glass, and rewiring her century old house in Ballard."
     paragraph_3: "Specialties: Java, XML, SQL"
+
+
+
