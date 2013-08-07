@@ -6,7 +6,8 @@ nav
     top         : 1rem
     bottom      : 0.5rem
   background:
-    color       : #000
+    color       : $pink
+  opacity       : 0.5
   +row($margin_p, $gutter_p)
   @media (min-width: 600px)
     +row($margin_t, $gutter_t)
@@ -17,6 +18,9 @@ nav
   a
     @extend p
     @extend %box
+    color         : $white
+    &:hover
+      color       : $grey
     float         : left
     +col(2, 1, $margin_p, $gutter_p)
     padding:

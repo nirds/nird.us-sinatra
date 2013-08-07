@@ -123,15 +123,16 @@ $image_pad_3  : 4rem
       margin      : auto auto
 
       &:hover
-        
         h3
-          @extend %fade_in_out
           color   : $pink
 
 
     .container
       @extend %container
       @extend %headshot
+      &:hover
+        @extend %fade_in_out
+        @include shadow(0rem, 0rem, $flare, $flare / 2, rgba($grey, 0.25))
       margin:
         bottom    : 2rem
 

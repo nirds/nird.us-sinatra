@@ -8,11 +8,11 @@
   font:
     family  : 'Arimo', Helvetica, sans-serif
 
-%bright_font
-  color     : $bright
-
 %light_font
-  color     : $light
+  color     : $grey
+
+%dark_font
+  color     : $dark
 
 %half_font
   font:
@@ -37,44 +37,40 @@
 h1
   @extend %header_font
   @extend %three_font
-  @extend %bright_font
+  @extend %dark_font
 
 h2
   @extend %header_font
   @extend %two_font
-  @extend %bright_font
+  @extend %dark_font
 
 h3
   @extend %copy_font
   @extend %two_font
-  @extend %light_font
+  @extend %dark_font
 
 h4
   @extend %copy_font
   @extend %one_font
-  @extend %light_font
+  @extend %dark_font
 
 
 p
   @extend %copy_font
   @extend %one_font
-  @extend %light_font
+  @extend %dark_font
   text-align: justify
   line-height: 1.5
 
 ul, ol, li
   @extend %copy_font
   @extend %one_font
-  @extend %light_font
+  @extend %dark_font
   margin-left: 5rem
   line-height: 1.5
 
 a
   text-decoration:  none
   color       : white
-  @extend %fade_in_out
   &:hover
     color     : $pink
-    text:
-      shadow  : 0 0 1rem rgba($pink, 0.5)
-    @extend %fade_in_out
