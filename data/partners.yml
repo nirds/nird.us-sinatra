@@ -1,8 +1,8 @@
-marakana:
-  id: "marakana"
-  name: "Marakana"
-  image: "[image] /images/marakana.png"
-  link: "[no-hyphen] http://marakana.com/"
+newcircle:
+  id: "newcircle"
+  name: "NewCircle"
+  image: "[image] /images/newcircle.png"
+  link: "[no-hyphen] https://thenewcircle.com/"
 brandworthy:
   id: "brandworthy"
   name: "Brandworthy"
