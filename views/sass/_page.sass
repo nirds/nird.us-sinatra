@@ -4,6 +4,7 @@ $grey         : #444
 $light        : #AAA
 $bright       : #DDD
 $pink         : #D32C58
+$lightpink    : #F6D4DD
 
 $margin_p     : 1%
 $gutter_p     : 2%
@@ -17,7 +18,7 @@ $gutter_s     : 5%
 $margin_l     : 10%
 $gutter_l     : 5%
 
-$radius       : 0.2rem
+
 $flare        : 0.2rem
 
 
@@ -84,16 +85,9 @@ a img
 
 .panel
   position: relative
-    margin:
-      top       : 1rem
-      bottom    : 4rem
+
   h1, p
     padding     : 1rem
-
-
-
-
-
 
   &:before
     position    : absolute
@@ -103,7 +97,5 @@ a img
     right       : 1rem
     height      : 4rem
 
-    @include round(1.0rem)
-  margin:
-    top         : 5rem
-  @extend %fade_in_out
+
+

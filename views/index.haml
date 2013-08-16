@@ -6,8 +6,9 @@
       %div.offering{:id => offering.id}
         %a.details{:href=>"/#{offering.id}"}
           %div.panel
-            %h1= offering.tagline
-            %p=  offering.copy
+            %div.text
+              %h1= offering.tagline
+              %p=  offering.copy
 
 %section.people
   %div.team
