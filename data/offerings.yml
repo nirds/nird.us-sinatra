@@ -40,7 +40,7 @@ teach:
         active: "Learn how to lever&shy;age Act&shy;iveRecord with as&shy;so&shy;ci&shy;ations, val&shy;id&shy;a&shy;tions, and call&shy;backs"
         rest: "Un&shy;der&shy;stand re&shy;sources and REST, and how to use them in a Rails ap&shy;plic&shy;a&shy;tion"
         plugins: "Learn how to find and use plu&shy;gins"
-        options: "Un&shy;der&shy;stand the vari&shy;ous de&shy;ploy&shy;ment op&shy;tions for Rails ap&shy;plic&shy;a&shy;tions"
+        options: "Un&shy;der&shy;stand vari&shy;ous de&shy;ploy&shy;ment op&shy;tions for Rails ap&shy;plic&shy;a&shy;tions"
         hugs: "Un&shy;der&shy;stand Rails' op&shy;tions and how to em&shy;brace or over&shy;ride them"
     bootcamp:
       bullets:

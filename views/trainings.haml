@@ -21,7 +21,7 @@
       %ul
       -@offerings.teach.detail.local.bullets.each_value do |bullet|
         %li=bullet
-      %p= soft_hyphenate("Contact us for more details about scheduling an on-site training.")
+      %p= soft_hyphenate("Contact us for more details about scheduling an on-site training in your city.")
       %div.button-footprint
         %a.button{:href=>"/contact"}
           Contact Us
@@ -57,21 +57,6 @@
       %div.button-footprint
         %a.button{:href=>"/contact"}
           Learn More
-%section.teach
-  %div.specialty
-    %div.panel
-      %h1
-        5 Day Bootcamp
-      %p= soft_hyphenate("The 5 Day Ruby and Rails Bootcamp combines the two courses above into one week-long workshop. Starting with the basics of Ruby and Rails, you'll learn the full Rails' MVC stack, testing techniques, Ajax and even web services. We'll work through the full life-cycle of a Rails project, giving you experience with all facets of a typical app.")
-      %p
-        Course Objectives:
-      %ul
-      -@offerings.teach.courses.bootcamp.bullets.each_value do |bullet|
-        %li=bullet
-      %p= soft_hyphenate("This course is designed for developers with some web development experience who wish to learn Ruby on Rails.")
-      %div.button-footprint
-        %a.button{:href=>"/contact"}
-          Learn More
   %div.specialty
     %div.panel
       %h1
@@ -87,9 +72,23 @@
       %div.button-footprint
         %a.button{:href=>"/contact"}
           Learn More
+  %div.specialty
+    %div.panel
+      %h1
+        5 Day Bootcamp
+      %p= soft_hyphenate("The 5 Day Ruby and Rails Bootcamp combines the two courses above into one week-long workshop. Starting with the basics of Ruby and Rails, you'll learn the full Rails' MVC stack, testing techniques, Ajax and even web services. We'll work through the full life-cycle of a Rails project, giving you experience with all facets of a typical app.")
+      %p
+        Course Objectives:
+      %ul
+      -@offerings.teach.courses.bootcamp.bullets.each_value do |bullet|
+        %li=bullet
+      %p= soft_hyphenate("This course is designed for developers with some web development experience who wish to learn Ruby on Rails.")
+      %div.button-footprint
+        %a.button{:href=>"/contact"}
+          Learn More
   %div.copy
     %div.panel
       %h1
         Feedback
       %p= soft_hyphenate("“This instructor knows her stuff, and is so generous with sharing her hard-earned knowledge, not just about Ruby on Rails but about programming and being part of the Open Source community in general. Whether or not I end up using Rails in the future (which is dependent upon my work environment, not on how I feel about Rails; I like it very much!), I will be a better programmer in general thanks to the experience I had in this class.” Paige - Reed College")
-      %p= soft_hyphenate("“I loved the last day of the class, where we worked on pairs and had fun while learning and coding in Ruby. The instructor was willing to answer many questions. She was extremely knowledgeable on ruby gems, plugins and development tools. She was very helpful when we got stuck on something. I thought the class was excellent.” Jose - Oregon State University")
+      %p= soft_hyphenate("“Cheri did an awesome job! She was patient, clear and funny. Great class.” Emily, Seattle")

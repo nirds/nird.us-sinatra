@@ -71,6 +71,10 @@ class NirdApp < Sinatra::Base
     haml :index
   end
 
+  get '/trainings' do
+    haml :trainings
+  end
+
   post '/charge' do
     money       = Money.parse params[:cost]
     amount      = ensure_minimum_cents    money.cents
