@@ -18,19 +18,13 @@ $image_pad_3  : 4rem
   .panel
     padding:
       bottom    : 3rem
+    margin-top  : 4em
   .team
     @include col(1, 1, $margin_p, $gutter_p)
     %extend %box
     .profile
       @include row(0, 0)
-      padding:
-        top     : $image_pad_1
-      @media (min-width: 768px)
-        padding:
-          top   : $image_pad_2
-      @media (min-width: 1024px)
-        padding:
-          top   : $image_pad_3
+      
     
     .text
       @include col(1, 1, 0, 0)

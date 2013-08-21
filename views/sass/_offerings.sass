@@ -121,6 +121,10 @@ $image_pad_3      : 4rem
     .container
       @extend %container
       @extend %logo
+      @include shadow(0rem, 0rem, $flare, $flare / 2, rgba($grey, 0.15))
+      @extend %border
+      &:hover
+        @include shadow(0rem, 0rem, $flare, $flare, rgba($grey, 0.25))
 
     h3
       text:
