@@ -51,12 +51,10 @@ $image_pad_3      : 4rem
     .offering
       @include col(3, 1, $margin_l, $gutter_l)
 
-.build, .teach, .partner, .trainings
+.build, .teach, .partner, .trainings, .advanced_bootcamp
   @include row($margin_p, $gutter_p)
   h1
     text-align    : center
-
-
   a 
     @extend %copy_font
     @extend %one_font
@@ -65,6 +63,8 @@ $image_pad_3      : 4rem
     @include col(1, 1, $margin_p, $gutter_p)
     float         : left
     margin        : 1em auto
+    h2
+      text-align  : center
 
   .specialty
     @include col(1, 1, $margin_p, $gutter_p)
@@ -75,8 +75,23 @@ $image_pad_3      : 4rem
     h1
       text:
         align     : center
+    h2
+      padding-left: 2em
     p
       padding     : 0.5em
+    .details 
+      p
+        padding-left: 4em
+    .register
+      text-align  : center
+      padding     : 2em
+      a
+        @extend %two_font 
+        @extend %heavy_font
+        @extend %header_font
+    .mapframe
+      text-align  : center 
+      margin      : 2em auto
 
   .display
     +row()
