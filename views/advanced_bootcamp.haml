@@ -4,7 +4,10 @@
       %h1
         Advanced Ruby on Rails Bootcamp
       %h2= "September 16-20, 2013 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seattle, WA" 
-      %p= soft_hyphenate("The Advanced Ruby on Rails Bootcamp is a one week course designed to teach advanced concepts in Rails. Students should have experience working with an object oriented programming language and have built or worked on a Rails application. Basic understanding of the Ruby Object model, the Rails Framework and MVC are required. The class will be taught at NIRD HQ, located in the Fremont neighborhood of Seattle. If you are interested in taking the class but would like more information, please <a href='/contact'>contact us</a>.")
+      %p
+        = soft_hyphenate("The Advanced Ruby on Rails Bootcamp is a one week course designed to teach advanced concepts in Rails. Students should have experience working with an object oriented programming language and have built or worked on a Rails application. Basic understanding of the Ruby Object model, the Rails Framework and MVC are required. The class will be taught at NIRD HQ, located in the Fremont neighborhood of Seattle. If you are interested in taking the class but would like more information, please ")
+        %a{:href => '/contact'}
+          contact us.
   %div.specialty
     %div.panel
       %h1 Curriculum
