@@ -17,30 +17,24 @@ nav
   a
     @extend p
     @extend %box
-    float         : left
-    +col(2, 1, $margin_p, $gutter_p)
+    float         : right
     padding:
       left        : 2rem
       right       : 2rem
     
     @media (min-width: 600px)
-      +col(2, 1, $margin_t, $gutter_t)
       padding:
         left        : 0.5rem
         right       : 0.5rem
 
     @media (min-width: 768px)
       padding:
-        left        : 6rem
-        right       : 6rem
+        left        : 2rem
+        right       : 2rem
       
     @media (min-width: 1024px)
-      +col(2, 1, $margin_s, $gutter_s)
       padding:
-        left        : 6rem
-        right       : 6rem
+        left        : 2rem
+        right       : 2rem
     @media (min-width: 1920px)
-      +col(2, 1, $margin_l, $gutter_l)
         
-.pay
-  text-align  : right
