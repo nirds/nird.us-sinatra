@@ -12,14 +12,14 @@
   margin    : $buffer / 1.0rem * 10px
   margin    : $buffer
 
-@mixin shadow($right: 0.0rem, $down: 0.0rem, $blur: 0.5rem, $spread: 0.0rem, $color: #fff)
+@mixin shadow($right: 0.0rem, $down: 0.0rem, $blur: 0.5rem, $spread: 0.0rem, $color: #ddd)
   box-shadow          : ($right / 1.0rem * 10px) ($down / 1.0rem * 10px) ($blur / 1.0rem * 10px) ($spread / 1.0rem * 10px) $color
   -webkit-box-shadow  : ($right / 1.0rem * 10px) ($down / 1.0rem * 10px) ($blur / 1.0rem * 10px) ($spread / 1.0rem * 10px) $color
   -moz-box-shadow     : ($right / 1.0rem * 10px) ($down / 1.0rem * 10px) ($blur / 1.0rem * 10px) ($spread / 1.0rem * 10px) $color
   box-shadow          : $right $down $blur $spread $color
 
-@mixin border($weight: 0.1rem, $color: #fff)
-  border  : ($weight / 1.0rem * 10px) solid $color
+@mixin border($weight: 1rem, $color: #ddd)
+  border  : ($weight / 1rem * 10px) solid $color
   border  : $weight solid $color
 
 @mixin row($margin: 0%, $gutter: 0%)

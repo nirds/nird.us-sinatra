@@ -3,10 +3,11 @@ nav
   z-index       : 1
   top           : 0
   padding:
-    top         : 1rem
+    top         : 0.5rem
     bottom      : 0.5rem
   background:
-    color       : #000
+    color       : $pink
+  opacity       : 0.8
   +row($margin_p, $gutter_p)
   @media (min-width: 600px)
     +row($margin_t, $gutter_t)
@@ -17,7 +18,11 @@ nav
   a
     @extend p
     @extend %box
-    float         : right
+    color         : $white
+    &:hover
+      color       : $lightpink
+    float         : left
+    +col(2, 1, $margin_p, $gutter_p)
     padding:
       left        : 2rem
       right       : 2rem
