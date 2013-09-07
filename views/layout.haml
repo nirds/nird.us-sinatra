@@ -15,10 +15,11 @@
     %link{:rel => "shortcut icon", :href => "/images/NIRD_favicon.png"}
   %header
     %nav.top
-      %a.action{:href=>"/contact"}
-        Contact NIRD
-      %a.pay{:href=>"/pay"}
-        Make a Payment
+      %div
+        %a.action{:href=>"/contact"}
+          Contact NIRD
+        %a.pay{:href=>"/pay"}
+          Make a Payment
     %script{:type=>"text/javascript"}
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-37368709-2']);
@@ -42,6 +43,4 @@
   %footer
     %div
       %p © Northwest Independent Ruby Development, LLC 2013.
-    %div
-      %a.action{:href=>"/contact"}
-        Contact NIRD
+

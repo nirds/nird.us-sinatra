@@ -14,23 +14,17 @@ $image_pad_3  : 4rem
 
 .people
   @include row($margin_p, $gutter_p)
+
   .panel
     padding:
       bottom    : 3rem
+    margin-top  : 4em
   .team
     @include col(1, 1, $margin_p, $gutter_p)
     %extend %box
-
     .profile
       @include row(0, 0)
-      padding:
-        top     : $image_pad_1
-      @media (min-width: 768px)
-        padding:
-          top   : $image_pad_2
-      @media (min-width: 1024px)
-        padding:
-          top   : $image_pad_3
+      
     
     .text
       @include col(1, 1, 0, 0)
@@ -123,15 +117,16 @@ $image_pad_3  : 4rem
       margin      : auto auto
 
       &:hover
-        
         h3
-          @extend %fade_in_out
           color   : $pink
 
 
     .container
       @extend %container
       @extend %headshot
+      &:hover
+        @extend %fade_in_out
+        @include shadow(0rem, 0rem, $flare, $flare / 2, rgba($grey, 0.25))
       margin:
         bottom    : 2rem
 
@@ -158,7 +153,7 @@ $image_pad_3  : 4rem
     .team
       @include col(1, 1, $margin_t, $gutter_t)
     .person
-      @include col(3, 1, 0, 0)
+      @include col(4, 1, 0, 0)
 
   @media (min-width: 1024px)
     @include row($margin_s, $gutter_s)

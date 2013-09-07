@@ -2,7 +2,7 @@
   @include row($margin_p, $gutter_p)
   .address 
     @extend p
-    line-height : 1
+    line-height : 0.8
   .form
     @include col(1, 1, $margin_p, $gutter_p)
   .field
@@ -23,11 +23,16 @@
       top         : 4rem
       left        : 1rem
       right       : 1rem
+      
       input
         width     : 100%
+        &:focus
+          border  : $pink solid 2px
       textarea
         width     : 100%
         height    : 10rem
+        &:focus
+          border  : $pink solid 2px
         &.input
           bottom  : 1rem
     .button

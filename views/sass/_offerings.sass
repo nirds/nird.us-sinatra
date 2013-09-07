@@ -20,35 +20,16 @@ $image_pad_3      : 4rem
     position      : relative
     %extend %box
     float         : left
+
     .panel
+      @include shadow(0rem, 0rem, $flare, $flare / 2, rgba($grey, 0.15))
+      @extend %border
       &:hover
-        @extend %fade_in_out
-        background:
+        @include shadow(0rem, 0rem, $flare, $flare, rgba($grey, 0.25))
+        h1
           color   : $pink
-          color   : rgba($pink, 0.5)
-        @include bottom_shade(rgba($pink, 0.6), rgba($pink, 0.1))
-        @include shadow(0rem, 0rem, $flare, $flare / 2, rgba($pink, 0.15))
-        @extend %fade_in_out
     
-      h1
-        @extend %fade_in_out
-        text:
-          align     : center
-
-      p
-        @extend %fade_in_out
-
-      &:hover
-        h2
-          @extend %fade_in_out
-          color     : white
-          text:
-            shadow  : 0 0 1rem rgba(white, 0.25)
-        p
-          @extend %fade_in_out
-          color     : $bright
-          text:
-            shadow  : 0 0 1rem rgba($bright, 0.15)
+      
 
   @media (min-width: 768px)
     @include row($margin_t, $gutter_t)
@@ -63,19 +44,17 @@ $image_pad_3      : 4rem
     @include row($margin_s, $gutter_s)
     .offering
       @include col(3, 1, $margin_s, $gutter_s)
+
   
   @media (min-width: 1920px)
     @include row($margin_l, $gutter_l)
     .offering
       @include col(3, 1, $margin_l, $gutter_l)
 
-.build, .teach, .partner
+.build, .teach, .partner, .trainings, .advanced_bootcamp
   @include row($margin_p, $gutter_p)
   h1
     text-align    : center
-
-  p, li
-    color         : $bright
   a 
     @extend %copy_font
     @extend %one_font
@@ -83,16 +62,36 @@ $image_pad_3      : 4rem
   .copy
     @include col(1, 1, $margin_p, $gutter_p)
     float         : left
+    margin        : 1em auto
+    h2
+      text-align  : center
 
   .specialty
     @include col(1, 1, $margin_p, $gutter_p)
+    @include shadow(0rem, 0rem, $flare, $flare / 2, rgba($grey, 0.15))
+    @extend %border
     margin        : 1rem
     float         : left
     h1
       text:
         align     : center
+    h2
+      padding-left: 2em
     p
       padding     : 0.5em
+    .details 
+      p
+        padding-left: 4em
+    .register
+      text-align  : center
+      padding     : 2em
+      a
+        @extend %two_font 
+        @extend %heavy_font
+        @extend %header_font
+    .mapframe
+      text-align  : center 
+      margin      : 2em auto
 
   .display
     +row()
@@ -106,6 +105,10 @@ $image_pad_3      : 4rem
     img
       width       : 100%
       height      : auto
+      @include shadow(0rem, 0rem, $flare, $flare / 2, rgba($grey, 0.15))
+      @extend %border
+      &:hover
+        @include shadow(0rem, 0rem, $flare, $flare, rgba($grey, 0.25))
     
   .os-copy
     +col(6, 5, 0, 0)
@@ -128,12 +131,15 @@ $image_pad_3      : 4rem
       margin      : auto auto
       &:hover
         h3
-          @extend %fade_in_out
           color   : $pink
 
     .container
       @extend %container
       @extend %logo
+      @include shadow(0rem, 0rem, $flare, $flare / 2, rgba($grey, 0.15))
+      @extend %border
+      &:hover
+        @include shadow(0rem, 0rem, $flare, $flare, rgba($grey, 0.25))
 
     h3
       text:
@@ -143,7 +149,6 @@ $image_pad_3      : 4rem
         bottom    : 1rem
         left      : 1rem
         right     : 1rem
-      @extend %fade_in_out
     p
       text:
         align     : center
