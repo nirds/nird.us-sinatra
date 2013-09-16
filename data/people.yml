@@ -90,7 +90,7 @@ megan:
   first_name: "Megan Kiest-"
   second_name: "[no-hyphen] McFarland"
   image: "[image] /images/megan_headshot.png"
-  twitter: 
+  twitter:
   description:
     paragraph_1: "Megan is highly skilled in the use of Java, SQL, and XML. A true full-stack developer, she pairs her solid programming skills with an eye for good design. Megan worked on business enterprise software at Expeditors International before moving to Palo Alto to build online education tools as an advanced software engineer at Aplia, a subsidiary of Cengage Learning. After five years in the Bay Area, Megan jumped at the chance to return to Seattle and work on new projects at NIRD."
     paragraph_2: "Megan spends her free time cooking, creating stained glass, and rewiring her century old house in Ballard."
@@ -101,7 +101,7 @@ lauren:
   first_name: "Lauren"
   second_name: "Hughs"
   image: "[image] /images/lauren_headshot.png"
-  twitter: "[no-hyphen] LeEastridge" 
+  twitter: "[no-hyphen] LeEastridge"
   description:
     paragraph_1: "After a successful career as a chemical research engineer at the University of Washington (too successful--they wouldn’t let her learn anything new), Lauren escaped from the labs in search of new adventures. Fortunately for us, she thought Ruby on Rails looked like a fun challenge. Lauren is a graduate of CodeFellows and has worked as a freelance Ruby on Rails consultant. In addition to web development, she has a strong background in measurement science and multivariate data analysis."
     paragraph_2: "Lauren’s hobbies include hiking, biking, and applying the scientific method in situations where it may not be entirely appropriate."
@@ -119,6 +119,19 @@ cheri:
     paragraph_1: "Cheri Allen brings a strong visual aesthetic and a delightful sense of fun honed by her work in sculpture and photography to the field of front-end design. She creates strong visual metaphors that convey information in unique and interesting ways, and backs up those design skills with a broad technical skill set that includes Rails, CSS, and JavaScript. Cheri is also a dedicated educator, committed to expanding access to technical education opportunities for people from a wide variety of backgrounds."
     paragraph_2: "Cheri brings her talents and energy to organizing RailsBridge workshops and managing the LGBT Library at Gay City. In her free time, she enjoys reading, sewing, and making dinosaur noises."
     paragraph_3: "Specialties: Ruby on Rails development, front-end design, education"
+    paragraph_4: ""
+    paragraph_5: ""
+bethany:
+  id: "[no-hyphen] bethany"
+  full_name: "Bethany Rentz"
+  first_name: "Bethany"
+  second_name: "Rentz"
+  image: "[image] /images/bethany_headshot.png"
+  twitter: "[no-hyphen] bethanyrentz"
+  description:
+    paragraph_1: "After many years working at a large software company, Bethany brings her program management and development experience to help build solutions to help customers."
+    paragraph_2: "In her free time, she is a K9 handler with Snohomish County Search and Rescue and enjoys hiking, biking and sailing."
+    paragraph_3: "Specialties: Ruby on Rails development, database design, program management"
     paragraph_4: ""
     paragraph_5: ""
 
