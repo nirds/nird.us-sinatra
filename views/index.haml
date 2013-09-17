@@ -1,9 +1,8 @@
 %section.callout
-  %a.banner{:href=>'/advanced_bootcamp'}
+  %a.banner{:href=>'/build'}
     %div.headline
       %h1
-        * * Advanced Ruby on Rails Bootcamp Sept. 16-20 in Seattle * *
-
+        Design + Develop + Deploy
 %section.offerings
   -# When iterating over these structures, use each_value,
   -# as each is returning key-value pairs.
@@ -26,6 +25,71 @@
             %div.container
               %img(src="#{person.image}")
             %figcaption
-              %h3.name= person.first_name
-              %h3.name= person.second_name
+              %p.name= person.full_name
       %div.height_set
+
+%section.contact
+  %div.panel
+    %h1 Contact Us
+    %div.address 
+      %br NIRD Office
+      %br 3601 Fremont Ave. N, Suite 304
+      %br Seattle, WA 98103
+      %br (707) 266-6473
+      %div.map
+        <iframe width="400" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=3601+Fremont+Avenue+N,+Suite+304,+Seattle&amp;aq=&amp;sll=47.65207,-122.349269&amp;sspn=0.007343,0.019269&amp;gl=us&amp;ie=UTF8&amp;hq=&amp;hnear=3601+Fremont+Ave+N+%23304,+Seattle,+King,+Washington+98103&amp;ll=47.652076,-122.349265&amp;spn=0.007343,0.019269&amp;t=m&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=3601+Fremont+Avenue+N,+Suite+304,+Seattle&amp;aq=&amp;sll=47.65207,-122.349269&amp;sspn=0.007343,0.019269&amp;gl=us&amp;ie=UTF8&amp;hq=&amp;hnear=3601+Fremont+Ave+N+%23304,+Seattle,+King,+Washington+98103&amp;ll=47.652076,-122.349265&amp;spn=0.007343,0.019269&amp;t=m&amp;z=14" style="color:#000000;text-align:left">View Larger Map</a></small>
+
+      %form{:action => "/contact", :method => "post"}
+        %div.field
+          %label{:name => :name}
+            * Name:
+          %div.input
+            %input{:name => :name, :type => 'text'}
+
+
+          -if form.failed?
+            -if form.failed_on?(:name)
+              .error
+                %h3 Please fill in your name.
+
+        %div.field
+          %label{:name => :organization}
+            Organization:
+          %div.input
+            %input{:name => :organization, :type => 'text'}
+
+
+        %div.field
+          %label{:name => :email}
+            * Email:
+          %div.input
+            %input{:name => :email, :type => 'text'}
+
+          %div.error
+            -if form.failed?
+              -if form.failed_on?(:email)
+                %h3 Please fill in your email address.
+
+        %div.field
+          %label{:name => :phone}
+            Phone:
+          %div.input
+            %input{:name => :phone, :type => 'text'}
+
+
+        %div.field.tall
+          %label{:name => :message}
+            * Send us a message:
+          %div.input
+            %textarea{:name => :message, :type => 'text-area'}
+
+          %div.error
+            -if form.failed?
+              -if form.failed_on?(:message)
+                %h3 Please include a short message.
+
+        %div.field
+          %input{:type => "submit", :value => "Send", :class => "button"}
+
+        %div.payment_clearfix
+    %div.height_set

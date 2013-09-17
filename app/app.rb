@@ -95,6 +95,10 @@ class NirdApp < Sinatra::Base
     haml :contact
   end
 
+  get '/style' do
+    haml :style
+  end
+  
   post '/contact' do
     form do
       VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

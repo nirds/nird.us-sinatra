@@ -1,12 +1,12 @@
 build:
   id: "build"
   homepage: true
-  tagline: "We Build"
-  copy: "NIRD builds light&shy;ning fast cus&shy;tom web ap&shy;plic&shy;a&shy;tions us&shy;ing Ruby on Rails, Sinatra, and Re&shy;fineryCMS. Our team works closely with NIRD cli&shy;ents to un&shy;der&shy;stand their busi&shy;ness re&shy;quire&shy;ments, en&shy;sur&shy;ing that the solu&shy;tions we build meet or ex&shy;ceed ex&shy;pect&shy;a&shy;tions. With NIRD you can watch your app grow from a sketch on the back of a nap&shy;kin to a full fea&shy;tured site."
+  tagline: "Web Development"
+  copy: "NIRD builds light&shy;ning fast cus&shy;tom web ap&shy;plic&shy;a&shy;tions. Watch your app grow from a sketch on the back of a nap&shy;kin to a full fea&shy;tured site."
 teach:
   id: "teach"
   homepage: true
-  tagline: "We Teach"
+  tagline: "Learn to Code"
   copy: "Our skilled team is pas&shy;sion&shy;ate about shar&shy;ing our ex&shy;pert&shy;ise. NIRD pro&shy;vides world class train&shy;ing in Ruby and Ruby on Rails onsite at our Seattle of&shy;fices, re&shy;motely via web con&shy;fer&shy;ence, and at cli&shy;ent sites around the coun&shy;try. We are able to pro&shy;vide all your Ruby stack train&shy;ing needs from be&shy;gin&shy;ner les&shy;sons in ba&shy;sic ruby to ad&shy;vanced top&shy;ics like scal&shy;ing or big data."
   detail:
     remote:
@@ -70,7 +70,7 @@ teach:
 partner:
   id: "[no-hyphen] partner"
   homepage: true
-  tagline: "We Partner"
+  tagline: "NIRD Partners"
   copy: "Look&shy;ing for a tech&shy;nic&shy;al part&shy;ner with the skills to help make your vis&shy;ion a real&shy;ity? At NIRD, we be&shy;lieve every&shy;one can learn Ruby on Rails. As we build, we will bring your team up to speed to main&shy;tain and ex&shy;tend your app. By the end of the pro&shy;ject, you'll be up and run&shy;ning a full fledged ap&shy;plic&shy;a&shy;tion, with the tech&shy;nic&shy;al skills you need to take it to the next level."
 pay:
   tagline: "Make a Payment"
