@@ -47,14 +47,10 @@
 
       %div.field.tall
         %label{:name => :message}
-          * Send us a message:
+          Send us a message:
         %div.input
           %textarea{:name => :message, :type => 'text-area'}
-
-        %div.error
-          -if form.failed?
-            -if form.failed_on?(:message)
-              %h3 Please include a short message.
+          
 
       %div.field
         %input{:type => "submit", :value => "Send", :class => "button"}
