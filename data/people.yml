@@ -1,10 +1,10 @@
 renee:
   id: "renee"
-  full_name: "[no-hyphen] Renée De&nbsp;Voursney"
+  full_name: "[no-hyphen] Renée Hendricksen"
   first_name: "Renée"
-  second_name: "[no-hyphen] De&nbsp;Voursney"
+  second_name: "[no-hyphen] Hendricksen"
   image: "[image] /images/renee_headshot.png"
-  twitter: "[no-hyphen] gigglegirl4e"
+  twitter: "[no-hyphen] nirdllc"
   description:
     paragraph_1: "President & Chief Adventure Officer - Renée draws on her experience from a variety of projects, from high energy physics simulations to financial forecasting models, to provide key expertise for NIRD’s clients in the areas of business intelligence and software development. An avid Ruby developer, Renee consults on projects for a diverse array of companies. She also teaches frequent classes on Ruby, Rails, and everything else to new programmers, experienced programmers, and sometimes to both at the same time!"
     paragraph_2: "Before founding NIRD, Renee utilized her background in computer science and economics to create innovative solutions for leading organizations in the telecommunications, aerospace, and high tech industries. An expert in agile development and a technical leader in the Ruby on Rails software community, she co-founded Seattle RailsBridge and frequently presents at Ruby conferences all over the world."
